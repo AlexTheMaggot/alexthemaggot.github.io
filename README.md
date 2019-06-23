@@ -1,2 +1,2 @@
-# alexthemaggot.github.io
+# AlexTheMaggot
 My first site

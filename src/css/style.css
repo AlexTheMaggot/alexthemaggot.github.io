@@ -90,4 +90,55 @@ body {
   margin: 0 auto;
   width: 150px;
   font-weight: 600;
+  background-color: #006748;
+  border: none;
+}
+.order button:hover {
+  background-color: #2DB38A;
+}
+.secondwindow {
+  height: 700px;
+  background-color: #2DB38A;
+}
+.secondwindow .secwinheader {
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  font-weight: 600;
+  margin-top: 10%;
+}
+.secondwindow .features {
+  text-align: center;
+  background-color: #2DB38A;
+}
+.secondwindow .features img {
+  margin-top: 20%;
+  margin-bottom: 20%;
+  height: 30%;
+  padding: 10%;
+  border: 3px solid white;
+  border-radius: 10%;
+}
+.secondwindow .features .feature1,
+.secondwindow .features .feature2,
+.secondwindow .features .feature3,
+.secondwindow .features .feature4 {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.secondwindow .features .feature1:hover {
+  height: 35%;
+}
+.secondwindow .features .feature2:hover {
+  height: 35%;
+}
+.secondwindow .features .feature3:hover {
+  height: 35%;
+}
+.secondwindow .features .feature4:hover {
+  height: 35%;
+}
+.secondwindow .features span {
+  font-size: 2rem;
+  color: white;
 }

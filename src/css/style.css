@@ -1,6 +1,11 @@
 body {
   font-family: sans-serif;
 }
+.header {
+  margin-top: -800px;
+  position: fixed;
+  z-index: -1;
+}
 .top {
   background-color: #90001F;
   height: 100px;
@@ -37,6 +42,7 @@ body {
 }
 .menu {
   height: 50px;
+  background-color: white;
 }
 .menu div {
   height: 100%;
@@ -62,9 +68,12 @@ body {
   text-decoration: none;
 }
 .firstwindow {
+  margin-top: -650px;
   height: 700px;
   background: url(../img/bg1.jpg) center center no-repeat;
   background-size: cover;
+  position: fixed;
+  z-index: -1;
 }
 .order {
   margin-top: 10%;
@@ -97,7 +106,8 @@ body {
   background-color: #2DB38A;
 }
 .secondwindow {
-  height: 700px;
+  margin-top: 800px;
+  height: 800px;
   background-color: #2DB38A;
 }
 .secondwindow .secwinheader {

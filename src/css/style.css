@@ -113,10 +113,9 @@ body {
   background-color: #2DB38A;
 }
 .secondwindow .features img {
-  margin-top: 20%;
-  margin-bottom: 20%;
+  display: block;
+  margin: 20% auto;
   height: 30%;
-  width: auto;
   padding: 10%;
   border: 3px solid white;
   border-radius: 10%;

@@ -127,16 +127,20 @@ body {
   transition: all 0.2s;
 }
 .secondwindow .features .feature1:hover {
-  height: 35%;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 .secondwindow .features .feature2:hover {
-  height: 35%;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 .secondwindow .features .feature3:hover {
-  height: 35%;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 .secondwindow .features .feature4:hover {
-  height: 35%;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 .secondwindow .features span {
   font-size: 2rem;

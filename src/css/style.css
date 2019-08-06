@@ -147,3 +147,47 @@ body {
   font-size: 2rem;
   color: white;
 }
+.thirdwindow {
+  height: 800px;
+}
+.thirdwindow .header {
+  text-align: center;
+  font-size: 3rem;
+  color: black;
+  font-weight: 600;
+  margin-top: 10%;
+}
+.thirdwindow .firststep,
+.thirdwindow .secondstep,
+.thirdwindow .thirdstep,
+.thirdwindow .fourthstep {
+  margin-top: 5%;
+  text-align: center;
+}
+.thirdwindow .inside {
+  padding: 5%;
+  border: 3px solid white;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.thirdwindow .inside img {
+  height: 100px;
+}
+.thirdwindow .inside:hover {
+  border: 3px solid #CD6933;
+  border-radius: 10px;
+}
+.thirdwindow .number {
+  font-size: 3rem;
+  color: #CD6933;
+  font-weight: 600;
+}
+.thirdwindow .step {
+  font-weight: 600;
+  font-size: 2rem;
+}
+.thirdwindow .description {
+  color: gray;
+  font-size: 1.5rem;
+}

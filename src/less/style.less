@@ -1,0 +1,199 @@
+body {
+	font-family: sans-serif;
+}
+.top {
+	background-color: #90001F;
+	height: 100px;
+}
+.logo {
+	@media (max-width: 916px) {
+		display: none;
+	}
+	a {
+		display: block;
+		width: 100%;
+		height: 100%;
+		img {
+			display: block;
+		}
+	}
+}
+.headertitle {
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 1.7rem;
+}
+.contacts {
+	float: right;
+	.row {
+		height: 100%;
+		width: 100%;
+	}
+	.phoneimg {
+		height: 100%;
+		width: 100%;
+		@media (max-width: 916px) {
+			display: none;
+		}
+	}
+	.phonenumber {
+		text-align: left;
+		margin: auto auto;
+		height: 100%;
+		width: 100%;
+		color: white;
+		font-size: 1.2rem;
+		@media (max-width: 916px) {
+			font-size: 1rem;
+		}
+	}
+}
+.menu {
+	height: 50px;
+	@media (max-width: 906px) {
+		height: 100px;
+	}
+	a {
+		display: block;
+		height: 100%;
+		padding-top: 1%;
+		transition: all 0.2s;
+		color: black;
+		font-weight: 600;
+		@media (max-width: 906px) {
+			height: 50%;
+		}
+		div {
+			p {
+				display: block;
+				margin: auto 14px;
+			}
+		}
+	}
+	a:hover {
+		background-color: #006748;
+		text-decoration: none;
+		color: white;
+	}
+}
+.firstwindow {
+	height: 700px;
+	background: url(../img/bg1.jpg) center center no-repeat;
+	background-size: cover;
+}
+.order {
+	margin-top: 10%;
+	height: 350px;
+	border-radius: 20px;
+	background-color: rgba(255,255,255,0.7);
+	span {
+		display: block;
+		text-align: center;
+		font-weight: 600;
+		margin-top: 40px;
+		font-size: 1.5rem;
+	}
+	label {
+		font-weight: 600;
+	}
+	input {
+		margin-bottom: 20px;
+	}
+	button {
+		display: block;
+		margin: 0 auto;
+		width: 150px;
+		font-weight: 600;
+		background-color: #006748;
+		border: none;
+	}
+	button:hover {
+		background-color: #2DB38A;
+	}
+}
+.secondwindow {
+	height: 800px;
+	background-color: #2DB38A;
+	@media (max-width: 991px) {
+		height: 1300px;
+	}
+	.secwinheader {
+		text-align: center;
+		font-size: 3rem;
+		color: white;
+		font-weight: 600;
+		margin-top: 10%;
+	}
+	.features {
+		text-align: center;
+		background-color: #2DB38A;
+		img {
+			display: block;
+			margin: 20% auto;
+			height: 30%;
+			padding: 10%;
+			border: 3px solid white;
+			border-radius: 10%;
+		}
+		.feature1, .feature2, .feature3, .feature4 {
+				transition: all 0.2s;
+			}
+		.feature1:hover {
+			transform: scale(1.2);
+		}
+		.feature2:hover {
+			transform: scale(1.2);
+		}
+		.feature3:hover {
+			transform: scale(1.2);
+		}
+		.feature4:hover {
+			transform: scale(1.2);
+		}
+		span {
+			font-size: 2rem;
+			color: white;
+		}
+	}
+}
+.thirdwindow {
+	height: 800px;
+	.header {
+		text-align: center;
+		font-size: 3rem;
+		color: black;
+		font-weight: 600;
+		margin-top: 10%;
+	}
+	.firststep, .secondstep, .thirdstep, .fourthstep {
+		margin-top: 5%;
+		text-align: center;
+	}
+	.inside {
+		padding: 5%;
+		border: 3px solid white;
+		border-radius: 10px;
+		transition: all 0.3s;
+		img {
+			height: 100px;
+		}
+	}
+	.inside:hover {
+		border: 3px solid #CD6933;
+		border-radius: 10px;
+	}
+	.number {
+		font-size: 3rem;
+		color: #CD6933;
+		font-weight: 600;
+	}
+	.step {
+		font-weight: 600;
+		font-size: 2rem;
+	}
+	.description {
+		color: gray;
+		font-size: 1.5rem;
+	}
+}

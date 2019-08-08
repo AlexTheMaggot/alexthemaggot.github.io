@@ -1,186 +1,221 @@
+/* Fonts Settings */
+@font-face {
+    font-family: 'ProximaNova_reg';
+    src: url('../fonts/ProximaNova-Regular.eot');
+    src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Regular.woff') format('woff'),
+        url('../fonts/ProximaNova-Regular.ttf') format('truetype'),
+        url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNova_bold';
+    src: url('../fonts/ProximaNova-Bold.eot');
+    src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Bold.woff') format('woff'),
+        url('../fonts/ProximaNova-Bold.ttf') format('truetype'),
+        url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.reg() {
+	font-family: 'ProximaNova_reg', sans-serif;
+}
+.bold() {
+	font-family: 'ProximaNova_bold', sans-serif;
+}
+/* Colors */
+@btn-color: #fcb303;
+@icons-color: #46b814;
+@text: #1a1820;
+@danger: #ff0000;
+@bg-light: #f5f5f5;
+@light: #fff;
+@border-input: #dddddd;
+
+/* Basic settings */
+html {
+	font-size: 10px;
+}
 body {
-	font-family: sans-serif;
+	.reg();
 }
-.top {
-	background-color: #90001F;
-	height: 100px;
+a:hover {
+	text-decoration: none;
 }
-.logo {
-	a {
-		display: block;
-		width: 100%;
-		height: 100%;
-		img {
-			display: block;
-		}
+button, input, a {
+	&:focus {
+		outline: none;
 	}
 }
-.headertitle {
-	text-align: center;
-	color: white;
-	font-weight: bold;
-	font-size: 1.7rem;
-}
-.contacts {
-	.row {
-		height: 100%;
-		width: 100%;
-	}
-	.phoneimg {
-		height: 100%;
-		width: 100%;
-	}
-	.phonenumber {
-		text-align: left;
-		margin: auto auto;
-		height: 100%;
-		width: 100%;
-		color: white;
-		font-size: 1.2rem;
+.button {
+	padding: 1rem 3rem;
+	border-radius: 8px;
+	font-size: 1.2rem;
+	background-color: @btn-color;
+	color: @light;
+	text-transform: uppercase;
+	border: none;
+	.reg();
+	transition: all 0.2s;
+	&:hover {
+		cursor: pointer;
+		background-color: darken(@btn-color, 5%);
 	}
 }
-.menu {
-	height: 50px;
-	background-color: white;
-	div {
-		height: 100%;
-		transition: all 0.2s;
-	}
-	div:hover {
-		background-color: #006748;
-		text-decoration: none;
-		a {
-			color: white;
-		}
-	}
-	a {
-		display: inline-block;
-		color: black;
-		margin: 14px;
-		transition: all 0.2s;
-		font-weight: bold;
-	}
-	a:hover {
-		text-decoration: none;
-	}
+
+/* Typography */
+section {
+	padding: 10rem 0px;
 }
-.firstwindow {
-	height: 700px;
-	background: url(../img/bg1.jpg) center center no-repeat;
+
+/* main */
+.main {
+	padding: 3rem 0 5rem;
+	background: #fff url(../img/main-bg.jpg) center center no-repeat;
 	background-size: cover;
-}
-.order {
-	margin-top: 10%;
-	height: 350px;
-	border-radius: 20px;
-	background-color: rgba(255,255,255,0.7);
+	&-content {
+		margin-top: 10rem;
+		/* Главный заголовок */
+		h1 {
+			margin-top: 0;
+			margin-bottom: 4rem;
+			.bold();
+			font-size: 4rem;
+			line-height: 1.45;
+			text-transform: uppercase;
+		} 
+	}
+	/* Подзаголовок */
+	&-subtitle {
+		margin-bottom: 4rem;
+		font-size: 2.4rem;
+		.reg();
+	}
+	/* Зеленый ярлык */
 	span {
-		display: block;
+		display: inline-block;
+		padding: 3rem 5rem;
+		font-size: 1.8rem;
+		color: @light;
+		background-color: @icons-color;
 		text-align: center;
-		font-weight: 600;
-		margin-top: 40px;
-		font-size: 1.5rem;
-	}
-	label {
-		font-weight: 600;
-	}
-	input {
-		margin-bottom: 20px;
-	}
-	button {
-		display: block;
-		margin: 0 auto;
-		width: 150px;
-		font-weight: 600;
-		background-color: #006748;
-		border: none;
-	}
-	button:hover {
-		background-color: #2DB38A;
-	}
-}
-.secondwindow {
-	height: 800px;
-	background-color: #2DB38A;
-	@media (max-width: 991px) {
-		height: 1300px;
-	}
-	.secwinheader {
-		text-align: center;
-		font-size: 3rem;
-		color: white;
-		font-weight: 600;
-		margin-top: 10%;
-	}
-	.features {
-		text-align: center;
-		background-color: #2DB38A;
-		img {
-			display: block;
-			margin: 20% auto;
-			height: 30%;
-			padding: 10%;
-			border: 3px solid white;
-			border-radius: 10%;
+		.reg();
+		/* Число 300 */
+		strong {
+			font-size: 3rem;
+			.bold();
 		}
-		.feature1, .feature2, .feature3, .feature4 {
-				transition: all 0.2s;
+	}
+	/* Оплата по факту */
+	&-trigger {
+		display: block;
+		margin-top: 3rem;
+		font-size: 2.2rem;
+		text-transform: uppercase;
+		.bold()
+	}
+	/* Главная форма */
+	&-form {
+		padding: 4rem 5rem;
+		background-color: @light;
+		text-align: center;
+		/* Заголовок формы */
+		&-header {
+			margin-bottom: 4rem;
+			font-size: 1.7rem;
+			strong {
+				font-size: 1.9rem;
 			}
-		.feature1:hover {
-			transform: scale(1.2);
 		}
-		.feature2:hover {
-			transform: scale(1.2);
+		/* Поле для ввода */
+		&-input {
+			display: block;
+			margin: 2rem 0;
+			width: 100%;
+			border: 1px solid @border-input;
+			padding: 1.5rem;
 		}
-		.feature3:hover {
-			transform: scale(1.2);
+		/* Подписи к полям */
+		label {
+			position: absolute;
+			display: inline-block;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			padding: 0.5rem;
+			background-color: @light;
+			font-size: 1.5rem;
+			.reg();
 		}
-		.feature4:hover {
-			transform: scale(1.2);
+		/* Кнопка отправить заявку */
+		&-btn {
+			display: block;
+			width: 100%;
+			height: 5.5rem;
+			font-size: 1.6rem;
 		}
-		span {
-			font-size: 2rem;
-			color: white;
+		/* Подпись под кнопкой */
+		small {
+			display: block;
+			margin-top: 1.5rem;
 		}
 	}
 }
-.thirdwindow {
-	height: 800px;
+.header {
+	height: 7rem;
+}
+.wrap {
+	display: table;
+	width: 100%;
+	height: 7rem;
+	&-block {
+		text-align: right;
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+.phone {
+	&-block {
+		text-align: right;
+	}
+	&-link {
+		display: inline-block;
+		.bold();
+		font-size: 2rem;
+		height: 7rem;
+		line-height: 7rem;
+		color: @text;
+	}
+}
+@media (max-width: 991px) {
+	.main {
+		background-position: top right;
+	}
+	.phone-block {
+		text-align: center;
+	}
+	.main-content {
+		margin-top: 3rem;
+	}
+	.main-title {
+		padding-bottom: 3rem;
+		text-align: center;
+	}
+}
+@media (max-width: 767px) {
 	.header {
 		text-align: center;
-		font-size: 3rem;
-		color: black;
-		font-weight: 600;
-		margin-top: 10%;
+		height: 20rem;
 	}
-	.firststep, .secondstep, .thirdstep, .fourthstep {
-		margin-top: 5%;
+	.wrap-block {
 		text-align: center;
 	}
-	.inside {
-		padding: 5%;
-		border: 3px solid white;
-		border-radius: 10px;
-		transition: all 0.3s;
-		img {
-			height: 100px;
-		}
-	}
-	.inside:hover {
-		border: 3px solid #CD6933;
-		border-radius: 10px;
-	}
-	.number {
-		font-size: 3rem;
-		color: #CD6933;
-		font-weight: 600;
-	}
-	.step {
-		font-weight: 600;
-		font-size: 2rem;
-	}
-	.description {
-		color: gray;
-		font-size: 1.5rem;
+	.main {
+		background-position: top left;
 	}
 }

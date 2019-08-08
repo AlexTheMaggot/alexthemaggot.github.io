@@ -1,198 +1,193 @@
-body {
-  font-family: sans-serif;
+/* Fonts Settings */
+@font-face {
+  font-family: 'ProximaNova_reg';
+  src: url('../fonts/ProximaNova-Regular.eot');
+  src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Regular.woff2') format('woff2'), url('../fonts/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular.ttf') format('truetype'), url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
-.top {
-  background-color: #90001F;
-  height: 100px;
-}
-.logo a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.logo a img {
-  display: block;
-}
-.headertitle {
-  text-align: center;
-  color: white;
+@font-face {
+  font-family: 'ProximaNova_bold';
+  src: url('../fonts/ProximaNova-Bold.eot');
+  src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Bold.woff2') format('woff2'), url('../fonts/ProximaNova-Bold.woff') format('woff'), url('../fonts/ProximaNova-Bold.ttf') format('truetype'), url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
   font-weight: bold;
+  font-style: normal;
+}
+/* Colors */
+/* Basic settings */
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'ProximaNova_reg', sans-serif;
+}
+a:hover {
+  text-decoration: none;
+}
+button:focus,
+input:focus,
+a:focus {
+  outline: none;
+}
+.button {
+  padding: 1rem 3rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  background-color: #fcb303;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+  font-family: 'ProximaNova_reg', sans-serif;
+  transition: all 0.2s;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #e3a103;
+}
+/* Typography */
+section {
+  padding: 10rem 0px;
+}
+/* main */
+.main {
+  padding: 3rem 0 5rem;
+  background: #ffffff url(../img/main-bg.jpg) center center no-repeat;
+  background-size: cover;
+  /* Подзаголовок */
+  /* Зеленый ярлык */
+  /* Оплата по факту */
+  /* Главная форма */
+}
+.main-content {
+  margin-top: 10rem;
+  /* Главный заголовок */
+}
+.main-content h1 {
+  margin-top: 0;
+  margin-bottom: 4rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 4rem;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+.main-subtitle {
+  margin-bottom: 4rem;
+  font-size: 2.4rem;
+  font-family: 'ProximaNova_reg', sans-serif;
+}
+.main span {
+  display: inline-block;
+  padding: 3rem 5rem;
+  font-size: 1.8rem;
+  color: #ffffff;
+  background-color: #46b814;
+  text-align: center;
+  font-family: 'ProximaNova_reg', sans-serif;
+  /* Число 300 */
+}
+.main span strong {
+  font-size: 3rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.main-trigger {
+  display: block;
+  margin-top: 3rem;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.main-form {
+  padding: 4rem 5rem;
+  background-color: #ffffff;
+  text-align: center;
+  /* Заголовок формы */
+  /* Поле для ввода */
+  /* Подписи к полям */
+  /* Кнопка отправить заявку */
+  /* Подпись под кнопкой */
+}
+.main-form-header {
+  margin-bottom: 4rem;
   font-size: 1.7rem;
 }
-.contacts .row {
-  height: 100%;
+.main-form-header strong {
+  font-size: 1.9rem;
+}
+.main-form-input {
+  display: block;
+  margin: 2rem 0;
   width: 100%;
+  border: 1px solid #dddddd;
+  padding: 1.5rem;
 }
-.contacts .phoneimg {
-  height: 100%;
-  width: 100%;
-}
-.contacts .phonenumber {
-  text-align: left;
-  margin: auto auto;
-  height: 100%;
-  width: 100%;
-  color: white;
-  font-size: 1.2rem;
-}
-.menu {
-  height: 50px;
-  background-color: white;
-}
-.menu div {
-  height: 100%;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-.menu div:hover {
-  background-color: #006748;
-  text-decoration: none;
-}
-.menu div:hover a {
-  color: white;
-}
-.menu a {
+.main-form label {
+  position: absolute;
   display: inline-block;
-  color: black;
-  margin: 14px;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  font-weight: bold;
-}
-.menu a:hover {
-  text-decoration: none;
-}
-.firstwindow {
-  height: 700px;
-  background: url(../img/bg1.jpg) center center no-repeat;
-  background-size: cover;
-}
-.order {
-  margin-top: 10%;
-  height: 350px;
-  border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.7);
-}
-.order span {
-  display: block;
-  text-align: center;
-  font-weight: 600;
-  margin-top: 40px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 0.5rem;
+  background-color: #ffffff;
   font-size: 1.5rem;
+  font-family: 'ProximaNova_reg', sans-serif;
 }
-.order label {
-  font-weight: 600;
-}
-.order input {
-  margin-bottom: 20px;
-}
-.order button {
+.main-form-btn {
   display: block;
-  margin: 0 auto;
-  width: 150px;
-  font-weight: 600;
-  background-color: #006748;
-  border: none;
+  width: 100%;
+  height: 5.5rem;
+  font-size: 1.6rem;
 }
-.order button:hover {
-  background-color: #2DB38A;
+.main-form small {
+  display: block;
+  margin-top: 1.5rem;
 }
-.secondwindow {
-  height: 800px;
-  background-color: #2DB38A;
+.header {
+  height: 7rem;
+}
+.wrap {
+  display: table;
+  width: 100%;
+  height: 7rem;
+}
+.wrap-block {
+  text-align: right;
+  display: table-cell;
+  vertical-align: middle;
+}
+.phone-block {
+  text-align: right;
+}
+.phone-link {
+  display: inline-block;
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 2rem;
+  height: 7rem;
+  line-height: 7rem;
+  color: #1a1820;
 }
 @media (max-width: 991px) {
-  .secondwindow {
-    height: 1300px;
+  .main {
+    background-position: top right;
+  }
+  .phone-block {
+    text-align: center;
+  }
+  .main-content {
+    margin-top: 3rem;
+  }
+  .main-title {
+    padding-bottom: 3rem;
+    text-align: center;
   }
 }
-.secondwindow .secwinheader {
-  text-align: center;
-  font-size: 3rem;
-  color: white;
-  font-weight: 600;
-  margin-top: 10%;
-}
-.secondwindow .features {
-  text-align: center;
-  background-color: #2DB38A;
-}
-.secondwindow .features img {
-  display: block;
-  margin: 20% auto;
-  height: 30%;
-  padding: 10%;
-  border: 3px solid white;
-  border-radius: 10%;
-}
-.secondwindow .features .feature1,
-.secondwindow .features .feature2,
-.secondwindow .features .feature3,
-.secondwindow .features .feature4 {
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-.secondwindow .features .feature1:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-.secondwindow .features .feature2:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-.secondwindow .features .feature3:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-.secondwindow .features .feature4:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-.secondwindow .features span {
-  font-size: 2rem;
-  color: white;
-}
-.thirdwindow {
-  height: 800px;
-}
-.thirdwindow .header {
-  text-align: center;
-  font-size: 3rem;
-  color: black;
-  font-weight: 600;
-  margin-top: 10%;
-}
-.thirdwindow .firststep,
-.thirdwindow .secondstep,
-.thirdwindow .thirdstep,
-.thirdwindow .fourthstep {
-  margin-top: 5%;
-  text-align: center;
-}
-.thirdwindow .inside {
-  padding: 5%;
-  border: 3px solid white;
-  border-radius: 10px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.thirdwindow .inside img {
-  height: 100px;
-}
-.thirdwindow .inside:hover {
-  border: 3px solid #CD6933;
-  border-radius: 10px;
-}
-.thirdwindow .number {
-  font-size: 3rem;
-  color: #CD6933;
-  font-weight: 600;
-}
-.thirdwindow .step {
-  font-weight: 600;
-  font-size: 2rem;
-}
-.thirdwindow .description {
-  color: gray;
-  font-size: 1.5rem;
+@media (max-width: 767px) {
+  .header {
+    text-align: center;
+    height: 20rem;
+  }
+  .wrap-block {
+    text-align: center;
+  }
+  .main {
+    background-position: top left;
+  }
 }

@@ -1,70 +1,30 @@
 body {
   font-family: sans-serif;
 }
-.top {
+.header {
   background-color: #90001F;
 }
-@media (max-width: 916px) {
-  .logo {
-    display: none;
-  }
-}
-.headertitle {
+.header .title h1 {
   text-align: center;
   color: white;
-  font-weight: bold;
-  font-size: 1.7rem;
+  font-weight: 600;
+  font-size: 2rem;
 }
-.contacts {
+.header .phone p {
+  display: block;
+  margin: auto;
   float: right;
-}
-.contacts .row {
-  height: 100%;
-  width: 100%;
-}
-.contacts .phoneimg {
-  height: 100%;
-  width: 100%;
-}
-@media (max-width: 916px) {
-  .contacts .phoneimg {
-    display: none;
-  }
-}
-.contacts .phonenumber {
-  text-align: left;
-  margin: auto auto;
-  height: 100%;
-  width: 100%;
+  font-size: 1.1rem;
   color: white;
-  font-size: 1.2rem;
-}
-@media (max-width: 916px) {
-  .contacts .phonenumber {
-    font-size: 1rem;
-  }
-}
-.menu {
-  height: 50px;
-}
-@media (max-width: 906px) {
-  .menu {
-    height: 100px;
-  }
 }
 .menu a {
   display: block;
   height: 100%;
-  padding-top: 1%;
+  padding: 1% 0;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   color: black;
   font-weight: 600;
-}
-@media (max-width: 906px) {
-  .menu a {
-    height: 50%;
-  }
 }
 .menu a div p {
   display: block;
@@ -76,7 +36,7 @@ body {
   color: white;
 }
 .firstwindow {
-  height: 700px;
+  height: 800px;
   background: url(../img/bg1.jpg) center center no-repeat;
   background-size: cover;
 }
@@ -111,13 +71,7 @@ body {
   background-color: #2DB38A;
 }
 .secondwindow {
-  height: 800px;
   background-color: #2DB38A;
-}
-@media (max-width: 991px) {
-  .secondwindow {
-    height: 1300px;
-  }
 }
 .secondwindow .secwinheader {
   text-align: center;
@@ -125,12 +79,13 @@ body {
   color: white;
   font-weight: 600;
   margin-top: 10%;
+  margin-bottom: 5%;
 }
-.secondwindow .features {
+.features {
   text-align: center;
   background-color: #2DB38A;
 }
-.secondwindow .features img {
+.features img {
   display: block;
   margin: 20% auto;
   height: 30%;
@@ -138,74 +93,72 @@ body {
   border: 3px solid white;
   border-radius: 10%;
 }
-.secondwindow .features .feature1,
-.secondwindow .features .feature2,
-.secondwindow .features .feature3,
-.secondwindow .features .feature4 {
+.features .feature1,
+.features .feature2,
+.features .feature3,
+.features .feature4 {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-.secondwindow .features .feature1:hover {
+.features .feature1:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
-.secondwindow .features .feature2:hover {
+.features .feature2:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
-.secondwindow .features .feature3:hover {
+.features .feature3:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
-.secondwindow .features .feature4:hover {
+.features .feature4:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
-.secondwindow .features span {
+.features span {
   font-size: 2rem;
   color: white;
 }
-.thirdwindow {
-  height: 800px;
-}
-.thirdwindow .header {
+.thirdwindow .twheader {
   text-align: center;
   font-size: 3rem;
   color: black;
   font-weight: 600;
   margin-top: 10%;
 }
-.thirdwindow .firststep,
-.thirdwindow .secondstep,
-.thirdwindow .thirdstep,
-.thirdwindow .fourthstep {
+.firststep,
+.secondstep,
+.thirdstep,
+.fourthstep {
   margin-top: 5%;
+  margin-bottom: 10%;
   text-align: center;
 }
-.thirdwindow .inside {
+.inside {
   padding: 5%;
   border: 3px solid white;
   border-radius: 10px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.thirdwindow .inside img {
+.inside img {
   height: 100px;
 }
-.thirdwindow .inside:hover {
+.inside:hover {
   border: 3px solid #CD6933;
   border-radius: 10px;
 }
-.thirdwindow .number {
+.number {
   font-size: 3rem;
   color: #CD6933;
   font-weight: 600;
 }
-.thirdwindow .step {
+.step {
   font-weight: 600;
   font-size: 2rem;
 }
-.thirdwindow .description {
+.description {
   color: gray;
   font-size: 1.5rem;
 }

@@ -84,10 +84,11 @@ body {
 .features {
   text-align: center;
   background-color: #2DB38A;
+  margin-top: -3px;
 }
 .features img {
   display: block;
-  margin: 20% auto;
+  margin: 15% auto;
   height: 30%;
   padding: 10%;
   border: 3px solid white;
@@ -119,20 +120,21 @@ body {
 .features span {
   font-size: 2rem;
   color: white;
+  margin-bottom: 10%;
 }
 .thirdwindow .twheader {
   text-align: center;
   font-size: 3rem;
   color: black;
   font-weight: 600;
-  margin-top: 10%;
+  margin-top: 15%;
 }
 .firststep,
 .secondstep,
 .thirdstep,
 .fourthstep {
   margin-top: 5%;
-  margin-bottom: 10%;
+  margin-bottom: 15%;
   text-align: center;
 }
 .inside {
@@ -149,11 +151,6 @@ body {
   border: 3px solid #CD6933;
   border-radius: 10px;
 }
-.number {
-  font-size: 3rem;
-  color: #CD6933;
-  font-weight: 600;
-}
 .step {
   font-weight: 600;
   font-size: 2rem;
@@ -161,4 +158,34 @@ body {
 .description {
   color: gray;
   font-size: 1.5rem;
+}
+.fourthwindow .fwheader {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-top: 15%;
+  margin-bottom: 5%;
+}
+.reviews .fotorama {
+  margin-bottom: 5%;
+  padding: 3%;
+}
+.reviews .fotorama .review {
+  height: 100%;
+}
+.reviews .fotorama .review img {
+  display: inline-block;
+  width: 100%;
+  border-radius: 100%;
+}
+.reviews .fotorama .review p {
+  display: inline-block;
+  padding-top: 5%;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.reviews .fotorama .review span {
+  display: block;
+  float: right;
+  font-size: 1.3rem;
 }

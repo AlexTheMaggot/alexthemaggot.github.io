@@ -1,16 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>DjangoSite</title>
+	<title>Commit 39</title>
 	{% load staticfiles %}
 	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+	<link rel="stylesheet" href="{% static 'css/fotorama.css' %}">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
-<body style="background-color: silver;">
-	{% block content %}
+<body>
+	<div class="container-fluid">
+		<div class="row header align-items-center">
+			<div class="logo col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 order-1">
+				<a href="/"><img src="{% static 'img/logo.png' %}" alt="На Главную"></a>
+			</div>
+			<div class="title col-xl-7 order-xl-2 col-lg-6 order-lg-2 col-md-12 col-sm-12 col-12 order-3 align-self-center">
+				<h1>Ремонт электроники в Санкт-Петербурге</h1>
+			</div>
+			<div class="phone col-xl-2 offset-lg-0 order-xl-3 col-lg-3 offset-lg-0 order-lg-3 col-md-3 offset-md-6 order-md-2 col-sm-4 offset-sm-2 order-sm-2 col-5 offset-1 order-2">
+				<p>+7 (911) 739-78-19</p>
+				<p>+7 (981) 863-17-99</p>
+			</div>
+		</div>
+		<div class="menu row">
+			<a href="/phones">
+				<div>
+					<p>ТЕЛЕФОНЫ</p>
+				</div>
+			</a>
+			<a href="tablets.html">
+				<div>
+					<p>ПЛАНШЕТЫ</p>
+				</div>
+			</a>
+			<a href="laptops.html">
+				<div>
+					<p>НОУТБУКИ</p>
+				</div>
+			</a>
+			<a href="cameras.html">
+				<div>
+					<p>ФОТОАППАРАТЫ</p>
+				</div>
+			</a>
+			<a href="about.html">
+				<div>
+					<p>О КОМПАНИИ</p>
+				</div>
+			</a>
+			<a href="/reviews">
+				<div>
+					<p>ОТЗЫВЫ</p>
+				</div>
+			</a>
+			<a href="/contacts">
+				<div>
+					<p>КОНТАКТЫ</p>
+				</div>
+			</a>
+		</div>
+		
+		{% block content %}
+		{% endblock %}
 
-	{% endblock %}
+		<div class="footer row justify-content-center">
+			<div class="col-10 offset-1">
+				<p>© 2011–2019 ИП«Малышев». Все права защищены. Информация на сайте носит исключительно информационный характер и не является публичной офертой, определяемой положениями Статьи 437 (2) ГК РФ</p>
+			</div>
+		</div>
+	</div>
 
-	
+	<script src="{% static 'js/jquery-3.4.1.js' %}"></script>
+	<script src="{% static 'js/fotorama.js' %}"></script>
 </body>
 </html>

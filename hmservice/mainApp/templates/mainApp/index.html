@@ -1,7 +1,211 @@
-{% extends "mainApp/wrapper.html" %}
+{% extends 'mainApp/wrapper.html' %}
 
 {% block content %}
-<p>Working Test1</p>
+	{% load staticfiles %}
+	
+	<div class="firstwindow row">
+		<div class="order col-xl-3 offset-xl-8 col-lg-3 offset-lg-8 col-md-4 offset-md-4 col-sm-6 offset-sm-3 col-10 offset-1">
+			<span>Оставьте заявку</span>
+			<form action="mail.php" method="POST">
+				<label for="#">Имя</label>
+				<input class="form-control" type="text" name="user_name" placeholder="Введите имя">
+				<label for="#">Номер телефона</label>
+				<input class="form-control" type="text" name="user_phone" placeholder="+7 (495) 123-45-67">
+				<button class="btn btn-success">Заказать</button>
+			</form>
+		</div>
+	</div>
+	<div class="secondwindow row">
+		<div class="secwinheader col-12">
+			<span>Почему нас выбирают?</span>
+		</div>
+	</div>
+	<div class="features row">
+		<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+			<img class="feature1" src="{% static 'img/feature1.png' %}" alt="">
+			<br>
+			<span>Гарантия</span>
+		</div>
+		<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+			<img class="feature2" src="{% static 'img/feature2.png' %}" alt="">
+			<br>
+			<span>Низкие цены</span>
+		</div>
+		<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+			<img class="feature3" src="{% static 'img/feature3.png' %}" alt="">
+			<br>
+			<span>Быстрые сроки</span>
+		</div>
+		<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+			<img class="feature4" src="{% static 'img/feature4.png' %}" alt="">
+			<br>
+			<span>Скидки и акции</span>
+		</div>
+	</div>
+	<div class="thirdwindow row">
+		<div class="twheader col-xl-12">
+			<span>Как мы работаем</span>
+		</div>
+	</div>
+	<div class="row">
+		<div class="firststep col-xl-3 col-lg-3 col-md-6 col-sm-12">
+			<div class="inside">
+				<img src="{% static 'img/checkbox.png' %}" alt="">
+				<br>
+				<span class="step">Шаг первый</span>
+				<br>
+				<span class="description">Вы оставляете устройство</span>
+			</div>
+		</div>
+		<div class="secondstep col-xl-3 col-lg-3 col-md-6 col-sm-12">
+			<div class="inside">
+				<img src="{% static 'img/checkbox.png' %}" alt="">
+				<br>
+				<span class="step">Шаг второй</span>
+				<br>
+				<span class="description">Мы сообщаем вам о стоимости и сроках ремонта</span>
+			</div>
+		</div>
+		<div class="thirdstep col-xl-3 col-lg-3 col-md-6 col-sm-12">
+			<div class="inside">
+				<img src="{% static 'img/checkbox.png' %}" alt="">
+				<br>
+				<span class="step">Шаг третий</span>
+				<br>
+				<span class="description">Процесс ремонта</span>
+			</div>
+		</div>
+		<div class="fourthstep col-xl-3 col-lg-3 col-md-6 col-sm-12">
+			<div class="inside">
+				<img src="{% static 'img/checkbox.png' %}" alt="">
+				<br>
+				<span class="step">Шаг четвертый</span>
+				<br>
+				<span class="description">Вы забираете готовый аппарат</span>
+			</div>
+		</div>
+	</div>
+	<div class="fourthwindow row">
+		<div class="fwheader col-12">
+			<span>Что о нас говорят клиенты?</span>
+		</div>
+	</div>
+	<div class="reviews row">
+		<div class="col-10 offset-1">
+			<div class="fotorama" data-height="400" data-width="100%" data-autoplay="true" data-nav="false" data-loop="true">
+				<div class="container review">
+					<div class="row">
+						<div class="col-3">
+							<img src="{% static 'img/pers1.jpg' %}" alt="">
+						</div>
+						<div class="col-9">
+							<p class="fotorama__select">Очень понравилось обслуживание. Сразу видно, что заинтересованы в проблеме и помогли довольно быстро. Теперь только сюда буду обращаться, особенно после всех других сервисов.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<span class="fotorama__select"><i>Мария</i></span>
+						</div>
+					</div>
+				</div>
+				<div class="container review">
+					<div class="row">
+						<div class="col-3">
+							<img src="{% static 'img/pers2.jpg' %}" alt="">
+						</div>
+						<div class="col-9">
+							<p class="fotorama__select">Отличный сервис, качественный ремонт,хорошее обслуживание. Работник общительный и внимательный, качественно выполняет свою работу,сделал мне два телефона и в подарок поставил защитное стекло!) Всем рекомендую!!!</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<span class="fotorama__select"><i>Анна</i></span>
+						</div>
+					</div>
+				</div>
+				<div class="container review">
+					<div class="row">
+						<div class="col-3">
+							<img src="{% static 'img/pers3.jpg' %}" alt="">
+						</div>
+						<div class="col-9">
+							<p class="fotorama__select">Отремонтировали все быстро и качественно! Приятным бонусом был очень вежливый менеджер, который все просто и понятно объяснил. Всем рекомендую. Спасибо!</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<span class="fotorama__select"><i>Татьяна</i></span>
+						</div>
+					</div>
+				</div>
+				<div class="container review">
+					<div class="row">
+						<div class="col-3">
+							<img src="{% static 'img/pers4.jpg' %}" alt="">
+						</div>
+						<div class="col-9">
+							<p class="fotorama__select">Перестал заряжаться мой iрhоnе 7, покупал его б/у и гарантии уже нет. Я пытался под разным углом заряжать телефон, но все таки пришлось сдавать сюда в ремонт. В сервисе меня вежливо встретили, проконсультировали и провели диагностику. Разъем зарядки заменили на новый быстро и недорого. Я сервисом доволен!</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<span class="fotorama__select"><i>Максим</i></span>
+						</div>
+					</div>
+				</div>
+				<div class="container review">
+					<div class="row">
+						<div class="col-3">
+							<img src="{% static 'img/pers5.jpg' %}" alt="">
+						</div>
+						<div class="col-9">
+							<p class="fotorama__select">Ребята молодцы, воскресили мой планшет. Я уже боялся что не получится его восстановить, и придется покупать новый. Спасибо!</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<span class="fotorama__select"><i>Денис</i></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="fifthwindow row">
+		<div class="ffwheader col-10 offset-1">
+			<p>Как нас найти</p>
+		</div>
+	</div>
+	<div class="map row">
+		<div class="col-10 offset-1">
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A09602d6f36d06799dc1882cf7cb2d7c7f8ace6c16a990d04efcfca0c06bcf533&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+		</div>
+	</div>
+	<div class="contacts row">
+		<div class="adress col-5 offset-1">
+			<p><span>Наш адрес</span></p>
+			<p><i>Метро "Сенная Площадь" Московский пр., 3, ТЦ "Адмиралтейский", 4 Этаж, Санкт-Петербург, Россия, 190068</i></p>
+			<p><span>Номер телефона</span></p>
+			<p><i>+7 (911) 739-78-19</i></p>
+			<p><i>+7 (981) 863-17-99</i></p>
+		</div>
+		<div class="links col-5">
+			<div class="row justify-content-center">
+				<p><span>Мы в соцсетях</span></p>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-5 offset-1">
+					<a href="https://vk.com/mr_chekmak">
+						<img src="{% static 'img/vk100x100.png' %}" alt="Мы в ВК">
+					</a>
+				</div>
+				<div class="col-5">
+					<a href="https://www.instagram.com/home_service78">
+						<img src="{% static 'img/inst100x100.png' %}" alt="Мы в Instagram">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
-{% include "mainApp/includes/some.html" %}
 {% endblock %}

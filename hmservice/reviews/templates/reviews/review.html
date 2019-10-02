@@ -1,0 +1,11 @@
+{% extends "mainApp/wrapper.html" %}
+
+{% block content %}
+
+	<h2 class="text-info">{{review.name}}</h2>
+	<h6 class="text-info">Posted: {{review.date|date:"Y-m-d в H:i:s"}}</h6>
+	<p>{{review.text|safe|linebreaks}}</p>
+	<br>
+	<a href="/reviews">Back to the all reviews</a>
+
+{% endblock %}

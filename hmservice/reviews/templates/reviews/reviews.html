@@ -1,0 +1,12 @@
+{% extends "mainApp/wrapper.html" %}
+
+{% block content %}
+	<h1 style="text-align: center;">List of reviews</h1>
+	{% for text in object_list %}
+		<div class="col-4 offset-4" style="margin-bottom: 50px;">	
+			<a href="/reviews/{{text.id}}"><h3>{{text.name}}</h3></a>
+			<h5>{{text.text}}</h5>
+			<h6>{{text.date|date:"d-m-Y"}}</h6>
+		</div>
+	{% endfor %}
+{% endblock %}

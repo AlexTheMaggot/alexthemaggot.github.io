@@ -21,7 +21,6 @@ body {
   display: block;
   height: 100%;
   padding: 1% 0;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
   color: black;
   font-weight: 600;
@@ -98,24 +97,19 @@ body {
 .features .feature2,
 .features .feature3,
 .features .feature4 {
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 .features .feature1:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 .features .feature2:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 .features .feature3:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 .features .feature4:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 .features span {
   font-size: 2rem;
@@ -141,7 +135,6 @@ body {
   padding: 5%;
   border: 3px solid white;
   border-radius: 10px;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 .inside img {

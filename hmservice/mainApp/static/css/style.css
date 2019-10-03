@@ -228,15 +228,15 @@
   margin-top: 2%;
   color: white;
 }
-/* Для страницы /phones */
-.phones_title {
+/* Для страниц брендов */
+.brands_title {
   margin: 30px 0;
 }
-.phones_brand {
+.brands_brand {
   margin-bottom: 15px;
   padding: 15px;
 }
-.phones_brand a {
+.brands_brand a {
   display: block;
   padding: 15px;
   border: 2px solid #696969;
@@ -245,11 +245,11 @@
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-.phones_brand a:hover {
+.brands_brand a:hover {
   text-decoration: none;
   background-color: #2DB38A;
 }
-.phones_brand img {
+.brands_brand img {
   margin-bottom: 20px;
 }
-/* Для страницы /phones */
+/* Для страниц брендов */

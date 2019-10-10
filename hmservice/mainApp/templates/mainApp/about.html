@@ -1,0 +1,52 @@
+{% extends 'mainApp/wrapper.html' %}
+
+{% load staticfiles %}
+
+{% block content %}
+
+<div class="aboutpage container">
+	<h1 class="text-center">О компании</h1>
+	<img src='{% static "img/about_img.jpg" %}' alt="">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab vitae, neque delectus minus asperiores tenetur ipsum culpa. Culpa, laboriosam repudiandae perspiciatis ducimus temporibus neque, voluptas asperiores praesentium omnis, minima suscipit molestias iure laudantium corrupti molestiae debitis, accusantium recusandae! Rem laboriosam optio assumenda, labore magni voluptatum non nisi debitis temporibus quasi, repellendus in! Nemo alias cupiditate quibusdam, ratione, modi atque consectetur excepturi, dolor tempora voluptatem ut porro expedita molestias unde doloribus aliquid voluptas sint ad! Distinctio praesentium, sunt quibusdam aspernatur nesciunt ex cum! Fugit voluptatem non ex obcaecati ratione magnam, a amet, laborum iste blanditiis numquam atque id consequatur voluptatibus animi.</p>
+	<img src='{% static "img/about_img.jpg" %}' alt="">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora excepturi voluptates veniam laborum animi doloribus rerum quam debitis quas quo perferendis ipsam est, asperiores dignissimos ullam delectus facilis accusantium provident ab sed blanditiis? Cum odio quaerat iure, vel dolorum, fugit explicabo suscipit. Sed quam aliquid impedit ullam error est officiis. Laborum in provident a, pariatur commodi non et, minima error ullam hic explicabo, atque adipisci exercitationem velit ea, at itaque nulla consequatur tempora doloremque facilis. Molestiae ad fugit maiores eaque, saepe debitis. Sit repellendus dolore pariatur quas deserunt consectetur, repudiandae in, magni, illo dicta vero quidem similique id quibusdam corrupti.</p>
+	<img src='{% static "img/about_img.jpg" %}' alt="">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro minus saepe itaque tempora exercitationem, quia id? Perspiciatis laboriosam esse dolorum mollitia sint debitis, delectus quasi porro. Similique, adipisci molestiae cupiditate dignissimos delectus, quis veniam culpa deleniti consequatur sapiente unde fugiat neque minima nostrum iure earum, eius enim tenetur! Maxime assumenda nisi, fuga excepturi commodi non cum qui laboriosam ex quidem sit aliquam impedit architecto atque beatae consequuntur accusamus odio, mollitia illo dignissimos suscipit, neque at unde totam. Explicabo nobis architecto excepturi, eligendi nihil fugiat sit quam, mollitia sint aut at. Quis officiis doloremque provident veritatis placeat repellendus consequuntur atque quaerat.</p>
+	<h3>Реквизиты</h3>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quasi aut, esse aliquid et officia nobis sunt officiis ratione vitae necessitatibus quaerat reprehenderit soluta quia debitis sapiente? Voluptatum libero, reiciendis totam at aspernatur tenetur corrupti, mollitia cumque dolorum labore est praesentium eveniet ratione sequi, nisi dignissimos. Repellat est, mollitia ea.</p>
+	<h3>Контактная информация</h3>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente repellendus quos magni suscipit aperiam ducimus minus, harum unde consequuntur quisquam exercitationem deleniti voluptas, rerum, labore facere officiis? Neque veritatis dignissimos, sint porro cum praesentium! Quas corporis sapiente delectus porro, aut suscipit cupiditate, consequuntur ratione eum voluptas nihil, quia alias quod.</p>
+</div>
+<div class="map row">
+	<div class="col-10 offset-1">
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A09602d6f36d06799dc1882cf7cb2d7c7f8ace6c16a990d04efcfca0c06bcf533&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+	</div>
+</div>
+<div class="contacts row">
+	<div class="adress col-5 offset-1">
+		<p><span>Наш адрес</span></p>
+		<p><i>Метро "Сенная Площадь" Московский пр., 3, ТЦ "Адмиралтейский", 4 Этаж, Санкт-Петербург, Россия, 190068</i></p>
+		<p><span>Номер телефона</span></p>
+		<p><i>+7 (911) 739-78-19</i></p>
+		<p><i>+7 (981) 863-17-99</i></p>
+	</div>
+	<div class="links col-5">
+		<div class="row justify-content-center">
+			<p><span>Мы в соцсетях</span></p>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-5 offset-1">
+				<a href="https://vk.com/mr_chekmak">
+					<img src="{% static 'img/vk100x100.png' %}" alt="Мы в ВК">
+				</a>
+			</div>
+			<div class="col-5">
+				<a href="https://www.instagram.com/home_service78">
+					<img src="{% static 'img/inst100x100.png' %}" alt="Мы в Instagram">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

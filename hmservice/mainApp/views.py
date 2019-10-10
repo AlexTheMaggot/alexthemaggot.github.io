@@ -4,4 +4,7 @@ def index(request):
 	return render(request, 'mainApp/index.html')
 
 def contacts(request):
-	return render(request, 'mainApp/basic.html', {'values': ['Phone number', '8(800)555-12-34',]})
+	return render(request, 'mainApp/contacts.html')
+
+def about(request):
+	return render(request, 'mainapp/about.html')

@@ -228,7 +228,7 @@
   margin-top: 2%;
   color: white;
 }
-/* Для страниц брендов */
+/* For page Brands */
 .brands_title {
   margin: 30px 0;
 }
@@ -252,4 +252,22 @@
 .brands_brand img {
   margin-bottom: 20px;
 }
-/* Для страниц брендов */
+/* For page Brands */
+
+/*For page About*/
+
+.aboutpage img {
+  display:block;
+  width: 500px;
+  margin: 30px auto;
+}
+
+/*For page About*/
+
+/* For page Reviews */
+
+.reviewspage h5{
+  color: gray;
+}
+
+/* For page Reviews */

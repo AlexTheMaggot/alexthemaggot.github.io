@@ -1,3 +1,6 @@
 from django.contrib import admin
+from tablets.models import TabletBrand, TabletModel
 
-# Register your models here.
+
+admin.site.register(TabletBrand)
+admin.site.register(TabletModel)

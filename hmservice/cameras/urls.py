@@ -1,6 +1,13 @@
 from django.conf.urls import url
-from. import views
+from django.urls import path
+
+from cameras.views import CameraBrandListView, CameraModelListView
+from cameras.models import CameraModel
 
 urlpatterns = [
-	url('', views.index, name='index'),
+    path('', CameraBrandListView.as_view(), name='cameras'),
+    path('Apple/', CameraModelListView.as_view(queryset=CameraModel.objects.filter(brand__name__contains='Apple')
+    .order_by("-id")), name='Apple'),
 ]
+
+

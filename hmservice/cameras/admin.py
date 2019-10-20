@@ -1,3 +1,7 @@
 from django.contrib import admin
 
-# Register your models here.
+from cameras.models import CameraBrand, CameraModel
+
+
+admin.site.register(CameraBrand)
+admin.site.register(CameraModel)

@@ -1,0 +1,22 @@
+{% extends 'mainApp/wrapper.html' %}
+
+{% block content %}
+	{% load staticfiles %}
+	<div class="container">
+		<div class="brands_title row">
+			<div class="col-12">
+				<h1 class="text-center">Выберите модель</h1>
+			</div>
+		</div>
+		<div class="row">
+			{% for text in object_list %}
+			<div class="brands_brand col-xl-3 col-lg-4 col-sm-6 col-12 text-center">
+				<a href="{{ text.slug }}/">
+					<img src="{{ text.logo.url }}" alt="{{ text.name }}">
+					<h5 class="text-center">{{ text.name }}</h5>
+				</a>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+{% endblock %}

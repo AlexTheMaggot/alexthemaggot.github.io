@@ -7,4 +7,4 @@ def contacts(request):
 	return render(request, 'mainApp/contacts.html')
 
 def about(request):
-	return render(request, 'mainapp/about.html')
+	return render(request, 'mainApp/about.html')

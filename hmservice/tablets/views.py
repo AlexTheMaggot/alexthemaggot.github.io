@@ -1,4 +1,25 @@
-from django.shortcuts import render
+from django.views.generic.list import ListView
 
-def index(request):
-	return render(request, 'tablets/tablets.html')
+from tablets.models import TabletBrand, TabletModel
+
+
+class TabletBrandListView(ListView):
+
+    model = TabletBrand
+    template_name = 'tablets/brands.html'
+
+    def get_context_data(self, **kwargs):
+
+        context = super().get_context_data(**kwargs)
+        return context
+
+
+class TabletModelListView(ListView):
+
+    model = TabletModel
+    template_name = 'tablets/models.html'
+
+    def get_context_data(self, **kwargs):
+
+        context = super().get_context_data(**kwargs)
+        return context

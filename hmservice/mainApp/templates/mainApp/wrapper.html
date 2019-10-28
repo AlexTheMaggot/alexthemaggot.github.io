@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Commit 39</title>
+	<title>HMService - ремонт мобильной техники и электроники в Санкт-Петербурге</title>
 	{% load staticfiles %}
 	<link rel="shortcut icon" href="{% static 'img/favicon.png' %}" type="image/png">
 	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
@@ -59,6 +59,11 @@
 					<p>КОНТАКТЫ</p>
 				</div>
 			</a>
+			<a href="/admin">
+				<div>
+					<p>ADMIN</p>
+				</div>
+			</a>
 		</div>
 		
 		{% block content %}
@@ -73,5 +78,6 @@
 
 	<script src="{% static 'js/jquery-3.4.1.js' %}"></script>
 	<script src="{% static 'js/fotorama.js' %}"></script>
+	<script src="{% static 'js/modal.js' %}"></script>
 </body>
 </html>

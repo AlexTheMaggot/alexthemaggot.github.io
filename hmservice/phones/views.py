@@ -1,4 +1,5 @@
 from django.views.generic.list import ListView
+from django.views.generic.detail import DetailView
 
 from phones.models import PhoneBrand, PhoneModel
 
@@ -19,3 +20,11 @@ class PhoneModelListView(ListView):
         context = super().get_context_data(**kwargs)
         return context
 		
+class PhoneModelDetailView(DetailView):
+
+    model = PhoneModel
+    template_name = "phones/model.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        return context

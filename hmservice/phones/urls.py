@@ -1,13 +1,14 @@
 from django.conf.urls import url
 from django.urls import path
 
-from phones.views import PhoneBrandListView, PhoneModelListView
+from phones.views import PhoneBrandListView, PhoneModelListView, PhoneModelDetailView
 from phones.models import PhoneModel
 
 urlpatterns = [
     path('', PhoneBrandListView.as_view(), name='phones'),
     path('Apple/', PhoneModelListView.as_view(queryset=PhoneModel.objects.filter(brand__name__contains='Apple')
     .order_by("-id")), name='Apple'),
+    path('Apple/<slug:slug>/', PhoneModelDetailView.as_view(), name='Phonemodel'),
     path('Xiaomi/', PhoneModelListView.as_view(queryset=PhoneModel.objects.filter(brand__name__contains='Xiaomi')
     .order_by("-id")), name='Xiaomi'),
     path('Samsung/', PhoneModelListView.as_view(queryset=PhoneModel.objects.filter(brand__name__contains='Samsung')

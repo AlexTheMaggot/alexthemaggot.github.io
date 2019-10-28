@@ -228,6 +228,9 @@
   margin-top: 2%;
   color: white;
 }
+
+
+
 /* For page Brands */
 .brands_title {
   margin: 30px 0;
@@ -254,6 +257,128 @@
 }
 /* For page Brands */
 
+
+
+/* For page Model */
+
+.modelimg {
+  display: inline-block;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  padding: 15px;
+  border: 2px solid #696969;
+  border-radius: 10px;
+}
+.servtitle {
+  margin-top: 30px;
+}
+.serv {
+  width: 400px;
+  height: 50px;
+  display: inline-block;
+  margin-left: 20%;
+  margin-bottom: 10px;
+  padding:12px;
+  background-color: #2DB38A;
+  color:white;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.serv:hover {
+  background-color: #CD6933;
+  color:white;
+  text-decoration: none;
+}
+
+/*Modal Window*/
+.modal_modal input {
+  width: 50%;
+  margin: 20px 25%;
+}
+.serv-confirm {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 30px 7px 30px;
+  background-color: #006748;
+  color:white;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.serv-confirm:hover {
+  background-color: #2DB38A;
+  color:white;
+  text-decoration: none;
+}
+.serv-cancel {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 30px 7px 30px;
+  background-color: #90001F;
+  color:white;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.serv-cancel:hover {
+  background-color: #C23251;
+  color:white;
+  text-decoration: none;
+}
+.overlay {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.35s ease-in-out;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+.overlay.open {
+  opacity: 1;
+  pointer-events: inherit;
+}
+.overlay .modal_modal {
+  background: white;
+  text-align: center;
+  padding: 40px 80px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 10px rgba(255, 255, 255, 0.35);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.35s ease-in-out;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+.overlay .modal_modal.open {
+  opacity: 1;
+  pointer-events: inherit;
+}
+.overlay .modal_modal.open .content {
+  transform: translate(0, 0px);
+  opacity: 1;
+}
+.overlay .modal_modal .content {
+  transform: translate(0, -10px);
+  opacity: 0;
+  transition: 0.35s ease-in-out;
+}
+.overlay .modal_modal .title {
+  margin-top: 0;
+}
+/*Modal Window*/
+
+/* For page Model */
+
+
+
 /*For page About*/
 
 .aboutpage img {
@@ -263,6 +388,8 @@
 }
 
 /*For page About*/
+
+
 
 /* For page Reviews */
 

@@ -26,6 +26,7 @@ urlpatterns = [
     path('laptops/', include('laptops.urls')),
     path('cameras/', include('cameras.urls')),
     path('reviews/', include('reviews.urls')),
+    path('feedback/', include('feedback.urls')),
 ]
 
 if settings.DEBUG:

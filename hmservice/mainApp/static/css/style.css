@@ -262,7 +262,6 @@
 /* For page Model */
 
 .modelimg {
-  display: inline-block;
   margin-top: 50px;
   margin-bottom: 100px;
   padding: 15px;
@@ -276,7 +275,6 @@
   width: 400px;
   height: 50px;
   display: inline-block;
-  margin-left: 20%;
   margin-bottom: 10px;
   padding:12px;
   background-color: #2DB38A;
@@ -302,6 +300,7 @@
   background-color: #006748;
   color:white;
   border-radius: 10px;
+  border: none;
   transition: all 0.3s;
 }
 .serv-confirm:hover {
@@ -374,6 +373,10 @@
   margin-top: 0;
 }
 /*Modal Window*/
+
+.empty_row {
+  height: 100px;
+}
 
 /* For page Model */
 

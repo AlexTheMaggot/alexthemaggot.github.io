@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'tablets',
     'laptops',
     'cameras',
+    'feedback',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -135,3 +136,11 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'mainApp/media')
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static/'),
 )    
+
+EMAIL_HOST = 'smtp.mail.ru'
+EMAIL_HOST_USER = 'alex23_95@mail.ru'
+EMAIL_HOST_PASSWORD = 'VinylScratch23'
+EMAIL_PORT = 465
+EMAIL_USE_SSL = True
+DEFAULT_FROM_EMAIL = 'alex23_95@mail.ru'
+DEFAULT_TO_EMAIL = 'alexthemaggot23@gmail.com'

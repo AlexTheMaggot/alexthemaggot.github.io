@@ -6,12 +6,13 @@
 	<div class="firstwindow row">
 		<div class="order col-xl-3 offset-xl-8 col-lg-3 offset-lg-8 col-md-4 offset-md-4 col-sm-6 offset-sm-3 col-10 offset-1">
 			<span>Оставьте заявку</span>
-			<form action="mail.php" method="POST">
+			<form action="{% url 'main_feedback_view' %}" method="POST">
+				{% csrf_token %}
 				<label for="#">Имя</label>
-				<input class="form-control" type="text" name="user_name" placeholder="Введите имя">
+				<input class="form-control" type="text" name="name" placeholder="Введите имя">
 				<label for="#">Номер телефона</label>
-				<input class="form-control" type="text" name="user_phone" placeholder="+7 (495) 123-45-67">
-				<button class="btn btn-success">Заказать</button>
+				<input class="form-control" type="text" name="phone" placeholder="+7 (495) 123-45-67">
+				<button class="btn btn-success" type="submit">Заказать</button>
 			</form>
 		</div>
 	</div>

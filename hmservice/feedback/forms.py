@@ -1,6 +1,11 @@
 from django import forms
 
-from .models import FeedBack
+from .models import MainFeedBack, FeedBack
+
+class MainFeedBackForm(forms.ModelForm):
+	class Meta:
+		model = MainFeedBack
+		fields = ['name', 'phone']
 
 class FeedBackForm(forms.ModelForm):
 	class Meta:

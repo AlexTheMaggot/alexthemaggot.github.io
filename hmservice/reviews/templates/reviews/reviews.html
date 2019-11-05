@@ -1,12 +1,33 @@
 {% extends "mainApp/wrapper.html" %}
 
 {% block content %}
-	<h1 style="text-align: center;">Отзывы</h1>
-	{% for text in object_list %}
-		<div class="reviewspage col-4 offset-4" style="margin-bottom: 50px;">	
-			<h3>{{text.name}}</h3>
-			<h6><i>{{text.date|date:"d-m-Y"}}</i></h6>
-			<h5>{{text.text}}</h5>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h1 class="text-center">Отзывы</h1>
+			</div>
 		</div>
-	{% endfor %}
+		<div class="row">
+			<div class=" col-lg-6 order-lg-1 col-12 order-2">
+				{% for text in object_list %}
+					<div class="reviewspage col-12" style="margin-bottom: 50px;">	
+						<h3>{{text.name}}</h3>
+						<h6><i>{{text.date|date:"d-m-Y"}}</i></h6>
+						<h5>{{text.text}}</h5>
+					</div>
+				{% endfor %}
+			</div>
+			<div class="addreview col-xl-4 offset-xl-2 col-lg-5 order-lg-2 offset-lg-1 col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-12 order-1">
+				<h3 class="text-center">Оставьте свой отзыв</h3>
+				<form action="{% url 'review_new' %}" method="POST">
+					{% csrf_token %}
+					<input type="text" class="form-control" placeholder="Имя" name="name">
+					<textarea class="form-control" name="text" cols="30" rows="7" placeholder="Комментарий"></textarea>
+					<div class="text-center">
+						<button class="btn btn-success" type="submit">Отправить отзыв</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 {% endblock %}

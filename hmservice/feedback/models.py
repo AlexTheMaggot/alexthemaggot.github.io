@@ -1,5 +1,17 @@
 from django.db import models
 
+class MainFeedBack(models.Model):
+
+	name = models.CharField(max_length=50)
+	phone = models.CharField(max_length=15)
+
+	def __str__(self):
+		return self.name
+
+	class Meta:
+		verbose_name = 'MainFeedback'
+		verbose_name_plural = 'MainFeedbacks'
+
 class FeedBack(models.Model):
 
 	name = models.CharField(max_length=50)

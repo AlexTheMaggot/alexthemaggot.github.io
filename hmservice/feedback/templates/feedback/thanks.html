@@ -1,0 +1,20 @@
+{% extends 'mainApp/wrapper.html' %}
+
+{% block content %}
+
+	{% load staticfiles %}
+	
+	<div class="container-fluid">
+		<div class="success_success row">
+			<div class="col-12">
+				<div class="text-center">
+					<h1>Спасибо за заявку!</h1>
+					<img src="{% static 'img/success_300x300.png' %}" alt="Ошибка">
+					<h3>С вами свяжутся буквально через минуту</h3>
+					<a href="/">На главную</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}

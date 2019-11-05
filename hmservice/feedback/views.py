@@ -2,8 +2,26 @@ from django.shortcuts import render, redirect
 from django.views import View
 from django.core.mail import send_mail
 
-from .forms import FeedBackForm
+from .forms import FeedBackForm, MainFeedBackForm
 
+class MainFeedBackView(View):
+
+    def post(self, request):
+        if request.method == 'POST':
+            form = MainFeedBackForm(request.POST)
+            if form.is_valid():
+                form.save()
+
+                subject = 'Новая заявка с сайта'
+                from_email = 'alex23_95@mail.ru'
+                message = 'Новая заявка с сайта \r\n \r\n'
+                message += form.cleaned_data['name'] + '\r\n' + form.cleaned_data['phone']
+                
+                to_email = ['alexthemaggot23@gmail.com', ]
+
+                send_mail(subject, message, from_email, to_email, fail_silently=False)
+                return redirect('/thank-you')
+        return redirect('/wrong')
 
 class FeedBackView(View):
 
@@ -23,5 +41,5 @@ class FeedBackView(View):
                 to_email = ['alexthemaggot23@gmail.com', ]
 
                 send_mail(subject, message, from_email, to_email, fail_silently=False)
-                return redirect('/')
+                return redirect('/thank-you')
         return redirect('/wrong')

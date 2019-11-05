@@ -8,3 +8,8 @@ def contacts(request):
 
 def about(request):
 	return render(request, 'mainApp/about.html')
+
+def wrong(request):
+	return render(request, 'feedback/wrong.html')
+def thanks(request):
+	return render(request, 'feedback/thanks.html')

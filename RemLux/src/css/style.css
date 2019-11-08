@@ -1,0 +1,138 @@
+.background_image img{
+	height: 1080px;
+	margin-top: -450px;
+	position: fixed;
+	z-index: 1;
+}
+.header {
+	background-color: white;
+	position: relative;
+	z-index: 2;
+}
+.logo img {
+	display: inline-block;
+	margin: 10px;
+}
+.logo h4 {
+	display: inline-block;
+}
+.phonenumber_wrap {
+	margin: 30px auto;
+	padding-top: 12px;
+	background-color: #E32638;
+	width: 250px;
+	height: 50px;
+	border-radius: 100px;
+	color: white;
+}
+.worktime {
+	margin-top: 10px;
+}
+.menu {
+	background-color: #26529C;
+	color: white;
+}
+.button {
+	height: 50px;
+	padding: 13px;
+	color: white;
+	transition: all 0.3s;
+}
+.button:hover {
+	background-color: #0C2D65;
+}
+.menu a:hover {
+	text-decoration: none;
+}
+
+.firstwindow {
+	position: relative;
+	z-index: 2;
+}
+.ordering {
+	background-color: #0C2D6580;
+	color: white;
+}
+.ordering h2 {
+	margin: 30px 0;
+}
+.ordering input {
+	margin: 15px 0;
+}
+.ordering button {
+	margin: 30px 0;
+}
+.secondwindow {
+	padding: 20px 0;
+	background-color: white;
+	position: relative;
+	z-index: 2;
+}
+.features {
+	background-color: white;
+	position: relative;
+	z-index: 2;
+}
+.feature {
+	padding: 60px;
+}
+.feature h6 {
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 3px solid #5984CD;
+}
+.feature p {
+	padding-bottom: 15px;
+}
+.thirdwindow {
+	padding: 30px 0;
+	background-color: #26529C;
+	color: white;
+	position: relative;
+	z-index: 2;
+}
+.price {
+	margin: 30px;
+	padding: 30px;
+	background-color: #FFF;
+	color: black;
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.5)
+}
+.price h4 {
+	margin-bottom: 20px;
+}
+.price h5 {
+	margin-bottom: 15px;
+}
+.price span {
+	color: #E32638;
+}
+.contacts {
+	padding: 30px 0;
+	position: relative;
+	z-index: 2;
+	background-color: #26529CA0;
+	color: white;
+}
+.contacts img {
+	margin: 15px;
+	padding: 10px;
+	background-color: white;
+	border-radius: 10px;
+}
+.contacts h1 {
+	margin: 10px 0;
+}
+.contacts h5 {
+	margin: 20px 0;
+}
+.contacts input {
+	margin: 15px 0 30px 0;
+}
+.footer {
+	padding-top: 20px;
+	position: relative;
+	z-index: 2;
+	background-color: #26529C;
+	color: white;
+}

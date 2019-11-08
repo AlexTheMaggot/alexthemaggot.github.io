@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'phones',
     'tablets',
     'laptops',
-    'cameras',
+    'cameras.apps.CamerasConfig',
     'feedback',
     'django.contrib.admin',
     'django.contrib.auth',

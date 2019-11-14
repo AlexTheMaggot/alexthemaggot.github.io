@@ -9,8 +9,8 @@ class LaptopBrand(models.Model):
 
     class Meta:
 
-        verbose_name = 'LaptopBrand'
-        verbose_name_plural = 'LaptopBrands'
+        verbose_name = 'Бренд ноутбуков'
+        verbose_name_plural = 'Бренды ноутбуков'
 
     def __str__(self):
         return self.name
@@ -25,8 +25,8 @@ class LaptopModel(models.Model):
 
     class Meta:
 
-        verbose_name = 'LaptopModel'
-        verbose_name_plural = 'LaptopModels'
+        verbose_name = 'Модель ноутбуков'
+        verbose_name_plural = 'Модели ноутбуков'
 
     def __str__(self):
         return self.name

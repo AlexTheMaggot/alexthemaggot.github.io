@@ -5,5 +5,9 @@ class Review(models.Model):
 	text = models.TextField()
 	date = models.DateTimeField(auto_now_add=True)
 
+	class Meta:
+		verbose_name = "Отзыв"
+		verbose_name_plural = 'Отзывы'
+
 	def __str__(self):
 		return self.name

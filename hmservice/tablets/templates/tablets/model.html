@@ -1,0 +1,207 @@
+{% extends "mainApp/wrapper.html" %}
+
+{% block content %}
+	{% load staticfiles %}
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h1 class="text-center">{{ object.brand }} {{ object.name }}</h1>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-xl-5 col-12 col-lg-6 col-md-5 col-12">
+				<div class=" text-center">
+					<img class="modelimg" src="{{ object.img.url }}" alt="{{ object.brand }} {{ object.name }}">
+				</div>
+			</div>
+			<div class="col-xl-5 offset-xl-2 col-lg-6 col-md-7 col-12">
+				<h2 class="servtitle text-center">Выберите услугу</h2>
+				<div class="text-center">
+					<a href="#" class='serv open-modal_modal' data-modal_modal="#modal_modal1"><h5 class="text-center">{{ object.serv1 }} - {{ object.price1 }} руб.</h5></a>
+				</div>
+				<div class='modal_modal' id='modal_modal1'>
+					<div class='content'>
+						<form action="{% url 'feedback_view' %}" method="POST">
+							{% csrf_token %}
+							<h1 class='title'>Введите имя и номер телефона</h1>
+							<input name="brand" type="hidden" value="{{ object.brand }}">
+							<input name="model" type="hidden" value="{{ object.name }}">
+							<input name="serv" type="hidden" value="{{ object.serv1 }}">
+							<input name="name" type="text" class="form-control" placeholder="Имя">
+							<input name="phone" type="text" class="form-control" placeholder="74951234567">
+							<button class='serv-confirm' type="submit"><h5>Заказать</h5></button>
+							<a class='serv-cancel close-modal_modal' data-modal_modal="#modal_modal1" href="#"><h5>Отменить</h5></a>
+						</form>
+					</div>	
+				</div>
+				<div class="text-center">
+					<a href="#" class='serv open-modal_modal' data-modal_modal="#modal_modal2"><h5 class="text-center">{{ object.serv2 }} - {{ object.price2 }} руб.</h5></a>
+				</div>
+				<div class='modal_modal' id='modal_modal2'>
+					<div class='content'>
+						<form action="{% url 'feedback_view' %}" method="POST">
+							{% csrf_token %}
+							<h1 class='title'>Введите имя и номер телефона</h1>
+							<input name="brand" type="hidden" value="{{ object.brand }}">
+							<input name="model" type="hidden" value="{{ object.name }}">
+							<input name="serv" type="hidden" value="{{ object.serv2 }}">
+							<input name="name" type="text" class="form-control" placeholder="Имя">
+							<input name="phone" type="text" class="form-control" placeholder="74951234567">
+							<button class='serv-confirm' type="submit"><h5>Заказать</h5></button>
+							<a class='serv-cancel close-modal_modal' data-modal_modal="#modal_modal2" href="#"><h5>Отменить</h5></a>
+						</form>
+					</div>	
+				</div>
+				<div class="text-center">
+					<a href="#" class='serv open-modal_modal' data-modal_modal="#modal_modal3"><h5 class="text-center">{{ object.serv3 }} - {{ object.price3 }} руб.</h5></a>
+				</div>
+				<div class='modal_modal' id='modal_modal3'>
+					<div class='content'>
+						<form action="{% url 'feedback_view' %}" method="POST">
+							{% csrf_token %}
+							<h1 class='title'>Введите имя и номер телефона</h1>
+							<input name="brand" type="hidden" value="{{ object.brand }}">
+							<input name="model" type="hidden" value="{{ object.name }}">
+							<input name="serv" type="hidden" value="{{ object.serv3 }}">
+							<input name="name" type="text" class="form-control" placeholder="Имя">
+							<input name="phone" type="text" class="form-control" placeholder="74951234567">
+							<button class='serv-confirm' type="submit"><h5>Заказать</h5></button>
+							<a class='serv-cancel close-modal_modal' data-modal_modal="#modal_modal3" href="#"><h5>Отменить</h5></a>
+						</form>
+					</div>	
+				</div>
+				<div class="text-center">
+					<a href="#" class='serv open-modal_modal' data-modal_modal="#modal_modal4"><h5 class="text-center">{{ object.serv4 }} - {{ object.price4 }} руб.</h5></a>
+				</div>
+				<div class='modal_modal' id='modal_modal4'>
+					<div class='content'>
+						<form action="{% url 'feedback_view' %}" method="POST">
+							{% csrf_token %}
+							<h1 class='title'>Введите имя и номер телефона</h1>
+							<input name="brand" type="hidden" value="{{ object.brand }}">
+							<input name="model" type="hidden" value="{{ object.name }}">
+							<input name="serv" type="hidden" value="{{ object.serv4 }}">
+							<input name="name" type="text" class="form-control" placeholder="Имя">
+							<input name="phone" type="text" class="form-control" placeholder="74951234567">
+							<button class='serv-confirm' type="submit"><h5>Заказать</h5></button>
+							<a class='serv-cancel close-modal_modal' data-modal_modal="#modal_modal4" href="#"><h5>Отменить</h5></a>
+						</form>
+					</div>	
+				</div>
+				<div class="text-center">
+					<a href="#" class='serv open-modal_modal' data-modal_modal="#modal_modal5"><h5 class="text-center">{{ object.serv5 }} - {{ object.price5 }} руб.</h5></a>
+				</div>
+				<div class='modal_modal' id='modal_modal5'>
+					<div class='content'>
+						<form action="{% url 'feedback_view' %}" method="POST">
+							{% csrf_token %}
+							<h1 class='title'>Введите имя и номер телефона</h1>
+							<input name="brand" type="hidden" value="{{ object.brand }}">
+							<input name="model" type="hidden" value="{{ object.name }}">
+							<input name="serv" type="hidden" value="{{ object.serv5 }}">
+							<input name="name" type="text" class="form-control" placeholder="Имя">
+							<input name="phone" type="text" class="form-control" placeholder="74951234567">
+							<button class='serv-confirm' type="submit"><h5>Заказать</h5></button>
+							<a class='serv-cancel close-modal_modal' data-modal_modal="#modal_modal5" href="#"><h5>Отменить</h5></a>
+						</form>
+					</div>	
+				</div>
+				<div class="text-center">
+					<a href="#" class='serv open-modal_modal' data-modal_modal="#modal_modal6"><h5 class="text-center">{{ object.serv6 }} - {{ object.price6 }} руб.</h5></a>
+				</div>
+				<div class='modal_modal' id='modal_modal6'>
+					<div class='content'>
+						<form action="{% url 'feedback_view' %}" method="POST">
+							{% csrf_token %}
+							<h1 class='title'>Введите имя и номер телефона</h1>
+							<input name="brand" type="hidden" value="{{ object.brand }}">
+							<input name="model" type="hidden" value="{{ object.name }}">
+							<input name="serv" type="hidden" value="{{ object.serv6 }}">
+							<input name="name" type="text" class="form-control" placeholder="Имя">
+							<input name="phone" type="text" class="form-control" placeholder="74951234567">
+							<button class='serv-confirm' type="submit"><h5>Заказать</h5></button>
+							<a class='serv-cancel close-modal_modal' data-modal_modal="#modal_modal6" href="#"><h5>Отменить</h5></a>
+						</form>
+					</div>	
+				</div>
+				<div class="text-center">
+					<a href="#" class='serv open-modal_modal' data-modal_modal="#modal_modal7"><h5 class="text-center">{{ object.serv7 }} - {{ object.price7 }} руб.</h5></a>
+				</div>
+				<div class='modal_modal' id='modal_modal7'>
+					<div class='content'>
+						<form action="{% url 'feedback_view' %}" method="POST">
+							{% csrf_token %}
+							<h1 class='title'>Введите имя и номер телефона</h1>
+							<input name="brand" type="hidden" value="{{ object.brand }}">
+							<input name="model" type="hidden" value="{{ object.name }}">
+							<input name="serv" type="hidden" value="{{ object.serv7 }}">
+							<input name="name" type="text" class="form-control" placeholder="Имя">
+							<input name="phone" type="text" class="form-control" placeholder="74951234567">
+							<button class='serv-confirm' type="submit"><h5>Заказать</h5></button>
+							<a class='serv-cancel close-modal_modal' data-modal_modal="#modal_modal7" href="#"><h5>Отменить</h5></a>
+						</form>
+					</div>	
+				</div>
+				<div class="text-center">
+					<a href="#" class='serv open-modal_modal' data-modal_modal="#modal_modal8"><h5 class="text-center">{{ object.serv8 }} - {{ object.price8 }} руб.</h5></a>
+				</div>
+				<div class='modal_modal' id='modal_modal8'>
+					<div class='content'>
+						<form action="{% url 'feedback_view' %}" method="POST">
+							{% csrf_token %}
+							<h1 class='title'>Введите имя и номер телефона</h1>
+							<input name="brand" type="hidden" value="{{ object.brand }}">
+							<input name="model" type="hidden" value="{{ object.name }}">
+							<input name="serv" type="hidden" value="{{ object.serv8 }}">
+							<input name="name" type="text" class="form-control" placeholder="Имя">
+							<input name="phone" type="text" class="form-control" placeholder="74951234567">
+							<button class='serv-confirm' type="submit"><h5>Заказать</h5></button>
+							<a class='serv-cancel close-modal_modal' data-modal_modal="#modal_modal8" href="#"><h5>Отменить</h5></a>
+						</form>
+					</div>	
+				</div>
+				<div class="text-center">
+					<a href="#" class='serv open-modal_modal' data-modal_modal="#modal_modal9"><h5 class="text-center">{{ object.serv9 }} - {{ object.price9 }} руб.</h5></a>
+				</div>
+				<div class='modal_modal' id='modal_modal9'>
+					<div class='content'>
+						<form action="{% url 'feedback_view' %}" method="POST">
+							{% csrf_token %}
+							<h1 class='title'>Введите имя и номер телефона</h1>
+							<input name="brand" type="hidden" value="{{ object.brand }}">
+							<input name="model" type="hidden" value="{{ object.name }}">
+							<input name="serv" type="hidden" value="{{ object.serv9 }}">
+							<input name="name" type="text" class="form-control" placeholder="Имя">
+							<input name="phone" type="text" class="form-control" placeholder="74951234567">
+							<button class='serv-confirm' type="submit"><h5>Заказать</h5></button>
+							<a class='serv-cancel close-modal_modal' data-modal_modal="#modal_modal9" href="#"><h5>Отменить</h5></a>
+						</form>
+					</div>	
+				</div>
+				<div class="text-center">
+					<a href="#" class='serv open-modal_modal' data-modal_modal="#modal_modal10"><h5 class="text-center">{{ object.serv10 }} - {{ object.price10 }} руб.</h5></a>
+				</div>
+				<div class='modal_modal' id='modal_modal10'>
+					<div class='content'>
+						<form action="{% url 'feedback_view' %}" method="POST">
+							{% csrf_token %}
+							<h1 class='title'>Введите имя и номер телефона</h1>
+							<input name="brand" type="hidden" value="{{ object.brand }}">
+							<input name="model" type="hidden" value="{{ object.name }}">
+							<input name="serv" type="hidden" value="{{ object.serv10 }}">
+							<input name="name" type="text" class="form-control" placeholder="Имя">
+							<input name="phone" type="text" class="form-control" placeholder="74951234567">
+							<button class='serv-confirm' type="submit"><h5>Заказать</h5></button>
+							<a class='serv-cancel close-modal_modal' data-modal_modal="#modal_modal10" href="#"><h5>Отменить</h5></a>
+						</form>
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div class="empty_row row"></div>
+	</div>
+
+
+
+
+{% endblock %}

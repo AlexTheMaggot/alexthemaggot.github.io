@@ -8,8 +8,8 @@ class CameraBrand(models.Model):
     logo = models.ImageField('Изображение (формат PNG размер 200x200)', upload_to='static/img/camerabrands/')
 
     class Meta:
-        verbose_name = "Бренд Фотоаппаратов"
-        verbose_name_plural = "Бренды Фотоаппаратов"
+        verbose_name = "Бренд фотоаппаратов"
+        verbose_name_plural = "Бренды фотоаппаратов"
 
     def __str__(self):
         return self.name
@@ -23,8 +23,8 @@ class CameraModel(models.Model):
     img = models.ImageField(upload_to='static/img/cameramodels/')
 
     class Meta:
-        verbose_name = "Модель Фотоаппаратов"
-        verbose_name_plural = "Модели Фотоаппаратов"
+        verbose_name = "Модель фотоаппаратов"
+        verbose_name_plural = "Модели фотоаппаратов"
 
     def __str__(self):
         return self.name

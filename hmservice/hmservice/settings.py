@@ -34,13 +34,13 @@ ALLOWED_HOSTS = [
 # Application definition
 
 INSTALLED_APPS = [
-    'mainApp',
-    'reviews',
-    'phones',
-    'tablets',
-    'laptops',
+    'mainApp.apps.MainappConfig',
+    'reviews.apps.ReviewsConfig',
+    'phones.apps.PhonesConfig',
+    'tablets.apps.TabletsConfig',
+    'laptops.apps.LaptopsConfig',
     'cameras.apps.CamerasConfig',
-    'feedback',
+    'feedback.apps.FeedbackConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -115,7 +115,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'ru-ru'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Istanbul'
 
 USE_I18N = True
 

@@ -1,0 +1,35 @@
+.logo h3 {
+	display: inline-block;
+}
+.geo input {
+	margin-top: 30px;
+}
+.sign {
+	padding: 30px;
+}
+.sign h6{
+	margin: 10px;
+	display: inline-block;
+	text-decoration: underline;
+}
+.moduls a {
+	border: 3px solid #202020;
+	border-radius: 100px;
+	padding: 30px;
+	margin: 10px;
+	transition: all 0.2s;
+}
+.moduls a:hover {
+	background-color: #5fb709;
+}
+.taxiwindow {
+	height: 400px;
+	background-color: #5fb709;
+	padding: 50px;
+}
+.foodphoto {
+	width: 400px;
+	height: 200px;
+	background-color: #5fb709;
+	padding: 30px;
+}

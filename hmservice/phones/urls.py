@@ -8,7 +8,7 @@ urlpatterns = [
     path('', PhoneBrandListView.as_view(), name='phones'),
     path('Apple/', PhoneModelListView.as_view(queryset=PhoneModel.objects.filter(brand__name__contains='Apple')
     .order_by("-id")), name='Apple'),
-    path('Apple/<slug:slug>/', PhoneModelDetailView.as_view(), name='Phonemodel'),
+    path('Apple/<slug:slug>/', PhoneModelDetailView.as_view(queryset=PhoneModel.objects.filter(brand__name__contains='Apple')), name='Phonemodel'),
     path('Xiaomi/', PhoneModelListView.as_view(queryset=PhoneModel.objects.filter(brand__name__contains='Xiaomi')
     .order_by("-id")), name='Xiaomi'),
     path('Xiaomi/<slug:slug>/', PhoneModelDetailView.as_view(), name='Phonemodel'),

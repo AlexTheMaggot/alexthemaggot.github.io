@@ -1,35 +1,227 @@
+.logo img {
+  height: 70px;
+  margin: -10px 0 0 15px;
+}
 .logo h3 {
-	display: inline-block;
+  margin: 40px 0 0 10px;
+  display: inline-block;
+}
+.geo {
+  width: 200px;
+  margin: 45px 0 0 10px;
+}
+.geo::after {
+  content: "";
+  display: block;
+  margin-top: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  transform-origin: 0%;
+  transform: scaleX(0);
+  transition: all 0.3s;
+}
+.geo:hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  transform: scaleX(1);
 }
 .geo input {
-	margin-top: 30px;
+  width: 200px;
+  border: none;
+  transition: all 0.2s;
 }
-.sign {
-	padding: 30px;
+.geo input:focus {
+  outline: none;
+  border-bottom: 2px solid #000000;
 }
-.sign h6{
-	margin: 10px;
-	display: inline-block;
-	text-decoration: underline;
+.sign_up {
+  display: inline-block;
+  margin: 45px 10px 0 0;
+  color: #000000;
 }
-.moduls a {
-	border: 3px solid #202020;
-	border-radius: 100px;
-	padding: 30px;
-	margin: 10px;
-	transition: all 0.2s;
+.sign_up:hover {
+  text-decoration: none;
+  color: #5fb709;
 }
-.moduls a:hover {
-	background-color: #5fb709;
+.sign_up_phonenumber {
+  width: 50%;
+  margin: 20px 0 20px 25%;
 }
-.taxiwindow {
-	height: 400px;
-	background-color: #5fb709;
-	padding: 50px;
+.sign_up_submit {
+  background-color: #5fb709;
+  color: #fff;
 }
-.foodphoto {
-	width: 400px;
-	height: 200px;
-	background-color: #5fb709;
-	padding: 30px;
+.sign_up_submit:hover {
+  background-color: #478806;
+  color: #fff;
+}
+.sign_in {
+  display: inline-block;
+  margin-top: 45px;
+  color: #000000;
+}
+.sign_in:hover {
+  text-decoration: none;
+  color: #5fb709;
+}
+.overlay {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.35s ease-in-out;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+.overlay.open {
+  opacity: 1;
+  pointer-events: inherit;
+}
+.overlay .modal_modal {
+  background: white;
+  text-align: center;
+  padding: 40px 80px;
+  box-shadow: 0px 1px 10px rgba(255, 255, 255, 0.35);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.35s ease-in-out;
+  max-height: 100vh;
+  overflow-y: auto;
+  border-radius: 10px;
+}
+.overlay .modal_modal.open {
+  opacity: 1;
+  pointer-events: inherit;
+}
+.overlay .modal_modal.open .content {
+  transform: translate(0, 0px);
+  opacity: 1;
+}
+.overlay .modal_modal .content {
+  transform: translate(0, -10px);
+  opacity: 0;
+  transition: 0.35s ease-in-out;
+}
+.overlay .modal_modal .title {
+  margin-top: 0;
+}
+.module{
+  width: 200px;
+  display: inline-block;
+  margin: 30px;
+  padding-bottom: 10px;
+  border: 2px solid #5fb709;
+  border-radius: 10px;
+  transition: all 0.3s;
+  color: #000000;
+}
+.module:hover {
+  text-decoration: none;
+  color: #000000;
+  background-color: #5fb709;
+}
+.module img {
+  height: 70px;
+  margin: 10px;
+}
+.module_selected {
+  width: 200px;
+  display: inline-block;
+  margin: 30px;
+  padding-bottom: 10px;
+  background-color: #5fb709;
+  border-radius: 10px;
+  transition: all 0.3s;
+  color: #000000;
+}
+.module_selected:hover {
+  text-decoration: none;
+  color: #000000;
+}
+.module_selected img {
+  height: 70px;
+  margin: 10px;
+}
+.taxi_order {
+  background-color: #000;
+}
+.taxi_order h1 {
+  margin-top: 20px;
+  color: #fff;
+}
+.taxi_order h4 {
+  margin-top: 20px;
+  color: #fff;
+}
+.price {
+  display: inline-block;
+  margin: 10px;
+}
+.price input {
+  display: none;
+}
+.price input + label h5 {
+  display: inline-block;
+  height: 50px;
+  width: 100px;
+  padding-top: 9px;
+  background-color: #fff;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.price input + label h5:hover {
+  border: 3px solid #5fb709;
+}
+.price input:checked + label h5 {
+  background-color: #5fb709;
+  border: 3px solid #5fb709;
+  color: #fff;
+}
+.options {
+  display: inline-block;
+  margin: 10px 0 -15px 5px;
+}
+.options input {
+  display: none;
+}
+.options input + label h5 {
+  display: inline-block;
+  height: 50px;
+  padding: 9px 5px 0 5px;
+  background-color: #fff;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.options input + label h5:hover {
+  border: 3px solid #5fb709;
+}
+.options input:checked + label h5 {
+  background-color: #5fb709;
+  border: 3px solid #5fb709;
+  color: #fff;
+}
+.order_submit {
+  margin-top: 20px;
+  background-color: #5fb709;
+  color: #fff;
+  transition: all 0.3s;
+}
+.order_submit:hover {
+  background-color: #478806;
+  color: #fff;
 }

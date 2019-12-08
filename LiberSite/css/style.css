@@ -216,7 +216,7 @@
   color: #fff;
 }
 .order_submit {
-  margin-top: 20px;
+  margin: 30px 0;
   background-color: #5fb709;
   color: #fff;
   transition: all 0.3s;
@@ -224,4 +224,10 @@
 .order_submit:hover {
   background-color: #478806;
   color: #fff;
+}
+.title_thanks {
+  margin-bottom: 30px;
+}
+.copyright {
+  margin: 20px 0;
 }

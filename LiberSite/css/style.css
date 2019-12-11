@@ -176,8 +176,7 @@
 .price input + label h5 {
   display: inline-block;
   height: 50px;
-  width: 100px;
-  padding-top: 9px;
+  padding: 9px 10px;
   background-color: #fff;
   border: 3px solid #fff;
   border-radius: 10px;
@@ -230,4 +229,49 @@
 }
 .copyright {
   margin: 20px 0;
+}
+.food_category {
+  display: inline-block;
+  margin: 10px;
+  padding: 5px 10px 0 10px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  color: #000;
+  transition: all 0.3s;
+}
+.food_category:hover {
+  text-decoration: none;
+  background-color: #303030;
+  color: #fff;
+}
+.food_category img {
+  height: 70px;
+}
+.restaurants_title {
+  margin: 30px 0 0 0;
+}
+.restaurants {
+  padding: 30px;
+}
+.restaurant_img {
+  height: 200px;
+}
+.restaurant_title {
+  margin-top: 10px;
+}
+.restaurant_time {
+  display: inline-block;
+  position: absolute;
+  margin-top: -72px;
+  margin-left: 200px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 1000px;
+}
+.restaurant_rating {
+  display: inline-block;
+  padding: 5px 7px;
+  background-color: #5fb709;
+  color: #fff;
+  border-radius: 1000px;
 }

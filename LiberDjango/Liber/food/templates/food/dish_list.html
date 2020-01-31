@@ -1,0 +1,86 @@
+{% extends 'wrapper.html' %}
+{% load static %}
+{% block title %}{{ restaurant.name }}{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="slider col-12">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3">
+                    <h1>Lorem ipsum.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate laborum
+                        accusantium atque optio sunt cum maiores aut. Enim eius ducimus molestias itaque
+                        veritatis atque, modi fugiat dolorem consequatur, mollitia, distinctio, dolore
+                        minus. At, deleniti accusamus delectus voluptatem enim illum optio aspernatur beatae
+                        sit nulla possimus quas vel sunt dolorem voluptate!</p>
+                </div>
+                <div class="col-1 offset-8">
+                    <button class="btn slider_button"><h4>Перейти</h4></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modules row">
+    <a class="module" href="/">
+        <div class="text-center">
+            <img src="{% static 'img/taxi.png' %}" alt="">
+        </div>
+        <div class="text-center">
+            <h4>Такси</h4>
+        </div>
+    </a>
+    <a class="module_selected" href="/food">
+        <div class="text-center">
+            <img src="{% static 'img/food.png' %}" alt="">
+        </div>
+        <div class="text-center">
+            <h4>Еда</h4>
+        </div>
+    </a>
+    <a class="module" href="/product">
+        <div class="text-center">
+            <img src="{% static 'img/product.png' %}" alt="">
+        </div>
+        <div class="text-center">
+            <h4>Продукты</h4>
+        </div>
+    </a>
+    <a class="module" href="/cargo">
+        <div class="text-center">
+            <img src="{% static 'img/cargo.png' %}" alt="">
+        </div>
+        <div class="text-center">
+            <h4>Грузовики</h4>
+        </div>
+    </a>
+    <a class="module" href="/harw">
+        <div class="text-center">
+            <img src="{% static 'img/harw.png' %}" alt="">
+        </div>
+        <div class="text-center">
+            <h4>Спецтехника</h4>
+        </div>
+    </a>
+</div>
+<img src="{{ restaurant.img.url }}" alt="" height="200">
+
+<p>{{restaurant.description}}</p>
+
+
+{% for d in restaurant.restaurant.all %}
+<h1>{{d.name}}</h1>
+{% if d.available == True %}
+<p>В наличии</p>
+{% else %}
+<p>Нет в наличии</p>
+{% endif %}
+<h2>{{d.restaurant}} - {{ d.category }}</h2>
+<p>{{d.description}}</p>
+<img src="{{d.img.url}}" alt="" height="200">
+<h3>{{d.price}}</h3>
+
+
+{% endfor %}
+
+{% endblock %}

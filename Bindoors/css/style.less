@@ -1,0 +1,166 @@
+@import "bootstrap.css";
+@import "fotorama.css";
+@import "colors";
+@import "header";
+@import "footer";
+
+.fw {
+  background: url("../img/bg01.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 30px 0;
+
+  .fw_title {
+    margin: 0 0 30px 0;
+    color: @white;
+  }
+
+  .fw_feature {
+    width: 400px;
+    height: 200px;
+    margin: 20px auto;
+    padding: 50px 0;
+    background-color: #FFFFFFAA;
+    border-radius: 30px;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      height: 50px;
+    }
+
+    p {
+      width: fit-content;
+      margin: 0 auto;
+      font-size: 1.5rem;
+      color: @gray-dark;
+
+      span {
+        font-size: 2.5rem;
+        color: @brown;
+      }
+    }
+  }
+
+  .fw_feature__ind {
+    .fw_feature();
+    padding: 30px 0;
+  }
+}
+
+.sw {
+  padding: 30px 0;
+
+  h1 {
+    margin: 20px 0;
+  }
+
+  .sw_button__catandprice {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 30px;
+    background-color: @green;
+    color: @white;
+    border-radius: 10px;
+    transition: all 0.3s;
+
+    &:hover {
+      text-decoration: none;
+      background-color: @green-dark;
+      color: @white;
+    }
+  }
+}
+
+.tw {
+  padding: 30px 0;
+
+  .ft__slide {
+    img {
+      height: 500px;
+      display: block;
+      margin: 10px auto;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 200px;
+      left: 10%;
+      height: 100px;
+      width: 100px;
+      background: url("../img/door.png");
+      background-size: cover;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 200px;
+      right: 10%;
+      height: 100px;
+      width: 100px;
+      background: url("../img/door.png");
+      background-size: cover;
+    }
+
+    p {
+      margin: 0 auto;
+      width: 80%;
+      text-align: center;
+    }
+  }
+  .tw_button__catandprice {
+      display: block;
+      width: fit-content;
+      margin: 20px auto;
+      padding: 10px 30px;
+      background-color: @brown;
+      color: @white;
+      border-radius: 10px;
+      transition: all 0.3s;
+
+      &:hover {
+        text-decoration: none;
+        background-color: @brown-dark;
+        color: @white;
+      }
+    }
+}
+.frw {
+  background: url("../img/bg02.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 30px 0;
+  h1 {
+    margin-bottom: 30px;
+  }
+  input {
+    margin: 0 auto 10px auto;
+    width: 50%;
+  }
+  .frw_submit {
+    display: block;
+    width: fit-content;
+    padding: 5px 30px;
+    margin: 20px auto;
+    background-color: @green;
+    color: @white;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.2s;
+    &:hover {
+      background-color: @green-dark;
+    }
+  }
+}

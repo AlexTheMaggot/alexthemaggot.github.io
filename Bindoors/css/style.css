@@ -1,0 +1,237 @@
+@import "bootstrap.css";
+@import "fotorama.css";
+header .row {
+  padding-top: 30px;
+}
+header .logo img {
+  height: 100px;
+  padding: 0 20px;
+}
+header .menu ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+header .menu ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 20px 20px;
+  margin: 0 10px;
+  font-weight: 600;
+}
+header .menu ul li::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: #3D610F;
+  transition: all 0.3s;
+}
+header .menu ul li:hover::after {
+  width: 100%;
+}
+header .menu ul li a {
+  color: #3D610F;
+  font-size: 1.5rem;
+}
+header .menu ul li a:hover {
+  text-decoration: none;
+}
+header .callback {
+  background-color: #68952D;
+  width: fit-content;
+  height: fit-content;
+  margin: 0 0 0 auto;
+  padding: 10px 50px 10px 50px;
+  border-radius: 1000px;
+}
+header .callback p {
+  color: #FFFFFF;
+  margin: 0 auto;
+  font-weight: 600;
+}
+footer {
+  padding: 30px 0 0 0;
+}
+footer .cont_title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #68952D;
+  margin-bottom: 5px;
+}
+footer img {
+  display: block;
+  height: 250px;
+  margin: 0 auto;
+}
+footer .disclaimer {
+  margin-top: 30px;
+  padding-top: 15px;
+  background-color: #68952D;
+  color: #FFFFFF;
+}
+.fw {
+  background: url("../img/bg01.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 30px 0;
+}
+.fw .fw_title {
+  margin: 0 0 30px 0;
+  color: #FFFFFF;
+}
+.fw .fw_feature {
+  width: 400px;
+  height: 200px;
+  margin: 20px auto;
+  padding: 50px 0;
+  background-color: #FFFFFFAA;
+  border-radius: 30px;
+  transition: all 0.3s;
+}
+.fw .fw_feature:hover {
+  transform: scale(1.1);
+}
+.fw .fw_feature img {
+  display: block;
+  margin: 0 auto;
+  height: 50px;
+}
+.fw .fw_feature p {
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  color: #333333;
+}
+.fw .fw_feature p span {
+  font-size: 2.5rem;
+  color: #A36D31;
+}
+.fw .fw_feature__ind {
+  width: 400px;
+  height: 200px;
+  margin: 20px auto;
+  padding: 50px 0;
+  background-color: #FFFFFFAA;
+  border-radius: 30px;
+  transition: all 0.3s;
+  padding: 30px 0;
+}
+.fw .fw_feature__ind:hover {
+  transform: scale(1.1);
+}
+.fw .fw_feature__ind img {
+  display: block;
+  margin: 0 auto;
+  height: 50px;
+}
+.fw .fw_feature__ind p {
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  color: #333333;
+}
+.fw .fw_feature__ind p span {
+  font-size: 2.5rem;
+  color: #A36D31;
+}
+.sw {
+  padding: 30px 0;
+}
+.sw h1 {
+  margin: 20px 0;
+}
+.sw .sw_button__catandprice {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 10px 30px;
+  background-color: #68952D;
+  color: #FFFFFF;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.sw .sw_button__catandprice:hover {
+  text-decoration: none;
+  background-color: #3D610F;
+  color: #FFFFFF;
+}
+.tw {
+  padding: 30px 0;
+}
+.tw .ft__slide img {
+  height: 500px;
+  display: block;
+  margin: 10px auto;
+}
+.tw .ft__slide::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 200px;
+  left: 10%;
+  height: 100px;
+  width: 100px;
+  background: url("../img/door.png");
+  background-size: cover;
+}
+.tw .ft__slide::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 200px;
+  right: 10%;
+  height: 100px;
+  width: 100px;
+  background: url("../img/door.png");
+  background-size: cover;
+}
+.tw .ft__slide p {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+.tw .tw_button__catandprice {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 10px 30px;
+  background-color: #A36D31;
+  color: #FFFFFF;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.tw .tw_button__catandprice:hover {
+  text-decoration: none;
+  background-color: #6A3F10;
+  color: #FFFFFF;
+}
+.frw {
+  background: url("../img/bg02.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 30px 0;
+}
+.frw h1 {
+  margin-bottom: 30px;
+}
+.frw input {
+  margin: 0 auto 10px auto;
+  width: 50%;
+}
+.frw .frw_submit {
+  display: block;
+  width: fit-content;
+  padding: 5px 30px;
+  margin: 20px auto;
+  background-color: #68952D;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+.frw .frw_submit:hover {
+  background-color: #3D610F;
+}
+/*# sourceMappingURL=style.css.map */

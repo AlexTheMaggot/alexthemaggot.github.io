@@ -1,65 +1,111 @@
 header {
-  .row {
-    padding-top: 30px;
-  }
+  .header {
+    padding-top: 10px;
+    padding-bottom: 10px;
 
-  .logo {
-    img {
-      height: 100px;
-      padding: 0 20px;
-    }
-  }
-
-  .menu {
-    ul {
-      margin-left: 0;
-      padding-left: 0;
-
-      li {
-        list-style-type: none;
-        display: inline-block;
-        padding: 20px 20px;
-        margin: 0 10px;
-        font-weight: 600;
-
-        &::after {
-          content: '';
-          display: block;
-          width: 0%;
-          height: 2px;
-          background-color: @green-dark;
-          transition: all 0.3s;
+    .top {
+      &__logo {
+        img {
+          height: 100px;
         }
+      }
 
-        &:hover::after {
-          width: 100%;
-        }
-
+      &__buttons {
         a {
-          color: @green-dark;
-          font-size: 1.5rem;
+          display: block;
+          width: 200px;
+          text-align: center;
+          margin: 10px 0;
+          padding: 10px;
+          border-radius: 10px;
+          border: 2px solid @green;
+          transition: all 0.3s;
 
           &:hover {
             text-decoration: none;
           }
         }
+
+        &_callback {
+          background-color: @white;
+          color: @green;
+
+          &:hover {
+            background-color: @brown;
+            color: @white;
+            border-color: @brown;
+          }
+        }
+
+        &_catalog {
+          background-color: @green;
+          color: @white;
+          border: 2px solid @green;
+
+          &:hover {
+            background-color: @brown;
+            border-color: @brown;
+          }
+        }
+      }
+
+      &__phone {
+        padding-top: 20px;
+
+        p {
+          margin: 0;
+        }
+
+        &_number {
+          font-weight: 600;
+          font-size: 1.2rem;
+        }
+
+        a {
+          margin: 10px;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+
+        img {
+          height: 20px;
+
+        }
       }
     }
   }
 
-  .callback {
+  .menu {
     background-color: @green;
-    width: fit-content;
-    height: fit-content;
-    margin: 0 0 0 auto;
-    padding: 10px 50px 10px 50px;
-    border-radius: 1000px;
-
-    p {
-      color: @white;
+    &__aligner {
+      max-width: 1140px;
+      width: 100%;
       margin: 0 auto;
-      font-weight: 600;
     }
+    ul {
+      margin-left: 0;
+      margin-bottom: 0;
+      padding-left: 0;
+      box-sizing: content-box;
+      li {
+        list-style-type: none;
+        display: inline-block;
+        a {
+          display: block;
+          color: @white;
+          padding: 10px 10px;
+          text-transform: uppercase;
+          font-weight: 600;
+          transition: all 0.3s;
+          &:hover {
+            text-decoration: none;
+            background-color: @green-light;
+          }
+        }
+      }
+    }
+
   }
 }
-

@@ -1,53 +1,91 @@
 @import "bootstrap.css";
 @import "fotorama.css";
-header .row {
-  padding-top: 30px;
+header .header {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-header .logo img {
+header .header .top__logo img {
   height: 100px;
-  padding: 0 20px;
+}
+header .header .top__buttons a {
+  display: block;
+  width: 200px;
+  text-align: center;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #68952D;
+  transition: all 0.3s;
+}
+header .header .top__buttons a:hover {
+  text-decoration: none;
+}
+header .header .top__buttons_callback {
+  background-color: #FFFFFF;
+  color: #68952D;
+}
+header .header .top__buttons_callback:hover {
+  background-color: #A36D31;
+  color: #FFFFFF;
+  border-color: #A36D31;
+}
+header .header .top__buttons_catalog {
+  background-color: #68952D;
+  color: #FFFFFF;
+  border: 2px solid #68952D;
+}
+header .header .top__buttons_catalog:hover {
+  background-color: #A36D31;
+  border-color: #A36D31;
+}
+header .header .top__phone {
+  padding-top: 20px;
+}
+header .header .top__phone p {
+  margin: 0;
+}
+header .header .top__phone_number {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+header .header .top__phone a {
+  margin: 10px;
+}
+header .header .top__phone a:hover {
+  text-decoration: none;
+}
+header .header .top__phone img {
+  height: 20px;
+}
+header .menu {
+  background-color: #68952D;
+}
+header .menu__aligner {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
 }
 header .menu ul {
   margin-left: 0;
+  margin-bottom: 0;
   padding-left: 0;
+  box-sizing: content-box;
 }
 header .menu ul li {
   list-style-type: none;
   display: inline-block;
-  padding: 20px 20px;
-  margin: 0 10px;
-  font-weight: 600;
-}
-header .menu ul li::after {
-  content: '';
-  display: block;
-  width: 0%;
-  height: 2px;
-  background-color: #3D610F;
-  transition: all 0.3s;
-}
-header .menu ul li:hover::after {
-  width: 100%;
 }
 header .menu ul li a {
-  color: #3D610F;
-  font-size: 1.5rem;
+  display: block;
+  color: #FFFFFF;
+  padding: 10px 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.3s;
 }
 header .menu ul li a:hover {
   text-decoration: none;
-}
-header .callback {
-  background-color: #68952D;
-  width: fit-content;
-  height: fit-content;
-  margin: 0 0 0 auto;
-  padding: 10px 50px 10px 50px;
-  border-radius: 1000px;
-}
-header .callback p {
-  color: #FFFFFF;
-  margin: 0 auto;
-  font-weight: 600;
+  background-color: #9CCA60;
 }
 footer {
   padding: 30px 0 0 0;
@@ -70,7 +108,7 @@ footer .disclaimer {
   color: #FFFFFF;
 }
 .fw {
-  background: url("../img/bg01.jpg");
+  background: url("../img/bg01-min.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -172,7 +210,7 @@ footer .disclaimer {
   left: 10%;
   height: 100px;
   width: 100px;
-  background: url("../img/door.png");
+  background: url("../img/door-min.png");
   background-size: cover;
 }
 .tw .ft__slide::after {
@@ -183,7 +221,7 @@ footer .disclaimer {
   right: 10%;
   height: 100px;
   width: 100px;
-  background: url("../img/door.png");
+  background: url("../img/door-min.png");
   background-size: cover;
 }
 .tw .ft__slide p {
@@ -207,7 +245,7 @@ footer .disclaimer {
   color: #FFFFFF;
 }
 .frw {
-  background: url("../img/bg02.jpg");
+  background: url("../img/bg02-min.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;

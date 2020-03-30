@@ -1,30 +1,25 @@
 @import "bootstrap.css";
 @import "fotorama.css";
+@import "modal.css";
 @import "colors";
 @import "header";
 @import "footer";
 
 .fw {
-  background: url("../img/bg01-min.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
   padding: 30px 0;
 
   .fw_title {
     margin: 0 0 30px 0;
-    color: @white;
+    color: @black;
   }
 
   .fw_feature {
-    width: 400px;
-    height: 200px;
-    margin: 20px auto;
-    padding: 50px 0;
-    background-color: #FFFFFFAA;
-    border-radius: 30px;
+    width: 300px;
+    padding: 30px 0;
+    margin: 0 0 35px 0;
     transition: all 0.3s;
-
+    border: 2px solid @green;
+    border-radius: 30px;
     &:hover {
       transform: scale(1.1);
     }
@@ -38,19 +33,14 @@
     p {
       width: fit-content;
       margin: 0 auto;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       color: @gray-dark;
 
       span {
-        font-size: 2.5rem;
         color: @brown;
+        font-size: 2rem;
       }
     }
-  }
-
-  .fw_feature__ind {
-    .fw_feature();
-    padding: 30px 0;
   }
 }
 
@@ -161,6 +151,42 @@
     transition: all 0.2s;
     &:hover {
       background-color: @green-dark;
+    }
+  }
+}
+
+.modal_modal {
+  h1 {
+    margin-bottom: 20px;
+  }
+  input {
+    width: 70%;
+    margin: 0 auto;
+  }
+  a {
+    display: inline-block;
+    width: fit-content;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: @white;
+    transition: all 0.3s;
+    &:hover {
+      text-decoration: none;
+      color: @white;
+
+    }
+  }
+  .button_send {
+    margin: 40px 40px 0 0;
+    background-color: @green;
+    &:hover {
+      background-color: @green-dark;
+    }
+  }
+  .button_cancel {
+    background-color: @gray;
+    &:hover {
+      background-color: @gray-dark;
     }
   }
 }

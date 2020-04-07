@@ -58,13 +58,13 @@
       width: fit-content;
       border-radius: 5px;
       color: @white;
-      background-color: @green;
+      background-color: @black;
       font-weight: 600;
       transition: all 0.3s;
 
       &:hover {
         text-decoration: none;
-        background-color: @green-dark;
+        background-color: @green;
       }
     }
   }
@@ -172,7 +172,7 @@
   .ft {
     &__slide {
     img {
-      max-width: 525px;
+      max-width: 800px;
       width: 100%;
       display: block;
       margin: 10px auto;
@@ -182,6 +182,7 @@
       font-weight: 600;
     }
     &_mats {
+      padding-top: 15px;
       span {
         font-weight: 600;
       }
@@ -403,7 +404,7 @@
     margin: 10px auto 70px auto;
   }
   &__img {
-    width: 200px;
+    height: 70px;
     margin: 0 30px;
     opacity: 0.25;
     &:hover {
@@ -412,44 +413,57 @@
   }
 }
 
-.testimonials {
-  position: relative;
-  padding: 100px;
-  background: #12222d;
-  text-align: center;
-  h2 {
-    margin-left: auto;
-    margin-right: auto;
+.reviews {
+  background-color: @green;
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  &__header {
+    color: @white;
+    text-align: center;
+    margin-bottom: 30px;
   }
-}
+  .review {
+    background-color: @white;
+    max-width: 550px;
+    padding: 50px 30px;
+    margin: 0 auto;
 
-.testimonials .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 40px;
-  flex-wrap: wrap;
-}
+    &__name {
+      img {
+        margin: 10px;
+        height: 150px;
+        border-radius: 100%;
+      }
+      p {
+        display: inline-block;
+        font-size: 2rem;
+        font-weight: 600;
+        color: @green;
+      }
+    }
+    &__text {
+      margin-top: 10px;
+      font-style: italic;
+      text-align: right;
+    }
+  }
+  &__btn {
+    display: block;
+    margin: 60px auto 0 auto;
+    padding: 10px 30px;
+    width: fit-content;
+    color: @white;
+    background-color: @black;
+    border-radius: 10px;
+    transition: all 0.3s;
+    &:hover {
+      text-decoration: none;
+      color: @white;
+      background-color: @gray-dark;
+    }
 
-.testimonials .container .contentBx {
-  background: #fff;
-  padding: 60px 50px;
-  width: 550px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-}
-
-.testimonials .container .contentBx p {
-  font-style: italic;
-}
-
-.testimonials .container .contentBx h3 {
-  width: 100%;
-  text-align: end;
-  font-weight: 500;
-  color: #68952D;
+  }
 }
 
 /* Контакты */

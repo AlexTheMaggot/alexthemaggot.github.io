@@ -244,13 +244,13 @@ footer .footer-bottom-text {
   width: fit-content;
   border-radius: 5px;
   color: #FFFFFF;
-  background-color: #68952D;
+  background-color: #000000;
   font-weight: 600;
   transition: all 0.3s;
 }
 .fw__button a:hover {
   text-decoration: none;
-  background-color: #3D610F;
+  background-color: #68952D;
 }
 @media (max-width: 1199px) {
   .fw__video {
@@ -349,7 +349,7 @@ footer .footer-bottom-text {
   padding: 30px 0;
 }
 .tw .ft__slide img {
-  max-width: 525px;
+  max-width: 800px;
   width: 100%;
   display: block;
   margin: 10px auto;
@@ -357,6 +357,9 @@ footer .footer-bottom-text {
 .tw .ft__slide_title {
   font-size: 1.5rem;
   font-weight: 600;
+}
+.tw .ft__slide_mats {
+  padding-top: 15px;
 }
 .tw .ft__slide_mats span {
   font-weight: 600;
@@ -539,47 +542,59 @@ footer .footer-bottom-text {
   margin: 10px auto 70px auto;
 }
 .partners__img {
-  width: 200px;
+  height: 70px;
   margin: 0 30px;
   opacity: 0.25;
 }
 .partners__img:hover {
   opacity: 1;
 }
-.testimonials {
-  position: relative;
-  padding: 100px;
-  background: #12222d;
+.reviews {
+  background-color: #68952D;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.reviews__header {
+  color: #FFFFFF;
   text-align: center;
+  margin-bottom: 30px;
 }
-.testimonials h2 {
-  margin-left: auto;
-  margin-right: auto;
+.reviews .review {
+  background-color: #FFFFFF;
+  max-width: 550px;
+  padding: 50px 30px;
+  margin: 0 auto;
 }
-.testimonials .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 40px;
-  flex-wrap: wrap;
+.reviews .review__name img {
+  margin: 10px;
+  height: 150px;
+  border-radius: 100%;
 }
-.testimonials .container .contentBx {
-  background: #fff;
-  padding: 60px 50px;
-  width: 550px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-}
-.testimonials .container .contentBx p {
-  font-style: italic;
-}
-.testimonials .container .contentBx h3 {
-  width: 100%;
-  text-align: end;
-  font-weight: 500;
+.reviews .review__name p {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 600;
   color: #68952D;
+}
+.reviews .review__text {
+  margin-top: 10px;
+  font-style: italic;
+  text-align: right;
+}
+.reviews__btn {
+  display: block;
+  margin: 60px auto 0 auto;
+  padding: 10px 30px;
+  width: fit-content;
+  color: #FFFFFF;
+  background-color: #000000;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.reviews__btn:hover {
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #333333;
 }
 /* Контакты */
 .contact {

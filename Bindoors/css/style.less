@@ -18,7 +18,7 @@
 
   &__features {
     &_feature {
-      margin: 35px auto;
+      margin: 25px auto;
       width: fit-content;
 
       &::after {
@@ -45,6 +45,7 @@
         width: fit-content;
         margin: 0 0 15px 0;
         font-size: 1.1rem;
+        text-align: center;
       }
     }
   }
@@ -113,6 +114,44 @@
       display: none;
     }
   }
+  &__door {
+    margin: 0 auto;
+    padding: 30px 50px;
+    width: fit-content;
+    border: 2px solid @white;
+    border-radius: 30px;
+    &_title {
+      font-weight: 600;
+      font-size: 1.5rem;
+      width: fit-content;
+      margin: 0 auto;
+      color: @white;
+    }
+    &_img {
+      height: 200px;
+      margin: 15px auto;
+      display: block;
+      border-radius: 10px;
+      transition: all 0.3s;
+    }
+    &_btn {
+      display: block;
+      margin: 0 auto;
+      padding: 10px 30px;
+      width: fit-content;
+      color: @white;
+      border: 2px solid @white;
+      border-radius: 5px;
+      font-weight: 600;
+      transition: all 0.3s;
+      &:hover {
+        text-decoration: none;
+        background-color: @white;
+        color: @green;
+      }
+
+    }
+  }
   &__button {
     margin: 70px auto 0 auto;
     padding: 10px 20px;
@@ -178,9 +217,12 @@
     margin-bottom: 30px;
   }
 
-  input {
+  &__inputs {
     margin: 0 auto 10px auto;
     width: 50%;
+  }
+  p {
+    text-align: center;
   }
 
   .frw_submit {
@@ -205,12 +247,14 @@
     margin-bottom: 20px;
   }
 
-  input {
+  .mod_inputs {
     width: 70%;
-    margin: 0 auto;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 400px;
   }
 
-  a {
+  .mod_btn {
     display: inline-block;
     width: fit-content;
     padding: 10px 30px;
@@ -291,6 +335,10 @@
   background: #12222d;
   padding: 100px;
   text-align: center;
+  h2 {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .services .container {
@@ -324,7 +372,6 @@
 
 .technology {
   background: #3f8ffc;
-  width: 100%;
   padding: 100px;
   padding-top: 300px;
   margin-top: -300px;
@@ -346,29 +393,23 @@
 }
 
 /* Партнеры */
-.client {
-  background: #162c3b;
-  padding: 100px;
-  text-align: center;
-}
-
-.client .imgBx {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 40px;
-}
-
-.client .imgBx img {
-  max-width: 200px;
-  margin: 20px;
-  opacity: 0.25;
-  cursor: pointer;
-}
-
-.client .imgBx img:hover {
-  opacity: 1;
+.partners {
+  background-color: @gray-dark;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: @white;
+  &__text {
+    width: 70%;
+    margin: 10px auto 70px auto;
+  }
+  &__img {
+    width: 200px;
+    margin: 0 30px;
+    opacity: 0.25;
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 
 .testimonials {
@@ -376,6 +417,10 @@
   padding: 100px;
   background: #12222d;
   text-align: center;
+  h2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .testimonials .container {

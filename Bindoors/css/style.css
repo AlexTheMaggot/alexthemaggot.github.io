@@ -27,9 +27,9 @@ header .header__callback_button {
   margin: 0 auto;
   padding: 10px 20px;
   width: fit-content;
-  border: 2px solid #68952D;
   border-radius: 5px;
-  color: #68952D;
+  color: #333333;
+  background-color: #ED9121;
   font-weight: 600;
   transition: all 0.3s;
 }

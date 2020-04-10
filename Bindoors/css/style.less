@@ -17,9 +17,13 @@
   }
 
   &__features {
+    p {
+      line-height: 30px;
+    }
     &_feature {
-      margin: 25px auto;
+      margin: 0 auto 25px auto;
       width: fit-content;
+      max-width: 400px;
 
       &::after {
         content: "";
@@ -45,6 +49,7 @@
         width: fit-content;
         margin: 0 0 15px 0;
         font-size: 1.1rem;
+        font-weight: 600;
         text-align: center;
       }
     }

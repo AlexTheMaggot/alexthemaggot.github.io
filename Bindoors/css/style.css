@@ -19,9 +19,6 @@ header .header__contacts_phone {
 header .header__contacts_time {
   font-weight: 400;
 }
-header .header__callback {
-  margin-top: -10px;
-}
 header .header__callback_button {
   display: block;
   margin: 0 auto;
@@ -210,9 +207,13 @@ footer .footer-bottom-text {
 .fw__title {
   margin: 30px 0;
 }
+.fw__features p {
+  line-height: 30px;
+}
 .fw__features_feature {
-  margin: 25px auto;
+  margin: 0 auto 25px auto;
   width: fit-content;
+  max-width: 400px;
 }
 .fw__features_feature::after {
   content: "";
@@ -235,6 +236,7 @@ footer .footer-bottom-text {
   width: fit-content;
   margin: 0 0 15px 0;
   font-size: 1.1rem;
+  font-weight: 600;
   text-align: center;
 }
 .fw__button a {

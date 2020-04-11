@@ -257,16 +257,41 @@
             </div>
         </div>
         <div class="row tw">
-            <!--            TODO: Увеличение фотографий при нажатии-->
             <!--            TODO: Украсить текст анимациями-->
             <div class="col-xl-12">
                 <h1 class="text-center">Наши работы</h1>
             </div>
             <div class="col-xl-12">
                 <div class="fotorama ft" data-height="500" data-width="100%" data-arrows="true"
-                     data-click="false"
+                     data-click="false" data-allowfullscreen="true"
                      data-swipe="true">
-                    <div class="ft__slide">
+                    <div class="ft__slide fotorama__select">
+                        <div class="row">
+                            <div class="col-xl-8 col-12">
+                                <script>
+                                    $('.ft_img').on("click", function () {
+                                        $('.image-fullscreen').removeClass('hidden');
+                                        setTimeout(function () {
+                                            $('.image-fullscreen').addClass("notrans");
+                                        }, 50);
+                                    })
+                                </script>
+                                <img src="img/slide1.jpg" alt="" class="ft_img">
+                            </div>
+                            <div class="col-xl-3 col-12 ft__slide_mats d-xl-block d-none">
+                                <p><span>Объект: </span>квартира</p>
+                                <p><span>Адрес: </span>с. Михайлово, Молодежный бульвар, д.1</p>
+                                <p><span>Дата монтажа: </span>март 2020 г.</p>
+                                <p><span>Задача: </span>необходимо было установить 5 межкомнатных дверей в частной
+                                    квартире</p>
+                                <p><span>Выполненные работы: </span>провели предварительный замер, расчет и установку
+                                    дверей компании Юкка (название модели), установили магнитные замки, ручки и петли от
+                                    компании Vantage</p>
+                                <p><span>Общая стоимость проекта: </span>________ рублей</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ft__slide fotorama__select">
                         <div class="row">
                             <div class="col-xl-8 col-12">
                                 <img src="img/slide1.jpg" alt="">
@@ -284,25 +309,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="ft__slide">
-                        <div class="row">
-                            <div class="col-xl-8 col-12">
-                                <img src="img/slide1.jpg" alt="">
-                            </div>
-                            <div class="col-xl-3 col-12 ft__slide_mats d-xl-block d-none">
-                                <p><span>Объект: </span>квартира</p>
-                                <p><span>Адрес: </span>с. Михайлово, Молодежный бульвар, д.1</p>
-                                <p><span>Дата монтажа: </span>март 2020 г.</p>
-                                <p><span>Задача: </span>необходимо было установить 5 межкомнатных дверей в частной
-                                    квартире</p>
-                                <p><span>Выполненные работы: </span>провели предварительный замер, расчет и установку
-                                    дверей компании Юкка (название модели), установили магнитные замки, ручки и петли от
-                                    компании Vantage</p>
-                                <p><span>Общая стоимость проекта: </span>________ рублей</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ft__slide">
+                    <div class="ft__slide fotorama__select">
                         <div class="row">
                             <div class="col-xl-8 col-12">
                                 <img src="img/slide1.jpg" alt="">
@@ -491,6 +498,11 @@
         <a class='button_cancel close-modal_modal mod_btn' data-modal_modal="#modal_modal2" href="#">Отмена</a>
     </div>
 </div>
+<div class="image-fullscreen hidden">
+    <img src="img/slide1.jpg" alt="" class="image-fullscreen_img">
+    <img src="img/cross.png" alt="" class="image-fullscreen_close">
+</div>
+
 
 <script src="js/jq.js"></script>
 <script src="css/fotorama.js"></script>

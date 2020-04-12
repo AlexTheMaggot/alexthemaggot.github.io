@@ -60,6 +60,10 @@ header .header__callback_social a:hover {
   width: 100%;
   margin: 0 auto;
 }
+.menu__aligner nav {
+  width: fit-content;
+  margin: 0 auto;
+}
 .menu ul {
   margin-left: 0;
   margin-bottom: 0;
@@ -736,7 +740,7 @@ footer .footer-bottom-text {
   height: 100vh;
   opacity: 0;
   display: flex;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 .image-fullscreen_img {
   width: 90%;

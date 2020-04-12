@@ -57,7 +57,7 @@ $(".image-fullscreen_close").on("click", function () {
     $('.image-fullscreen').removeClass('notrans');
     setTimeout(function () {
         $('.image-fullscreen').addClass('hidden');
-    }, 300);
+    }, 500);
 });
 
 $(".modal_modal").each(function () {

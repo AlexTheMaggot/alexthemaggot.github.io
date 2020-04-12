@@ -12,9 +12,17 @@ header .header__contacts {
   padding: 0 0;
 }
 header .header__contacts_phone {
+  display: block;
   font-size: 1.2rem;
   font-weight: 600;
-  margin: 0 0 0 0;
+  width: fit-content;
+  margin: 0 auto;
+  color: #000000;
+  transition: all 0.3s;
+}
+header .header__contacts_phone:hover {
+  text-decoration: none;
+  transform: scale(1.1) translate(0, 5px);
 }
 header .header__contacts_time {
   font-weight: 400;

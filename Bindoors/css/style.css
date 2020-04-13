@@ -29,7 +29,7 @@ header .header__contacts_time {
 }
 header .header__callback_button {
   display: block;
-  margin: 0 auto;
+  margin: 0  0 0 auto;
   padding: 10px 20px;
   width: fit-content;
   border-radius: 5px;
@@ -45,7 +45,7 @@ header .header__callback_button:hover {
 }
 header .header__callback_social {
   width: fit-content;
-  margin: 10px auto;
+  margin: 10px 0 10px auto;
 }
 header .header__callback_social a {
   margin: 0 10px;
@@ -217,7 +217,7 @@ footer .footer-bottom-text {
   padding: 30px 0;
 }
 .fw__title {
-  margin: 30px 0;
+  margin: 0 0 10px 0;
 }
 .fw__features p {
   line-height: 30px;
@@ -253,7 +253,7 @@ footer .footer-bottom-text {
 }
 .fw__button a {
   display: block;
-  margin: 30px auto 0 auto;
+  margin: 10px auto 0 auto;
   padding: 10px 20px;
   width: fit-content;
   border-radius: 5px;

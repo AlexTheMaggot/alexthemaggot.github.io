@@ -1,4 +1,6 @@
 @import "bootstrap.css";
+@import "font-awesome.css";
+@import "courgette.css";
 @import "fotorama.css";
 @import "modal.css";
 header .header {
@@ -221,6 +223,7 @@ footer .footer-bottom-text {
 }
 .fw__features p {
   line-height: 30px;
+  margin-top: -10px;
 }
 .fw__features_feature {
   margin: 0 auto 25px auto;
@@ -385,7 +388,6 @@ footer .footer-bottom-text {
   margin-left: 80px;
   margin-right: 60px;
   padding-bottom: 10px;
-  border-bottom: 2px solid #FFFFFF;
   transition: all 0.3s;
 }
 .tw .ft__slide_mats p::before {
@@ -398,8 +400,16 @@ footer .footer-bottom-text {
   background-position: center;
   background-size: cover;
 }
-.tw .ft__slide_mats p:hover {
-  border-bottom: 2px solid #68952D;
+.tw .ft__slide_mats p::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #68952D;
+  transition: all 0.3s;
+}
+.tw .ft__slide_mats p:hover::after {
+  width: 100%;
 }
 .tw .ft__slide_mats p span {
   font-weight: 600;

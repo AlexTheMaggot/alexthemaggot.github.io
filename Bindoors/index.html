@@ -2,11 +2,8 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <!--    TODO: Отключить все CDN-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Courgette|Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-
+    <script src="js/jq.js"></script>
     <title>Главная</title>
 </head>
 <body>
@@ -79,7 +76,6 @@
                 <div class="row">
                     <!--    TODO: Изменить количество моделей-->
                     <!--                    TODO: Подложка под текст-->
-                    <!--                    TODO: Выравнивание преимуществ-->
                     <div class="col-12 fw__title">
                         <h1 class="text-center">
                             Продажа и установка входных и межкомнатных дверей в квартирах, домах и
@@ -279,7 +275,6 @@
             <!--            TODO: Сделать увеличение каждой фотографии отдельно-->
             <!--            TODO: Уменьшить высоту фоторамы-->
             <!--            TODO: Сделать подчеркивания как в блоке "О нас"-->
-            <!--            TODO: Отразить иконку по-горизонтали-->
             <!--            TODO: Центрировать стрелки навигации-->
             <div class="col-xl-12">
                 <h1 class="text-center">Наши проекты</h1>
@@ -487,7 +482,6 @@
     <!--    TODO: Подкорректировать иконки соц-сетей-->
     <!--    TODO: Поменять акцию на подписку-->
     <!--    TODO: Вставить текст вместо рыбы-->
-    <!--    TODO: Пункты меню как сверху -->
     <div class="footer-top">
         <div class="container">
             <div class="row" id="contacts">
@@ -500,10 +494,11 @@
                 <div class="col-md-3 col-sm-6 col-xs-12 segment-two md-mb-30 sm-md-30">
                     <h2>Bindoors</h2>
                     <ul>
-                        <li><a href="#" class="footer_link">Наши работы</a></li>
-                        <li><a href="#" class="footer_link">Почему мы?</a></li>
-                        <li><a href="#" class="footer_link">О нас</a></li>
-                        <li><a href="#" class="footer_link">Контакты</a></li>
+                        <li><a href="#about" class="footer_link">О нас</a></li>
+                        <li><a href="#partners" class="footer_link">Наши работы</a></li>
+                        <li><a href="#projects" class="footer_link">Наши проекты</a></li>
+                        <li><a href="#reviews" class="footer_link">Отзывы</a></li>
+                        <li><a href="#contacts" class="footer_link">Контакты</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12 segment-three sm-mb-30">
@@ -535,7 +530,8 @@
     <div class='content'>
         <h1 class='title'>Оставьте свой телефон и мы перезвоним в течение 15 минут</h1>
         <input type="text" class="form-control mod_inputs" placeholder="Имя">
-        <input type="tel" pattern="[0-9]{11}" class="form-control mod_inputs" placeholder="+7 (495) 123-45-67">
+        <input type="tel" pattern="[0-9]{11}" class="form-control mod_inputs"
+               placeholder="+7 (495) 123-45-67 (Обязательное поле)">
         <p class="form-check-label">
             <input type="checkbox">
             Согласен с <a href="#">Политикой конфиденциальности</a>
@@ -558,7 +554,6 @@
 </div>
 
 
-<script src="js/jq.js"></script>
 <script src="css/fotorama.js"></script>
 <script src="js/main.js"></script>
 

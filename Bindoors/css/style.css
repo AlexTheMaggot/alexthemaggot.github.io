@@ -665,32 +665,14 @@ footer .footer-bottom-text {
   background-color: #68952D;
   padding-top: 70px;
   padding-bottom: 70px;
-  /*  .review {
-    background-color: @white;
-    max-width: 550px;
-    padding: 50px 30px;
-    margin: 0 auto;
-
-    &__name {
-      img {
-        margin: 10px;
-        height: 150px;
-        border-radius: 100%;
-      }
-
-      p {
-        display: inline-block;
-        font-size: 2rem;
-        font-weight: 600;
-        color: @green;
-      }
-    }
-
-    &__text {
-      margin-top: 10px;
-      text-align: right;
-    }
-  } */
+}
+.reviews .fotorama__arr--next {
+  background: url("../img/door_next_white.png") center;
+  background-size: cover;
+}
+.reviews .fotorama__arr--prev {
+  background: url("../img/door_prev_white.png") center;
+  background-size: cover;
 }
 .reviews__header {
   color: #FFFFFF;
@@ -700,6 +682,8 @@ footer .footer-bottom-text {
 .reviews__review {
   background-color: #fff;
   height: 100%;
+  width: 500px;
+  margin: 0 auto;
   padding: 20px 50px;
 }
 .reviews .review__img {
@@ -708,24 +692,26 @@ footer .footer-bottom-text {
   float: left;
 }
 .reviews .review__name {
-  float: right;
+  text-align: right;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  margin-top: -10px;
   color: #68952D;
 }
 .reviews .review__city {
-  float: right;
-  font-size: 1.5rem;
-  font-style: italic;
+  margin-top: -15px;
+  text-align: right;
+  font-size: 1.1rem;
 }
 .reviews .review__text {
   float: right;
-  margin-top: 30px;
-  text-align: right;
+  margin-top: 10px;
+  text-align: left;
+  width: 230px;
 }
 .reviews__btn {
   display: block;
-  margin: 60px auto 0 auto;
+  margin: 20px auto 0 auto;
   padding: 10px 30px;
   width: fit-content;
   color: #FFFFFF;

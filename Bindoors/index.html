@@ -276,15 +276,11 @@
             </div>
         </div>
         <div class="row tw" id="projects">
-            <!--            TODO: Сделать увеличение каждой фотографии отдельно-->
-            <!--            TODO: Уменьшить высоту фоторамы-->
-            <!--            TODO: Сделать подчеркивания как в блоке "О нас"-->
-            <!--            TODO: Центрировать стрелки навигации-->
             <div class="col-xl-12">
                 <h1 class="text-center">Наши проекты</h1>
             </div>
             <div class="col-xl-12">
-                <div class="fotorama ft" data-height="500" data-width="100%" data-arrows="true"
+                <div class="fotorama ft" data-height="450" data-width="100%" data-arrows="true"
                      data-click="false" data-allowfullscreen="true"
                      data-swipe="true">
                     <div class="ft__slide fotorama__select">
@@ -362,14 +358,57 @@
                         <div class="row">
                             <div class="col-xl-7 col-12">
                                 <script>
-                                    $('.ft_img').on("click", function () {
-                                        $('.image-fullscreen').removeClass('hidden');
+                                    $('.ft__img_1').on("click", function () {
+                                        $('.image1-fullscreen').removeClass('hidden');
                                         setTimeout(function () {
-                                            $('.image-fullscreen').addClass("notrans");
+                                            $('.image1-fullscreen').addClass("notrans");
+                                        }, 50);
+                                    })
+                                    $('.ft__img_2').on("click", function () {
+                                        $('.image2-fullscreen').removeClass('hidden');
+                                        setTimeout(function () {
+                                            $('.image2-fullscreen').addClass("notrans");
+                                        }, 50);
+                                    })
+                                    $('.ft__img_3').on("click", function () {
+                                        $('.image3-fullscreen').removeClass('hidden');
+                                        setTimeout(function () {
+                                            $('.image3-fullscreen').addClass("notrans");
+                                        }, 50);
+                                    })
+                                    $('.ft__img_4').on("click", function () {
+                                        $('.image4-fullscreen').removeClass('hidden');
+                                        setTimeout(function () {
+                                            $('.image4-fullscreen').addClass("notrans");
+                                        }, 50);
+                                    })
+                                    $('.ft__img_5').on("click", function () {
+                                        $('.image5-fullscreen').removeClass('hidden');
+                                        setTimeout(function () {
+                                            $('.image5-fullscreen').addClass("notrans");
+                                        }, 50);
+                                    })
+                                    $('.ft__img_6').on("click", function () {
+                                        $('.image6-fullscreen').removeClass('hidden');
+                                        setTimeout(function () {
+                                            $('.image6-fullscreen').addClass("notrans");
                                         }, 50);
                                     })
                                 </script>
-                                <img src="img/slide1.jpg" alt="" class="ft_img">
+                                <div class="ft__img">
+                                    <div class="ft__img_1234">
+                                        <div class="ft__img_123">
+                                            <img src="img/01.jpg" alt="" class="ft__img_1">
+                                            <img src="img/02.jpg" alt="" class="ft__img_2">
+                                            <img src="img/03.jpg" alt="" class="ft__img_3">
+                                        </div>
+                                        <img src="img/04.jpg" alt="" class="ft__img_4">
+                                    </div>
+                                    <div class="ft__img_56">
+                                        <img src="img/05.jpg" alt="" class="ft__img_5">
+                                        <img src="img/06.jpg" alt="" class="ft__img_6">
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-xl-5 col-12 ft__slide_mats mats d-xl-block d-none">
                                 <p class="mats__object"><span>Объект: </span>квартира</p>
@@ -390,14 +429,57 @@
                         <div class="row">
                             <div class="col-xl-7 col-12">
                                 <script>
-                                    $('.ft_img').on("click", function () {
-                                        $('.image-fullscreen').removeClass('hidden');
+                                    $('.ft__img_1').on("click", function () {
+                                        $('.image1-fullscreen').removeClass('hidden');
                                         setTimeout(function () {
-                                            $('.image-fullscreen').addClass("notrans");
+                                            $('.image1-fullscreen').addClass("notrans");
+                                        }, 50);
+                                    })
+                                    $('.ft__img_2').on("click", function () {
+                                        $('.image2-fullscreen').removeClass('hidden');
+                                        setTimeout(function () {
+                                            $('.image2-fullscreen').addClass("notrans");
+                                        }, 50);
+                                    })
+                                    $('.ft__img_3').on("click", function () {
+                                        $('.image3-fullscreen').removeClass('hidden');
+                                        setTimeout(function () {
+                                            $('.image3-fullscreen').addClass("notrans");
+                                        }, 50);
+                                    })
+                                    $('.ft__img_4').on("click", function () {
+                                        $('.image4-fullscreen').removeClass('hidden');
+                                        setTimeout(function () {
+                                            $('.image4-fullscreen').addClass("notrans");
+                                        }, 50);
+                                    })
+                                    $('.ft__img_5').on("click", function () {
+                                        $('.image5-fullscreen').removeClass('hidden');
+                                        setTimeout(function () {
+                                            $('.image5-fullscreen').addClass("notrans");
+                                        }, 50);
+                                    })
+                                    $('.ft__img_6').on("click", function () {
+                                        $('.image6-fullscreen').removeClass('hidden');
+                                        setTimeout(function () {
+                                            $('.image6-fullscreen').addClass("notrans");
                                         }, 50);
                                     })
                                 </script>
-                                <img src="img/slide1.jpg" alt="" class="ft_img">
+                                <div class="ft__img">
+                                    <div class="ft__img_1234">
+                                        <div class="ft__img_123">
+                                            <img src="img/01.jpg" alt="" class="ft__img_1">
+                                            <img src="img/02.jpg" alt="" class="ft__img_2">
+                                            <img src="img/03.jpg" alt="" class="ft__img_3">
+                                        </div>
+                                        <img src="img/04.jpg" alt="" class="ft__img_4">
+                                    </div>
+                                    <div class="ft__img_56">
+                                        <img src="img/05.jpg" alt="" class="ft__img_5">
+                                        <img src="img/06.jpg" alt="" class="ft__img_6">
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-xl-5 col-12 ft__slide_mats mats d-xl-block d-none">
                                 <p class="mats__object"><span>Объект: </span>квартира</p>
@@ -481,38 +563,35 @@
 
         <div class="reviews row justify-content-center" id="reviews">
             <!--            TODO: Переписать код-->
-            <!--            TODO: Имя наверх-->
-            <!--            TODO: Добавить город-->
-            <!--            TODO: Стрелки и точки навигации-->
-            <!--            TODO: Текст по правому краю-->
-            <!--            TODO: Убрать курсив текста-->
             <div class="col-12">
                 <h2 class="reviews__header">Отзывы</h2>
             </div>
             <div class="col-xl-6">
                 <div style="width: 500px; margin: 0 auto">
-                    <div class="fotorama" data-arrows="false" data-nav="false">
+                    <div class="fotorama">
                         <div class="reviews__review review">
-                            <div class="review__name">
-                                <img src="img/review1.jpg" alt="">
-                                <p>Сергей Сеськин</p>
-                            </div>
+                            <img src="img/review1.jpg" alt="" class="review__img">
+                            <p class="review__name">Сергей Сеськин</p>
+                            <p class="review__city">г. Саранск</p>
                             <p class="review__text">"Обратился в компанию Bindoors, понравился ассортимент, качество
-                                дверей
-                                и цена. Компания
-                                выполняет все услуги, что очень удобно. Привезли и установили в обговорённый срок.
-                                Рекомендую!"</p>
+                                дверей и цена. Компания выполняет все услуги, что очень удобно. Привезли и установили в
+                                обговорённый срок. Рекомендую!"</p>
                         </div>
                         <div class="reviews__review review">
-                            <div class="review__name">
-                                <img src="img/review1.jpg" alt="">
-                                <p>Сергей Сеськин</p>
-                            </div>
+                            <img src="img/review1.jpg" alt="" class="review__img">
+                            <p class="review__name">Сергей Сеськин</p>
+                            <p class="review__city">г. Саранск</p>
                             <p class="review__text">"Обратился в компанию Bindoors, понравился ассортимент, качество
-                                дверей
-                                и цена. Компания
-                                выполняет все услуги, что очень удобно. Привезли и установили в обговорённый срок.
-                                Рекомендую!"</p>
+                                дверей и цена. Компания выполняет все услуги, что очень удобно. Привезли и установили в
+                                обговорённый срок. Рекомендую!"</p>
+                        </div>
+                        <div class="reviews__review review">
+                            <img src="img/review1.jpg" alt="" class="review__img">
+                            <p class="review__name">Сергей Сеськин</p>
+                            <p class="review__city">г. Саранск</p>
+                            <p class="review__text">"Обратился в компанию Bindoors, понравился ассортимент, качество
+                                дверей и цена. Компания выполняет все услуги, что очень удобно. Привезли и установили в
+                                обговорённый срок. Рекомендую!"</p>
                         </div>
                     </div>
                 </div>

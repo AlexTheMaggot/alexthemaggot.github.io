@@ -570,8 +570,36 @@
     text-align: center;
     margin-bottom: 30px;
   }
-
+  &__review {
+    background-color:#fff;
+    height: 100%;
+    padding: 20px 50px;
+  }
   .review {
+
+    &__img {
+      height: 150px;
+      border-radius: 100%;
+      float: left;
+    }
+    &__name {
+      float: right;
+      font-weight: 600;
+      font-size: 2rem;
+      color: @green;
+    }
+    &__city {
+      float: right;
+      font-size: 1.5rem;
+      font-style: italic;
+    }
+    &__text {
+      float: right;
+      margin-top: 30px;
+      text-align: right;
+    }
+  }
+/*  .review {
     background-color: @white;
     max-width: 550px;
     padding: 50px 30px;
@@ -594,10 +622,9 @@
 
     &__text {
       margin-top: 10px;
-      font-style: italic;
       text-align: right;
     }
-  }
+  } */
 
   &__btn {
     display: block;

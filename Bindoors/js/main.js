@@ -54,9 +54,39 @@ $(".sw_ftpb").on("click", function () {
 });
 
 $(".image-fullscreen_close").on("click", function () {
-    $('.image-fullscreen').removeClass('notrans');
+    $('.image1-fullscreen').removeClass('notrans');
     setTimeout(function () {
-        $('.image-fullscreen').addClass('hidden');
+        $('.image1-fullscreen').addClass('hidden');
+    }, 500);
+});
+$(".image-fullscreen_close").on("click", function () {
+    $('.image2-fullscreen').removeClass('notrans');
+    setTimeout(function () {
+        $('.image2-fullscreen').addClass('hidden');
+    }, 500);
+});
+$(".image-fullscreen_close").on("click", function () {
+    $('.image3-fullscreen').removeClass('notrans');
+    setTimeout(function () {
+        $('.image3-fullscreen').addClass('hidden');
+    }, 500);
+});
+$(".image-fullscreen_close").on("click", function () {
+    $('.image4-fullscreen').removeClass('notrans');
+    setTimeout(function () {
+        $('.image4-fullscreen').addClass('hidden');
+    }, 500);
+});
+$(".image-fullscreen_close").on("click", function () {
+    $('.image5-fullscreen').removeClass('notrans');
+    setTimeout(function () {
+        $('.image5-fullscreen').addClass('hidden');
+    }, 500);
+});
+$(".image-fullscreen_close").on("click", function () {
+    $('.image6-fullscreen').removeClass('notrans');
+    setTimeout(function () {
+        $('.image6-fullscreen').addClass('hidden');
     }, 500);
 });
 

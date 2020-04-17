@@ -291,14 +291,57 @@
                         <div class="row">
                             <div class="col-xl-7 col-12">
                                 <script>
-                                    $('.ft_img').on("click", function () {
-                                        $('.image-fullscreen').removeClass('hidden');
+                                    $('.ft__img_1').on("click", function () {
+                                        $('.image1-fullscreen').removeClass('hidden');
                                         setTimeout(function () {
-                                            $('.image-fullscreen').addClass("notrans");
+                                            $('.image1-fullscreen').addClass("notrans");
+                                        }, 50);
+                                    })
+                                    $('.ft__img_2').on("click", function () {
+                                        $('.image2-fullscreen').removeClass('hidden');
+                                        setTimeout(function () {
+                                            $('.image2-fullscreen').addClass("notrans");
+                                        }, 50);
+                                    })
+                                    $('.ft__img_3').on("click", function () {
+                                        $('.image3-fullscreen').removeClass('hidden');
+                                        setTimeout(function () {
+                                            $('.image3-fullscreen').addClass("notrans");
+                                        }, 50);
+                                    })
+                                    $('.ft__img_4').on("click", function () {
+                                        $('.image4-fullscreen').removeClass('hidden');
+                                        setTimeout(function () {
+                                            $('.image4-fullscreen').addClass("notrans");
+                                        }, 50);
+                                    })
+                                    $('.ft__img_5').on("click", function () {
+                                        $('.image5-fullscreen').removeClass('hidden');
+                                        setTimeout(function () {
+                                            $('.image5-fullscreen').addClass("notrans");
+                                        }, 50);
+                                    })
+                                    $('.ft__img_6').on("click", function () {
+                                        $('.image6-fullscreen').removeClass('hidden');
+                                        setTimeout(function () {
+                                            $('.image6-fullscreen').addClass("notrans");
                                         }, 50);
                                     })
                                 </script>
-                                <img src="img/slide1.jpg" alt="" class="ft_img">
+                                <div class="ft__img">
+                                    <div class="ft__img_1234">
+                                        <div class="ft__img_123">
+                                            <img src="img/01.jpg" alt="" class="ft__img_1">
+                                            <img src="img/02.jpg" alt="" class="ft__img_2">
+                                            <img src="img/03.jpg" alt="" class="ft__img_3">
+                                        </div>
+                                        <img src="img/04.jpg" alt="" class="ft__img_4">
+                                    </div>
+                                    <div class="ft__img_56">
+                                        <img src="img/05.jpg" alt="" class="ft__img_5">
+                                        <img src="img/06.jpg" alt="" class="ft__img_6">
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-xl-5 col-12 ft__slide_mats mats d-xl-block d-none">
                                 <p class="mats__object"><span>Объект: </span>квартира</p>
@@ -552,8 +595,28 @@
         <a class='button_cancel close-modal_modal mod_btn' data-modal_modal="#modal_modal2" href="#">Отмена</a>
     </div>
 </div>
-<div class="image-fullscreen hidden">
-    <img src="img/slide1.jpg" alt="" class="image-fullscreen_img">
+<div class="image1-fullscreen hidden">
+    <img src="img/01.jpg" alt="" class="image1-fullscreen_img">
+    <img src="img/cross.png" alt="" class="image-fullscreen_close">
+</div>
+<div class="image2-fullscreen hidden">
+    <img src="img/02.jpg" alt="" class="image2-fullscreen_img">
+    <img src="img/cross.png" alt="" class="image-fullscreen_close">
+</div>
+<div class="image3-fullscreen hidden">
+    <img src="img/03.jpg" alt="" class="image3-fullscreen_img">
+    <img src="img/cross.png" alt="" class="image-fullscreen_close">
+</div>
+<div class="image4-fullscreen hidden">
+    <img src="img/04.jpg" alt="" class="image4-fullscreen_img">
+    <img src="img/cross.png" alt="" class="image-fullscreen_close">
+</div>
+<div class="image5-fullscreen hidden">
+    <img src="img/05.jpg" alt="" class="image5-fullscreen_img">
+    <img src="img/cross.png" alt="" class="image-fullscreen_close">
+</div>
+<div class="image6-fullscreen hidden">
+    <img src="img/06.jpg" alt="" class="image6-fullscreen_img">
     <img src="img/cross.png" alt="" class="image-fullscreen_close">
 </div>
 

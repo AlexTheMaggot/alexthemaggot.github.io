@@ -226,7 +226,7 @@ footer .footer-bottom-text {
   font-weight: 600;
 }
 .fw__features {
-  background-color: #000000AA;
+  background-color: #00000077;
   margin-bottom: 20px;
   padding: 30px 30px 0 30px;
   border-radius: 10px;
@@ -372,15 +372,45 @@ footer .footer-bottom-text {
 .tw {
   padding: 30px 0;
 }
-.tw .ft__slide img {
-  width: 100%;
-  display: block;
-  margin: 10px 0 10px 50px;
-  transition: all 0.3s;
+.tw .ft__slide .ft__img {
+  margin-left: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
 }
-.tw .ft__slide img:hover {
+.tw .ft__slide .ft__img_1234 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.tw .ft__slide .ft__img_56 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+}
+.tw .ft__slide .ft__img_123 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+}
+.tw .ft__slide .ft__img_1,
+.tw .ft__slide .ft__img_2,
+.tw .ft__slide .ft__img_3,
+.tw .ft__slide .ft__img_4 {
+  width: 100%;
+}
+.tw .ft__slide .ft__img_1:hover,
+.tw .ft__slide .ft__img_2:hover,
+.tw .ft__slide .ft__img_3:hover,
+.tw .ft__slide .ft__img_4:hover {
   cursor: pointer;
-  transform: scale(1.03);
+}
+.tw .ft__slide .ft__img_5,
+.tw .ft__slide .ft__img_6 {
+  height: 100%;
+}
+.tw .ft__slide .ft__img_5:hover,
+.tw .ft__slide .ft__img_6:hover {
+  cursor: pointer;
 }
 .tw .ft__slide_title {
   font-size: 1.5rem;
@@ -801,27 +831,53 @@ footer .footer-bottom-text {
     padding: 50px;
   }
 }
-.image-fullscreen {
+.image1-fullscreen,
+.image2-fullscreen,
+.image3-fullscreen,
+.image5-fullscreen,
+.image6-fullscreen {
   position: fixed;
   top: 0;
   left: 0;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100vw;
   opacity: 0;
   display: flex;
   transition: all 0.5s;
 }
-.image-fullscreen_img {
+.image1-fullscreen_img,
+.image2-fullscreen_img,
+.image3-fullscreen_img,
+.image5-fullscreen_img,
+.image6-fullscreen_img {
+  height: 90%;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px 2000px #000A;
+}
+.image4-fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0;
+  display: flex;
+  transition: all 0.5s;
+}
+.image4-fullscreen_img {
   width: 90%;
-  border-radius: 10px;
+  border-radius: 50px;
   box-shadow: 0px 0px 0px 2000px #000A;
 }
 .image-fullscreen_close {
   display: block;
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 40px;
   height: 50px;
   width: 50px;
   border-radius: 50px;

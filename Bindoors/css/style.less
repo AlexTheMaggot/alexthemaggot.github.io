@@ -26,10 +26,11 @@
   }
 
   &__features {
-    background-color: #000000AA;
+    background-color: #00000077;
     margin-bottom: 20px;
     padding: 30px 30px 0 30px;
     border-radius: 10px;
+
     &_feature {
       margin: 0 auto 25px auto;
       width: fit-content;
@@ -201,16 +202,56 @@
 
   .ft {
     &__slide {
-      img {
-        width: 100%;
-        display: block;
-        margin: 10px 0 10px 50px;
-        transition: all 0.3s;
+      //img {
+      //  width: 100%;
+      //  display: block;
+      //  margin: 10px 0 10px 50px;
+      //  transition: all 0.3s;
+      //
+      //  &:hover {
+      //    cursor: pointer;
+      //    transform: scale(1.03);
+      //  }
+      //}
+      .ft__img {
+        margin-left: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
 
-        &:hover {
-          cursor: pointer;
-          transform: scale(1.03);
+        &_1234 {
+          display: grid;
+          grid-template-rows: 1fr 1fr;
         }
+
+        &_56 {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-column-gap: 10px;
+        }
+
+        &_123 {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-column-gap: 10px;
+        }
+
+        &_1, &_2, &_3, &_4 {
+          width: 100%;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        &_5, &_6 {
+          height: 100%;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
       }
 
       &_title {
@@ -727,13 +768,33 @@
   }
 }
 
-.image-fullscreen {
+.image1-fullscreen, .image2-fullscreen, .image3-fullscreen, .image5-fullscreen, .image6-fullscreen {
   position: fixed;
   top: 0;
   left: 0;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100vw;
+  opacity: 0;
+  display: flex;
+  transition: all 0.5s;
+
+
+  &_img {
+    height: 90%;
+    border-radius: 50px;
+    box-shadow: 0px 0px 0px 2000px #000A;
+  }
+}
+.image4-fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
   opacity: 0;
   display: flex;
   transition: all 0.5s;
@@ -741,7 +802,7 @@
 
   &_img {
     width: 90%;
-    border-radius: 10px;
+    border-radius: 50px;
     box-shadow: 0px 0px 0px 2000px #000A;
   }
 }
@@ -750,7 +811,7 @@
   display: block;
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 40px;
   height: 50px;
   width: 50px;
   border-radius: 50px;

@@ -380,6 +380,7 @@ footer .footer-bottom-text {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 10px;
+  max-width: 780px;
 }
 .tw .ft__slide .ft__img_1234 {
   display: grid;
@@ -424,6 +425,7 @@ footer .footer-bottom-text {
   width: fit-content;
   margin-left: 80px;
   margin-right: 60px;
+  margin-bottom: 0;
   padding-bottom: 10px;
   transition: all 0.3s;
 }
@@ -771,7 +773,7 @@ footer .footer-bottom-text {
   background: #fff;
   color: #111;
   cursor: pointer;
-  font-weight: 400px;
+  font-weight: 400;
 }
 @media (max-width: 991px) {
   .banner {

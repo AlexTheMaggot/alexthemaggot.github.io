@@ -101,6 +101,15 @@ header .header__callback_social a:hover {
     margin: 20px 0;
   }
 }
+.title {
+  margin-bottom: 30px;
+}
+.title_black {
+  color: #000000;
+}
+.title_white {
+  color: #FFFFFF;
+}
 footer p {
   color: #999;
   line-height: 25px;
@@ -218,9 +227,6 @@ footer .footer-bottom-text {
   background-position: center;
   padding: 30px 0;
 }
-.fw__title {
-  margin: 0 0 10px 0;
-}
 .fw__wrapper {
   background-color: #FFFFFF88;
   border-radius: 10px;
@@ -290,10 +296,6 @@ footer .footer-bottom-text {
 .sw {
   background-color: #68952D;
   padding: 70px 0 50px 0;
-}
-.sw__title {
-  margin-bottom: 50px;
-  color: #FFFFFF;
 }
 .sw__type {
   color: #FFFFFF;
@@ -498,9 +500,6 @@ footer .footer-bottom-text {
   background-position: center;
   padding: 30px 0;
 }
-.frw h1 {
-  margin-bottom: 30px;
-}
 .frw__inputs {
   margin: 0 auto 10px auto;
   width: 50%;
@@ -645,8 +644,8 @@ footer .footer-bottom-text {
 /* Партнеры */
 .partners {
   background-color: #333333;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 70px;
+  padding-bottom: 70px;
   color: #FFFFFF;
 }
 .partners__text {
@@ -673,11 +672,6 @@ footer .footer-bottom-text {
 .reviews .fotorama__arr--prev {
   background: url("../img/door_prev_white.png") center;
   background-size: cover;
-}
-.reviews__header {
-  color: #FFFFFF;
-  text-align: center;
-  margin-bottom: 30px;
 }
 .reviews__review {
   background-color: #fff;
@@ -895,8 +889,8 @@ footer .footer-bottom-text {
   position: absolute;
   top: 20px;
   right: 40px;
-  height: 50px;
-  width: 50px;
+  height: 30px;
+  width: 30px;
   border-radius: 50px;
   border: 2px solid #FFFFFF;
   transition: all 0.3s;

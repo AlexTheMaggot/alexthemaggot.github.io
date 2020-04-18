@@ -159,6 +159,9 @@ footer .segment-three h2 {
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
 }
+footer .segment-three .phone {
+  margin-top: 10px;
+}
 footer .segment-three h2:before {
   content: "|";
   color: #68952D;
@@ -196,6 +199,7 @@ footer .segment-four form input[type=submit] {
   padding: 3px 15px;
   color: #fff;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 footer .footer-bottom-text {
   padding: 10px 0;
@@ -401,6 +405,7 @@ footer .footer-bottom-text {
 .tw .ft__slide .ft__img_3,
 .tw .ft__slide .ft__img_4 {
   width: 100%;
+  border-radius: 10px;
 }
 .tw .ft__slide .ft__img_1:hover,
 .tw .ft__slide .ft__img_2:hover,
@@ -411,6 +416,7 @@ footer .footer-bottom-text {
 .tw .ft__slide .ft__img_5,
 .tw .ft__slide .ft__img_6 {
   height: 100%;
+  border-radius: 10px;
 }
 .tw .ft__slide .ft__img_5:hover,
 .tw .ft__slide .ft__img_6:hover {
@@ -863,7 +869,7 @@ footer .footer-bottom-text {
 .image5-fullscreen_img,
 .image6-fullscreen_img {
   height: 90%;
-  border-radius: 50px;
+  border-radius: 10px;
   box-shadow: 0px 0px 0px 2000px #000A;
 }
 .image4-fullscreen {

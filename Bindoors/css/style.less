@@ -4,191 +4,30 @@
 @import "fotorama.css";
 @import "modal.css";
 @import "colors";
-@import "header";
+@import "homepage/header/header";
+@import "homepage/header/header-sm";
+@import "homepage/header/header-md";
+@import "homepage/header/header-lg";
+@import "homepage/header/header-xl";
+@import "homepage/about/about";
+@import "homepage/about/about-sm";
+@import "homepage/about/about-md";
+@import "homepage/about/about-lg";
+@import "homepage/about/about-xl";
+@import "homepage/quiz/quiz";
+@import "homepage/quiz/quiz-sm";
+@import "homepage/quiz/quiz-md";
+@import "homepage/quiz/quiz-lg";
+@import "homepage/quiz/quiz-xl";
+@import "homepage/partners/partners";
+@import "homepage/partners/partners-sm";
+@import "homepage/partners/partners-md";
+@import "homepage/partners/partners-lg";
+@import "homepage/partners/partners-xl";
 @import "homepage/title/title";
+@import "homepage/window/window";
 @import "footer";
 
-.fw {
-  background: url("../img/bg01.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  padding: 30px 0;
-
-  &__wrapper {
-    background-color: #FFFFFF88;
-    border-radius: 10px;
-    padding: 30px;
-  }
-  &__desc {
-    p {
-      line-height: 30px;
-      font-weight: 600;
-    }
-  }
-
-  &__features {
-    margin-bottom: 20px;
-
-    &_feature {
-      margin: 20px auto 25px auto;
-      width: fit-content;
-      max-width: 400px;
-
-      &::after {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 2px;
-        background-color: @green;
-        transform: scaleX(0);
-        transition: all 0.3s;
-      }
-
-      &:hover::after {
-        transform: scaleX(1);
-      }
-
-      img {
-        display: block;
-        height: 50px;
-        margin: 0 auto 0 auto;
-      }
-
-      p {
-        width: fit-content;
-        margin: 0 0 15px 0;
-        font-size: 1.1rem;
-        font-weight: 600;
-        text-align: center;
-      }
-    }
-
-  }
-
-  &__button {
-    a {
-      display: block;
-      margin: 10px auto 0 auto;
-      padding: 10px 20px;
-      width: fit-content;
-      border-radius: 5px;
-      color: @white;
-      background-color: @black;
-      font-weight: 600;
-      transition: all 0.3s;
-
-      &:hover {
-        text-decoration: none;
-        background-color: @green;
-      }
-    }
-  }
-}
-
-@media (max-width: 1199px) {
-  .fw__video {
-    margin-top: 125px;
-  }
-}
-
-@media (max-width: 991px) {
-  .fw__video {
-    margin-top: 0;
-  }
-}
-
-.sw {
-  background-color: @green;
-  padding: 70px 0 50px 0;
-
-  &__type {
-    color: @white;
-    display: flex;
-    margin: 20px auto;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    width: 200px;
-    border: 3px solid @white;
-    border-radius: 100px;
-    transition: all 0.3s;
-
-    &:hover {
-      cursor: pointer;
-      background-color: @white;
-      color: @green;
-    }
-
-    p {
-      margin-bottom: 0;
-      font-weight: 600;
-      font-size: 2rem;
-    }
-
-    &_hidden {
-      display: none;
-    }
-  }
-
-  &__door {
-    margin: 0 auto;
-    padding: 30px 50px;
-    width: fit-content;
-    border: 2px solid @white;
-    border-radius: 30px;
-
-    &_title {
-      font-weight: 600;
-      font-size: 1.5rem;
-      width: fit-content;
-      margin: 0 auto;
-      color: @white;
-    }
-
-    &_img {
-      height: 200px;
-      margin: 15px auto;
-      display: block;
-      border-radius: 10px;
-      transition: all 0.3s;
-    }
-
-    &_btn {
-      display: block;
-      margin: 0 auto;
-      padding: 10px 30px;
-      width: fit-content;
-      color: @white;
-      border: 2px solid @white;
-      border-radius: 5px;
-      font-weight: 600;
-      transition: all 0.3s;
-
-      &:hover {
-        text-decoration: none;
-        background-color: @white;
-        color: @green;
-      }
-
-    }
-  }
-
-  &__button {
-    margin: 70px auto 0 auto;
-    padding: 10px 20px;
-    width: fit-content;
-    color: @white;
-    border: 2px solid @white;
-    border-radius: 5px;
-
-    &:hover {
-      cursor: pointer;
-      background-color: @white;
-      color: @green;
-    }
-  }
-}
 
 .tw {
   padding: 30px 0;
@@ -197,9 +36,6 @@
     &__slide {
       .ft__img {
         margin-left: 50px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 10px;
         max-width: 780px;
 
         &_1234 {
@@ -219,18 +55,28 @@
           grid-column-gap: 10px;
         }
 
-        &_1, &_2, &_3, &_4 {
+        &_1, &_2, &_3 {
           width: 100%;
+          height: 100%;
           border-radius: 10px;
+          padding: 0 5px 5px 5px;
 
           &:hover {
             cursor: pointer;
           }
         }
-
-        &_5, &_6 {
+        &_4 {
+          width: 100%;
           height: 100%;
           border-radius: 10px;
+          padding: 5px 5px 0 5px;
+        }
+
+        &_5, &_6 {
+          width: 102%;
+          height: 100%;
+          border-radius: 10px;
+          padding: 0 5px;
 
           &:hover {
             cursor: pointer;
@@ -421,17 +267,17 @@
 }
 
 
-.about {
-  position: relative;
-  width: 100%;
-  display: flex;
-}
-
-.about .contentBx {
-  background: #68952D;;
-  padding: 100px;
-  width: 50%;
-}
+//.about {
+//  position: relative;
+//  width: 100%;
+//  display: flex;
+//}
+//
+//.about .contentBx {
+//  background: #68952D;;
+//  padding: 100px;
+//  width: 50%;
+//}
 
 .heading {
   color: #fff;
@@ -518,7 +364,7 @@
   max-width: 100%;
 }
 
-/* Партнеры */
+/* Партнеры
 .partners {
   background-color: @gray-dark;
   padding-top: 70px;
@@ -540,7 +386,7 @@
     }
   }
 }
-
+*/
 .reviews {
   background-color: @green;
   padding-top: 70px;
@@ -550,18 +396,20 @@
     background: url("../img/door_next_white.png") center;
     background-size: cover;
   }
+
   .fotorama__arr--prev {
     background: url("../img/door_prev_white.png") center;
     background-size: cover;
   }
 
   &__review {
-    background-color:#fff;
+    background-color: #fff;
     height: 100%;
     width: 500px;
     margin: 0 auto;
     padding: 20px 50px;
   }
+
   .review {
 
     &__img {
@@ -569,6 +417,7 @@
       border-radius: 100%;
       float: left;
     }
+
     &__name {
       text-align: right;
       font-weight: 600;
@@ -576,11 +425,13 @@
       margin-top: -10px;
       color: @green;
     }
+
     &__city {
       margin-top: -15px;
       text-align: right;
       font-size: 1.1rem;
     }
+
     &__text {
       float: right;
       margin-top: 10px;
@@ -777,6 +628,7 @@
     box-shadow: 0px 0px 0px 2000px #000A;
   }
 }
+
 .image4-fullscreen {
   position: fixed;
   top: 0;

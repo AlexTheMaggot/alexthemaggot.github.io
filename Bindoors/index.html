@@ -2,275 +2,182 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jq.js"></script>
     <title>Главная</title>
 </head>
 <body>
 <!--TODO: Сделать Адаптив-->
+<!--TODO: Сделать поле телефона обязательным в "Позвоните мне"-->
+<!--TODO: Изменить количество моделей-->
+<!--TODO: Переделать иконку (фон)-->
+<!--TODO: Поменять заголовок-->
+<!--TODO: Подкорректировать иконки соц-сетей-->
+<!--TODO: Переписать код-->
 <header>
-    <div class="container header">
-        <!--        TODO: Сделать поле телефона обязательным в "Позвоните мне"-->
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-12 header__logo">
-                <div class="text-md-left text-center">
-                    <a href="/">
-                        <img src="img/logo.svg" alt="">
-                    </a>
-                </div>
+    <div class="container">
+        <div class="row window">
+            <div class="col-md-4 col-sm-12">
+                <a href="/" class="logo">
+                    <img class="logo__img" src="img/logo.svg" alt="">
+                </a>
             </div>
-            <div class="col-lg-4 col-md-4 col-12 header__contacts">
-                <div class="text-center">
-                    <a href="tel:+79775640883" class="header__contacts_phone text-lg-center text-md-right text-center">
-                        <p>+7 (977) 564-08-83</p>
-                    </a>
-                </div>
-                <p class="text-lg-center text-md-right text-center header__contacts_time">С 10:00 до 20:00</p>
+            <div class="col-md-4 col-sm-6 col-12">
+                <a href="tel:+79775640883" class="phone">
+                    <p>+7 (977) 564-08-83</p>
+                </a>
+                <p class="worktime">С 10:00 до 20:00</p>
             </div>
-            <div class="col-lg-4 col-md-4 col-12 header__callback">
-                <a href="#" class="open-modal_modal header__callback_button" data-modal_modal="#modal_modal1">Перезвоните
-                    мне</a>
-                <div class="header__callback_social">
-                    <a href="https://wa.me/79775640883">
-                        <i class="fa fa-whatsapp"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa fa-telegram"></i>
-                    </a>
-                    <a href="https://www.instagram.com/bindoors_moscow/">
-                        <i class="fa fa-instagram"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa fa-facebook"></i>
-                    </a>
+            <div class="col-md-4 col-sm-6 col-12">
+                <div class="callback">
+                    <a href="#" class="open-modal_modal btn callback__button" data-modal_modal="#modal_modal1">Перезвоните
+                        мне</a>
+                    <div class="callback__social-wrapper">
+                        <a href="https://wa.me/79775640883" class="callback__social-item">
+                            <i class="fa fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="callback__social-item">
+                            <i class="fa fa-telegram"></i>
+                        </a>
+                        <a href="https://www.instagram.com/bindoors_moscow/" class="callback__social-item">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="#" class="callback__social-item">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </div>
                 </div>
+
+
             </div>
         </div>
     </div>
-    <div class="container-fluid menu">
-        <div class="row">
-            <div class="menu__aligner">
-                <!--                TODO: Сделать гамбургер-->
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#about">О нас</a>
-                        <li>
-                            <a href="#partners">Наши Партнеры</a>
-                        <li>
-                            <a href="#projects">Наши проекты</a>
-                        <li>
-                            <a href="#reviews">Отзывы</a>
-                        <li>
-                            <a href="#contacts">Контакты</a>
-                    </ul>
-                </nav>
-            </div>
+    <div class="container-fluid">
+        <div class="row menu">
+            <nav class="menu__nav">
+                <ul class="menu__ul">
+                    <li class="menu__li">
+                        <a href="#about" class="menu__item">О нас</a>
+                    <li class="menu__li">
+                        <a href="#partners" class="menu__item">Наши Партнеры</a>
+                    <li class="menu__li">
+                        <a href="#projects" class="menu__item">Наши проекты</a>
+                    <li class="menu__li">
+                        <a href="#reviews" class="menu__item">Отзывы</a>
+                    <li class="menu__li">
+                        <a href="#contacts" class="menu__item">Контакты</a>
+                </ul>
+            </nav>
         </div>
     </div>
 </header>
 <main>
     <div class="container-fluid">
-        <div class="row fw" id="about">
+        <div class="row window about" id="about">
             <div class="container">
                 <div class="row">
-                    <!--    TODO: Изменить количество моделей-->
                     <div class="col-12">
                         <h1 class="title title_black text-center">Продажа и установка входных и межкомнатных дверей в
-                            квартирах,
-                            домах и офисах</h1>
+                            квартирах, домах и офисах</h1>
                     </div>
                 </div>
-                <div class="row fw__wrapper">
-                    <div class="col-xl-6 col-lg-4 col-12 fw__desc">
-                        <p>Добро пожаловать на главную страницу Bindoors.ru – компании по продаже и установке
-                            входных и
+                <div class="row about__wrapper">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                        <p class="about__desc">Добро пожаловать на главную страницу Bindoors.ru – компании по продаже и
+                            установке входных и
                             межкомнатных дверей в квартирах, домах и офисах!</p>
-                        <p>Мы успешно работаем на рынке входных и межкомнатных дверей более 12 лет, за это время
+                        <p class="about__desc">Мы успешно работаем на рынке входных и межкомнатных дверей более 12 лет,
+                            за это время
                             выполнили более 1000 проектов различной сложности.</p>
-                        <p>Позвоните нам или оставьте заявку на обратный звонок, и мы бесплатно проконсультируем
-                            Вас по
-                            вопросам приобретения и установки входных и межкомнатных дверей в Вашей квартире,
-                            доме или
+                        <p class="about__desc">Позвоните нам или оставьте заявку на обратный звонок, и мы бесплатно
+                            проконсультируем Вас по
+                            вопросам приобретения и установки входных и межкомнатных дверей в Вашей квартире, доме или
                             офисе.</p>
                     </div>
-                    <div class="col-xl-6">
-                        <div class="fw__features">
-                            <div class="row">
-                                <div class="col-xl-6 col-lg-12 col-sm-6 col-12">
-                                    <div class="fw__features_feature">
-                                        <img src="img/door-min.png" alt="">
-                                        <!--                            TODO: Переделать иконку (фон)-->
-                                        <p>Более 10 000 моделей дверей на выбор</p>
-                                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-3 col-sm-6 col-6">
+                                <div class="about__feature">
+                                    <img src="img/door.png" alt="" class="about__feature-img">
+                                    <p class="about__feature-desc">Более 10 000 моделей дверей на выбор</p>
                                 </div>
-                                <div class="col-xl-6 col-lg-12 col-sm-6 col-12">
-                                    <div class="fw__features_feature">
-                                        <img src="img/warranty-min.png" alt="">
-                                        <p>Гарантия качества</p>
-                                    </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-3 col-sm-6 col-6">
+                                <div class="about__feature">
+                                    <img src="img/hands.png" alt="" class="about__feature-img">
+                                    <p class="about__feature-desc">Сотрудничество с лучшими производителями</p>
                                 </div>
-                                <div class="col-xl-6 col-lg-12 col-sm-6 col-12">
-                                    <div class="fw__features_feature">
-                                        <img src="img/quality-min.png" alt="">
-                                        <p>Сотрудничество с лучшими производителями</p>
-                                    </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-3 col-sm-6 col-6">
+                                <div class="about__feature">
+                                    <img src="img/warranty.png" alt="" class="about__feature-img">
+                                    <p class="about__feature-desc">Гарантия качества</p>
                                 </div>
-                                <div class="col-xl-6 col-lg-12 col-sm-6 col-12">
-                                    <div class="fw__features_feature">
-                                        <img src="img/great-min.png" alt="">
-                                        <p>500+ довольных клиентов</p>
-                                    </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-3 col-sm-6 col-6">
+                                <div class="about__feature">
+                                    <img src="img/great.png" alt="" class="about__feature-img">
+                                    <p class="about__feature-desc">500+ довольных клиентов</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 fw__button">
-                        <a href="#" class="open-modal_modal" data-modal_modal="#modal_modal2">Отправить заявку на
-                            каталог и
-                            прайс</a>
+                    <div class="col-12">
+                        <a href="#" class="open-modal_modal btn about__button" data-modal_modal="#modal_modal2">Отправить
+                            заявку на каталог и прайс</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row sw">
-            <!--            TODO: Добавить цены-->
-            <div class="col-12 sw__title sw_ft">
-                <h1 class="text-center title title_white">
-                    Выберите тип двери
-                </h1>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-12">
-                <div class="sw__type sw_fte">
-                    <p>Эконом</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-12">
-                <div class="sw__type sw_fts">
-                    <p>Стандарт</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-12 col-12">
-                <div class="sw__type sw_ftp">
-                    <p>Премиум</p>
-                </div>
-            </div>
-            <div class="col-12 sw__title sw_ftet hidden">
-                <h1 class="text-center">Двери эконом-класса</h1>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-12">
-                <div class="sw__door sw_ftee hidden">
-                    <p class="sw__door_title">First Door Eco</p>
-                    <img src="img/bg2.jpg" alt="" class="sw__door_img">
-                    <a href="#" class="sw__door_btn">Заказать</a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 col-12">
-                <div class="sw__door sw_ftee hidden">
-                    <p class="sw__door_title">Second Door Eco</p>
-                    <img src="img/bg2.jpg" alt="" class="sw__door_img">
-                    <a href="#" class="sw__door_btn">Заказать</a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-12 col-12">
-                <div class="sw__door sw_ftee hidden">
-                    <p class="sw__door_title">Third Door Eco</p>
-                    <img src="img/bg2.jpg" alt="" class="sw__door_img">
-                    <a href="#" class="sw__door_btn">Заказать</a>
-                </div>
-            </div>
+        <div class="row window_small quiz justify-content-center">
             <div class="col-12">
-                <div class="sw_fteb sw__button hidden">Назад</div>
+                <h1 class="title title_white text-center">Какие двери Вас интересуют?</h1>
             </div>
-            <div class="col-12 sw__title sw_ftst hidden">
-                <h1 class="text-center">Двери стандарт-класса</h1>
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                <input type="radio" name="door__type" class="quiz__input" id="entrance">
+                <label for="entrance" class="quiz__label">
+                    <p class="quiz__item">Входные</p>
+                </label>
             </div>
-            <div class="col-lg-4 col-sm-6 col-12">
-                <div class="sw__door sw_ftse hidden">
-                    <p class="sw__door_title">First Door Standart</p>
-                    <img src="img/bg2.jpg" alt="" class="sw__door_img">
-                    <a href="#" class="sw__door_btn">Заказать</a>
-                </div>
+            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                <input type="radio" name="door__type" class="quiz__input" id="room">
+                <label for="room" class="quiz__label">
+                    <p class="quiz__item">Межкомнатные</p>
+                </label>
             </div>
-            <div class="col-lg-4 col-sm-6 col-12">
-                <div class="sw__door sw_ftse hidden">
-                    <p class="sw__door_title">Second Door Standart</p>
-                    <img src="img/bg2.jpg" alt="" class="sw__door_img">
-                    <a href="#" class="sw__door_btn">Заказать</a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-12 col-12">
-                <div class="sw__door sw_ftse hidden">
-                    <p class="sw__door_title">Third Door Standart</p>
-                    <img src="img/bg2.jpg" alt="" class="sw__door_img">
-                    <a href="#" class="sw__door_btn">Заказать</a>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="sw_ftsb sw__button hidden">Назад</div>
-            </div>
-            <div class="col-12 sw__title sw_ftpt hidden">
-                <h1 class="text-center">Двери премиум-класса</h1>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <div class="sw__door sw_ftpe hidden">
-                    <p class="sw__door_title">First Door Premium</p>
-                    <img src="img/bg2.jpg" alt="" class="sw__door_img">
-                    <a href="#" class="sw__door_btn">Заказать</a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <div class="sw__door sw_ftpe hidden">
-                    <p class="sw__door_title">Second Door Premium</p>
-                    <img src="img/bg2.jpg" alt="" class="sw__door_img">
-                    <a href="#" class="sw__door_btn">Заказать</a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-12">
-                <div class="sw__door sw_ftpe hidden">
-                    <p class="sw__door_title">Third Door Premium</p>
-                    <img src="img/bg2.jpg" alt="" class="sw__door_img">
-                    <a href="#" class="sw__door_btn">Заказать</a>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="sw_ftpb sw__button hidden">Назад</div>
+            <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+                <input type="radio" name="door__type" class="quiz__input" id="entrance_room">
+                <label for="entrance_room" class="quiz__label">
+                    <p class="quiz__item">И входные, и межкомнатные</p>
+                </label>
             </div>
         </div>
-        <div class="row partners" id="partners" name="partners">
+        <div class="row window_small partners" id="partners">
             <div class="col-12">
                 <h1 class="title title_white text-center">Наши партнеры</h1>
             </div>
-            <div class="col-xl-12">
-                <p class="partners__text text-center">
-                    Мы сотрудничаем напрямую с проверенными производителями входных и межкомнатных дверей и дверной
-                    фурнитуры, тщательно проверяя каждую позицию каталога и предлагая Вам лучшее, что сейчас есть на
-                    рынке.
-                </p>
+            <div class="col-12">
+                <p class="partners__desc">Мы сотрудничаем напрямую с проверенными производителями входных и межкомнатных
+                    дверей и дверной фурнитуры, тщательно проверяя каждую позицию каталога и предлагая Вам лучшее, что
+                    сейчас есть на рынке.</p>
             </div>
-            <div class="col-xl-3">
-                <div class="text-center">
-                    <img class="partners__img" src="img/brand1.png" alt="">
-                </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                <img class="partners__img" src="img/brand1.png" alt="">
             </div>
-            <div class="col-xl-3">
-                <div class="text-center">
-                    <img class="partners__img" src="img/brand2.png" alt="">
-                </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                <img class="partners__img" src="img/brand2.png" alt="">
             </div>
-            <div class="col-xl-3">
-                <div class="text-center">
-                    <img class="partners__img" src="img/brand3.png" alt="">
-                </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                <img class="partners__img" src="img/brand3.png" alt="">
             </div>
-            <div class="col-xl-3">
-                <div class="text-center">
-                    <img class="partners__img" src="img/brand4.png" alt="">
-                </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
+                <img class="partners__img" src="img/brand4.png" alt="">
             </div>
         </div>
+
         <div class="row tw" id="projects">
             <div class="col-xl-12">
                 <h1 class="text-center title title_black">Наши проекты</h1>
@@ -319,6 +226,46 @@
                                         }, 50);
                                     })
                                 </script>
+                                <div class="ft__img">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="row">
+                                                        <img src="img/slide-photo-thumb-1.jpg" alt="" class="ft__img_1">
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="row">
+                                                        <img src="img/slide-photo-thumb-2.jpg" alt="" class="ft__img_2">
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="row">
+                                                        <img src="img/slide-photo-thumb-3.jpg" alt="" class="ft__img_3">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="row">
+                                                        <img src="img/slide-photo-thumb-4.jpg" alt="" class="ft__img_4">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="row">
+                                                <img src="img/slide-photo-thumb-5.jpg" alt="" class="ft__img_5">
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="row">
+                                                <img src="img/slide-photo-thumb-6.jpg" alt="" class="ft__img_6">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="ft__img">
                                     <div class="ft__img_1234">
                                         <div class="ft__img_123">
@@ -391,17 +338,57 @@
                                     })
                                 </script>
                                 <div class="ft__img">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="row">
+                                                        <img src="img/slide-photo-thumb-1.jpg" alt="" class="ft__img_1">
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="row">
+                                                        <img src="img/slide-photo-thumb-2.jpg" alt="" class="ft__img_2">
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="row">
+                                                        <img src="img/slide-photo-thumb-3.jpg" alt="" class="ft__img_3">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="row">
+                                                        <img src="img/slide-photo-thumb-4.jpg" alt="" class="ft__img_4">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="row">
+                                                <img src="img/slide-photo-thumb-5.jpg" alt="" class="ft__img_5">
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="row">
+                                                <img src="img/slide-photo-thumb-6.jpg" alt="" class="ft__img_6">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ft__img">
                                     <div class="ft__img_1234">
                                         <div class="ft__img_123">
-                                            <img src="img/01.jpg" alt="" class="ft__img_1">
-                                            <img src="img/02.jpg" alt="" class="ft__img_2">
-                                            <img src="img/03.jpg" alt="" class="ft__img_3">
+                                            <img src="img/slide-photo-thumb-1.jpg" alt="" class="ft__img_1">
+                                            <img src="img/slide-photo-thumb-2.jpg" alt="" class="ft__img_2">
+                                            <img src="img/slide-photo-thumb-3.jpg" alt="" class="ft__img_3">
                                         </div>
-                                        <img src="img/04.jpg" alt="" class="ft__img_4">
+                                        <img src="img/slide-photo-thumb-4.jpg" alt="" class="ft__img_4">
                                     </div>
                                     <div class="ft__img_56">
-                                        <img src="img/05.jpg" alt="" class="ft__img_5">
-                                        <img src="img/06.jpg" alt="" class="ft__img_6">
+                                        <img src="img/slide-photo-thumb-5.jpg" alt="" class="ft__img_5">
+                                        <img src="img/slide-photo-thumb-6.jpg" alt="" class="ft__img_6">
                                     </div>
                                 </div>
                             </div>
@@ -462,17 +449,57 @@
                                     })
                                 </script>
                                 <div class="ft__img">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="row">
+                                                        <img src="img/slide-photo-thumb-1.jpg" alt="" class="ft__img_1">
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="row">
+                                                        <img src="img/slide-photo-thumb-2.jpg" alt="" class="ft__img_2">
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="row">
+                                                        <img src="img/slide-photo-thumb-3.jpg" alt="" class="ft__img_3">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="row">
+                                                        <img src="img/slide-photo-thumb-4.jpg" alt="" class="ft__img_4">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="row">
+                                                <img src="img/slide-photo-thumb-5.jpg" alt="" class="ft__img_5">
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="row">
+                                                <img src="img/slide-photo-thumb-6.jpg" alt="" class="ft__img_6">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ft__img">
                                     <div class="ft__img_1234">
                                         <div class="ft__img_123">
-                                            <img src="img/01.jpg" alt="" class="ft__img_1">
-                                            <img src="img/02.jpg" alt="" class="ft__img_2">
-                                            <img src="img/03.jpg" alt="" class="ft__img_3">
+                                            <img src="img/slide-photo-thumb-1.jpg" alt="" class="ft__img_1">
+                                            <img src="img/slide-photo-thumb-2.jpg" alt="" class="ft__img_2">
+                                            <img src="img/slide-photo-thumb-3.jpg" alt="" class="ft__img_3">
                                         </div>
-                                        <img src="img/04.jpg" alt="" class="ft__img_4">
+                                        <img src="img/slide-photo-thumb-4.jpg" alt="" class="ft__img_4">
                                     </div>
                                     <div class="ft__img_56">
-                                        <img src="img/05.jpg" alt="" class="ft__img_5">
-                                        <img src="img/06.jpg" alt="" class="ft__img_6">
+                                        <img src="img/slide-photo-thumb-5.jpg" alt="" class="ft__img_5">
+                                        <img src="img/slide-photo-thumb-6.jpg" alt="" class="ft__img_6">
                                     </div>
                                 </div>
                             </div>
@@ -499,7 +526,7 @@
             </div>
         </div>
         <div class="row frw">
-            <!--            TODO: Поменять заголовок-->
+
             <div class="col-xl-6 offset-xl-6">
                 <h1 class="text-center title title_black">Заявка на каталог и прайс</h1>
                 <form action="#">
@@ -558,7 +585,7 @@
         <!-- Комментарии -->
 
         <div class="reviews row justify-content-center" id="reviews">
-            <!--            TODO: Переписать код-->
+
             <div class="col-12">
                 <h1 class="text-center title title_white">Отзывы</h1>
             </div>
@@ -602,7 +629,7 @@
     </div>
 </main>
 <footer>
-    <!--    TODO: Подкорректировать иконки соц-сетей-->
+
     <div class="footer-top">
         <div class="container">
             <div class="row" id="contacts">

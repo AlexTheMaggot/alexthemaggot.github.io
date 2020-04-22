@@ -5,16 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jq.js"></script>
+
     <title>Главная</title>
 </head>
 <body>
-<!--TODO: Сделать Адаптив-->
-<!--TODO: Сделать поле телефона обязательным в "Позвоните мне"-->
-<!--TODO: Изменить количество моделей-->
-<!--TODO: Переделать иконку (фон)-->
-<!--TODO: Поменять заголовок-->
-<!--TODO: Подкорректировать иконки соц-сетей-->
-<!--TODO: Переписать код-->
 <header>
     <div class="container">
         <div class="row window">
@@ -184,28 +178,61 @@
             <div class="col-12">
                 <div class="fotorama" data-width="100%" data-arrows="true" data-click="false">
                     <div class="container-fluid projects__fotorama fotorama__select">
-                        <div class="row">
-                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                        <script>
+                            $(document).ready(function () {
+                                var h = $('.projects__fotorama-row').height();
+                                $('.fotorama__stage:first').height(h);
+                                $(window).resize(function () {
+                                    var dh = $('.projects__fotorama-row').height();
+                                    $('.fotorama__stage:first').height(dh);
+                                });
+                            });
+                        </script>
+                        <script>
+                            $(document).ready(function () {
+
+
+                                $('.projects__img').on('click', function (e) {
+                                    e.preventDefault();
+                                    e.stopImmediatePropagation;
+                                    var $this = $(this),
+                                        fullscreen_img = $($this).data("fullscreen-img");
+                                    $(fullscreen_img).css('display', 'flex');
+                                    setTimeout(function () {
+                                        $(fullscreen_img).css('opacity', '1');
+                                    }, 1);
+                                });
+
+                                $('.fullscreen-img, .fullscreen-img__cross').on('click', function () {
+                                    $('.fullscreen-img').css('opacity', '0');
+                                    setTimeout(function () {
+                                        $('.fullscreen-img').css('display', 'none');
+                                    }, 300);
+                                });
+                            });
+                        </script>
+                        <div class="row projects__fotorama-row">
+                            <div class="col-xl-6 col-12">
                                 <div class="row">
                                     <div class="col-6">
                                         <div class="row">
                                             <div class="col-4 projects__img-wrap">
                                                 <img src="img/slide-photo-thumb-1.jpg" alt=""
-                                                     class="projects__img">
+                                                     class="projects__img" data-fullscreen-img="#fullscreen-img1">
                                             </div>
                                             <div class="col-4 projects__img-wrap">
                                                 <img src="img/slide-photo-thumb-2.jpg" alt=""
-                                                     class="projects__img">
+                                                     class="projects__img" data-fullscreen-img="#fullscreen-img2">
                                             </div>
                                             <div class="col-4 projects__img-wrap">
                                                 <img src="img/slide-photo-thumb-3.jpg" alt=""
-                                                     class="projects__img">
+                                                     class="projects__img" data-fullscreen-img="#fullscreen-img3">
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-12 projects__img-wrap">
                                                 <img src="img/slide-photo-thumb-4.jpg" alt=""
-                                                     class="projects__img">
+                                                     class="projects__img" data-fullscreen-img="#fullscreen-img4">
                                             </div>
                                         </div>
                                     </div>
@@ -213,17 +240,17 @@
                                         <div class="row">
                                             <div class="col-6 projects__img-wrap">
                                                 <img src="img/slide-photo-thumb-5.jpg" alt=""
-                                                     class="projects__img">
+                                                     class="projects__img" data-fullscreen-img="#fullscreen-img5">
                                             </div>
                                             <div class="col-6 projects__img-wrap">
                                                 <img src="img/slide-photo-thumb-6.jpg" alt=""
-                                                     class="projects__img">
+                                                     class="projects__img" data-fullscreen-img="#fullscreen-img6">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-none d-md-block">
+                            <div class="col-xl-6 col-12 d-none d-md-block">
                                 <p class="projects__text projects__text_object"><span class="projects__text_bold">Объект: </span>квартира
                                 </p>
                                 <p class="projects__text projects__text_adress"><span
@@ -249,28 +276,61 @@
                         </div>
                     </div>
                     <div class="container-fluid projects__fotorama fotorama__select">
-                        <div class="row">
-                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                        <script>
+                            $(document).ready(function () {
+                                var h = $('.projects__fotorama-row').height();
+                                $('.fotorama__stage:first').height(h);
+                                $(window).resize(function () {
+                                    var dh = $('.projects__fotorama-row').height();
+                                    $('.fotorama__stage:first').height(dh);
+                                });
+                            });
+                        </script>
+                        <script>
+                            $(document).ready(function () {
+
+
+                                $('.projects__img').on('click', function (e) {
+                                    e.preventDefault();
+                                    e.stopImmediatePropagation;
+                                    var $this = $(this),
+                                        fullscreen_img = $($this).data("fullscreen-img");
+                                    $(fullscreen_img).css('display', 'flex');
+                                    setTimeout(function () {
+                                        $(fullscreen_img).css('opacity', '1');
+                                    }, 1);
+                                });
+
+                                $('.fullscreen-img, .fullscreen-img__cross').on('click', function () {
+                                    $('.fullscreen-img').css('opacity', '0');
+                                    setTimeout(function () {
+                                        $('.fullscreen-img').css('display', 'none');
+                                    }, 300);
+                                });
+                            });
+                        </script>
+                        <div class="row projects__fotorama-row">
+                            <div class="col-xl-6 col-12">
                                 <div class="row">
                                     <div class="col-6">
                                         <div class="row">
                                             <div class="col-4 projects__img-wrap">
                                                 <img src="img/slide-photo-thumb-1.jpg" alt=""
-                                                     class="projects__img">
+                                                     class="projects__img" data-fullscreen-img="#fullscreen-img1">
                                             </div>
                                             <div class="col-4 projects__img-wrap">
                                                 <img src="img/slide-photo-thumb-2.jpg" alt=""
-                                                     class="projects__img">
+                                                     class="projects__img" data-fullscreen-img="#fullscreen-img2">
                                             </div>
                                             <div class="col-4 projects__img-wrap">
                                                 <img src="img/slide-photo-thumb-3.jpg" alt=""
-                                                     class="projects__img">
+                                                     class="projects__img" data-fullscreen-img="#fullscreen-img3">
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-12 projects__img-wrap">
                                                 <img src="img/slide-photo-thumb-4.jpg" alt=""
-                                                     class="projects__img">
+                                                     class="projects__img" data-fullscreen-img="#fullscreen-img4">
                                             </div>
                                         </div>
                                     </div>
@@ -278,17 +338,17 @@
                                         <div class="row">
                                             <div class="col-6 projects__img-wrap">
                                                 <img src="img/slide-photo-thumb-5.jpg" alt=""
-                                                     class="projects__img">
+                                                     class="projects__img" data-fullscreen-img="#fullscreen-img5">
                                             </div>
                                             <div class="col-6 projects__img-wrap">
                                                 <img src="img/slide-photo-thumb-6.jpg" alt=""
-                                                     class="projects__img">
+                                                     class="projects__img" data-fullscreen-img="#fullscreen-img6">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-none d-md-block">
+                            <div class="col-xl-6 col-12 d-none d-md-block">
                                 <p class="projects__text projects__text_object"><span class="projects__text_bold">Объект: </span>квартира
                                 </p>
                                 <p class="projects__text projects__text_adress"><span
@@ -314,28 +374,61 @@
                         </div>
                     </div>
                     <div class="container-fluid projects__fotorama fotorama__select">
-                        <div class="row">
-                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                        <script>
+                            $(document).ready(function () {
+                                var h = $('.projects__fotorama-row').height();
+                                $('.fotorama__stage:first').height(h);
+                                $(window).resize(function () {
+                                    var dh = $('.projects__fotorama-row').height();
+                                    $('.fotorama__stage:first').height(dh);
+                                });
+                            });
+                        </script>
+                        <script>
+                            $(document).ready(function () {
+
+
+                                $('.projects__img').on('click', function (e) {
+                                    e.preventDefault();
+                                    e.stopImmediatePropagation;
+                                    var $this = $(this),
+                                        fullscreen_img = $($this).data("fullscreen-img");
+                                    $(fullscreen_img).css('display', 'flex');
+                                    setTimeout(function () {
+                                        $(fullscreen_img).css('opacity', '1');
+                                    }, 1);
+                                });
+
+                                $('.fullscreen-img, .fullscreen-img__cross').on('click', function () {
+                                    $('.fullscreen-img').css('opacity', '0');
+                                    setTimeout(function () {
+                                        $('.fullscreen-img').css('display', 'none');
+                                    }, 300);
+                                });
+                            });
+                        </script>
+                        <div class="row projects__fotorama-row">
+                            <div class="col-xl-6 col-12">
                                 <div class="row">
                                     <div class="col-6">
                                         <div class="row">
                                             <div class="col-4 projects__img-wrap">
                                                 <img src="img/slide-photo-thumb-1.jpg" alt=""
-                                                     class="projects__img">
+                                                     class="projects__img" data-fullscreen-img="#fullscreen-img1">
                                             </div>
                                             <div class="col-4 projects__img-wrap">
                                                 <img src="img/slide-photo-thumb-2.jpg" alt=""
-                                                     class="projects__img">
+                                                     class="projects__img" data-fullscreen-img="#fullscreen-img2">
                                             </div>
                                             <div class="col-4 projects__img-wrap">
                                                 <img src="img/slide-photo-thumb-3.jpg" alt=""
-                                                     class="projects__img">
+                                                     class="projects__img" data-fullscreen-img="#fullscreen-img3">
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-12 projects__img-wrap">
                                                 <img src="img/slide-photo-thumb-4.jpg" alt=""
-                                                     class="projects__img">
+                                                     class="projects__img" data-fullscreen-img="#fullscreen-img4">
                                             </div>
                                         </div>
                                     </div>
@@ -343,17 +436,17 @@
                                         <div class="row">
                                             <div class="col-6 projects__img-wrap">
                                                 <img src="img/slide-photo-thumb-5.jpg" alt=""
-                                                     class="projects__img">
+                                                     class="projects__img" data-fullscreen-img="#fullscreen-img5">
                                             </div>
                                             <div class="col-6 projects__img-wrap">
                                                 <img src="img/slide-photo-thumb-6.jpg" alt=""
-                                                     class="projects__img">
+                                                     class="projects__img" data-fullscreen-img="#fullscreen-img6">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-none d-md-block">
+                            <div class="col-xl-6 col-12 d-none d-md-block">
                                 <p class="projects__text projects__text_object"><span class="projects__text_bold">Объект: </span>квартира
                                 </p>
                                 <p class="projects__text projects__text_adress"><span
@@ -382,7 +475,7 @@
             </div>
             <div class="col-12">
                 <a href="#" class="open-modal_modal btn projects__button" data-modal_modal="#modal_modal2">Отправить
-                            заявку на каталог и прайс</a>
+                    заявку на каталог и прайс</a>
             </div>
         </div>
         <div class="row window order">
@@ -402,371 +495,46 @@
                 </form>
             </div>
         </div>
-
-        <!--<div class="row tw" id="projects">
-            <div class="col-xl-12">
-                <h1 class="text-center title title_black">Наши проекты</h1>
+        <div class="row window_small reviews" id="reviews">
+            <div class="col-12">
+                <h1 class="title title_white text-center">Отзывы</h1>
             </div>
-            <div class="col-xl-12">
-                <div class="fotorama ft" data-height="400" data-width="100%" data-arrows="true"
-                     data-click="false" data-swipe="true">
-                    <div class="ft__slide fotorama__select">
-                        <div class="row">
-                            <div class="col-xl-7 col-12">
-                                <script>
-                                     $('.ft__img_1').on("click", function () {
-                                         $('.image1-fullscreen').removeClass('hidden');
-                                        setTimeout(function () {
-                                            $('.image1-fullscreen').addClass("notrans");
-                                        }, 50);
-                                    })
-                                    $('.ft__img_2').on("click", function () {
-                                        $('.image2-fullscreen').removeClass('hidden');
-                                        setTimeout(function () {
-                                            $('.image2-fullscreen').addClass("notrans");
-                                        }, 50);
-                                    })
-                                    $('.ft__img_3').on("click", function () {
-                                        $('.image3-fullscreen').removeClass('hidden');
-                                        setTimeout(function () {
-                                            $('.image3-fullscreen').addClass("notrans");
-                                        }, 50);
-                                    })
-                                    $('.ft__img_4').on("click", function () {
-                                        $('.image4-fullscreen').removeClass('hidden');
-                                        setTimeout(function () {
-                                            $('.image4-fullscreen').addClass("notrans");
-                                        }, 50);
-                                    })
-                                    $('.ft__img_5').on("click", function () {
-                                        $('.image5-fullscreen').removeClass('hidden');
-                                        setTimeout(function () {
-                                            $('.image5-fullscreen').addClass("notrans");
-                                        }, 50);
-                                    })
-                                    $('.ft__img_6').on("click", function () {
-                                        $('.image6-fullscreen').removeClass('hidden');
-                                        setTimeout(function () {
-                                            $('.image6-fullscreen').addClass("notrans");
-                                        }, 50);
-                                    })
-                                </script>
-                                <div class="ft__img">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="row">
-                                                <div class="col-4">
-                                                    <div class="row">
-                                                        <img src="img/slide-photo-thumb-1.jpg" alt="" class="ft__img_1">
-                                                    </div>
-                                                </div>
-                                                <div class="col-4">
-                                                    <div class="row">
-                                                        <img src="img/slide-photo-thumb-2.jpg" alt="" class="ft__img_2">
-                                                    </div>
-                                                </div>
-                                                <div class="col-4">
-                                                    <div class="row">
-                                                        <img src="img/slide-photo-thumb-3.jpg" alt="" class="ft__img_3">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="row">
-                                                        <img src="img/slide-photo-thumb-4.jpg" alt="" class="ft__img_4">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="row">
-                                                <img src="img/slide-photo-thumb-5.jpg" alt="" class="ft__img_5">
-                                            </div>
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="row">
-                                                <img src="img/slide-photo-thumb-6.jpg" alt="" class="ft__img_6">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ft__img">
-                                    <div class="ft__img_1234">
-                                        <div class="ft__img_123">
-                                            <img src="img/slide-photo-thumb-1.jpg" alt="" class="ft__img_1">
-                                            <img src="img/slide-photo-thumb-2.jpg" alt="" class="ft__img_2">
-                                            <img src="img/slide-photo-thumb-3.jpg" alt="" class="ft__img_3">
-                                        </div>
-                                        <img src="img/slide-photo-thumb-4.jpg" alt="" class="ft__img_4">
-                                    </div>
-                                    <div class="ft__img_56">
-                                        <img src="img/slide-photo-thumb-5.jpg" alt="" class="ft__img_5">
-                                        <img src="img/slide-photo-thumb-6.jpg" alt="" class="ft__img_6">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-5 col-12 ft__slide_mats mats d-xl-block d-none">
-                                <p class="mats__object"><span>Объект: </span>квартира</p>
-                                <p class="mats__address"><span>Адрес: </span>с. Михайлово, Молодежный бульвар, д.1</p>
-                                <p class="mats__date"><span>Дата монтажа: </span>март 2020 г.</p>
-                                <p class="mats__task"><span>Задача: </span>необходимо было установить 5 межкомнатных
-                                    дверей в частной
-                                    квартире</p>
-                                <p class="mats__jobs"><span>Выполненные работы: </span>провели предварительный замер,
-                                    расчет и установку
-                                    дверей компании Юкка (название модели), установили магнитные замки, ручки и петли от
-                                    компании Vantage</p>
-                                <p class="mats__price"><span>Общая стоимость проекта: </span>________ рублей</p>
-                            </div>
+            <div class="col-12">
+                <div class="reviews__slider">
+                    <div class="fotorama" data-width="100%" data-arrows="true" data-click="false">
+                        <div class="reviews__review">
+                            <img src="img/review1.jpg" alt="" class="reviews__img">
+                            <p class="reviews__name">Сергей Сеськин</p>
+                            <p class="reviews__city">г. Саранск</p>
+                            <p class="reviews__text">"Обратился в компанию Bindoors, понравился ассортимент, качество
+                                дверей и цена. Компания выполняет все услуги, что очень удобно. Привезли и установили в
+                                обговорённый срок. Рекомендую!"</p>
                         </div>
-                    </div>
-                    <div class="ft__slide fotorama__select">
-                        <div class="row">
-                            <div class="col-xl-7 col-12">
-                                <script>
-                                    $('.ft__img_1').on("click", function () {
-                                        $('.image1-fullscreen').removeClass('hidden');
-                                        setTimeout(function () {
-                                            $('.image1-fullscreen').addClass("notrans");
-                                        }, 50);
-                                    })
-                                    $('.ft__img_2').on("click", function () {
-                                        $('.image2-fullscreen').removeClass('hidden');
-                                        setTimeout(function () {
-                                            $('.image2-fullscreen').addClass("notrans");
-                                        }, 50);
-                                    })
-                                    $('.ft__img_3').on("click", function () {
-                                        $('.image3-fullscreen').removeClass('hidden');
-                                        setTimeout(function () {
-                                            $('.image3-fullscreen').addClass("notrans");
-                                        }, 50);
-                                    })
-                                    $('.ft__img_4').on("click", function () {
-                                        $('.image4-fullscreen').removeClass('hidden');
-                                        setTimeout(function () {
-                                            $('.image4-fullscreen').addClass("notrans");
-                                        }, 50);
-                                    })
-                                    $('.ft__img_5').on("click", function () {
-                                        $('.image5-fullscreen').removeClass('hidden');
-                                        setTimeout(function () {
-                                            $('.image5-fullscreen').addClass("notrans");
-                                        }, 50);
-                                    })
-                                    $('.ft__img_6').on("click", function () {
-                                        $('.image6-fullscreen').removeClass('hidden');
-                                        setTimeout(function () {
-                                            $('.image6-fullscreen').addClass("notrans");
-                                        }, 50);
-                                    })
-                                </script>
-                                <div class="ft__img">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="row">
-                                                <div class="col-4">
-                                                    <div class="row">
-                                                        <img src="img/slide-photo-thumb-1.jpg" alt="" class="ft__img_1">
-                                                    </div>
-                                                </div>
-                                                <div class="col-4">
-                                                    <div class="row">
-                                                        <img src="img/slide-photo-thumb-2.jpg" alt="" class="ft__img_2">
-                                                    </div>
-                                                </div>
-                                                <div class="col-4">
-                                                    <div class="row">
-                                                        <img src="img/slide-photo-thumb-3.jpg" alt="" class="ft__img_3">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="row">
-                                                        <img src="img/slide-photo-thumb-4.jpg" alt="" class="ft__img_4">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="row">
-                                                <img src="img/slide-photo-thumb-5.jpg" alt="" class="ft__img_5">
-                                            </div>
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="row">
-                                                <img src="img/slide-photo-thumb-6.jpg" alt="" class="ft__img_6">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ft__img">
-                                    <div class="ft__img_1234">
-                                        <div class="ft__img_123">
-                                            <img src="img/slide-photo-thumb-1.jpg" alt="" class="ft__img_1">
-                                            <img src="img/slide-photo-thumb-2.jpg" alt="" class="ft__img_2">
-                                            <img src="img/slide-photo-thumb-3.jpg" alt="" class="ft__img_3">
-                                        </div>
-                                        <img src="img/slide-photo-thumb-4.jpg" alt="" class="ft__img_4">
-                                    </div>
-                                    <div class="ft__img_56">
-                                        <img src="img/slide-photo-thumb-5.jpg" alt="" class="ft__img_5">
-                                        <img src="img/slide-photo-thumb-6.jpg" alt="" class="ft__img_6">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-5 col-12 ft__slide_mats mats d-xl-block d-none">
-                                <p class="mats__object"><span>Объект: </span>квартира</p>
-                                <p class="mats__address"><span>Адрес: </span>с. Михайлово, Молодежный бульвар, д.1</p>
-                                <p class="mats__date"><span>Дата монтажа: </span>март 2020 г.</p>
-                                <p class="mats__task"><span>Задача: </span>необходимо было установить 5 межкомнатных
-                                    дверей в частной
-                                    квартире</p>
-                                <p class="mats__jobs"><span>Выполненные работы: </span>провели предварительный замер,
-                                    расчет и установку
-                                    дверей компании Юкка (название модели), установили магнитные замки, ручки и петли от
-                                    компании Vantage</p>
-                                <p class="mats__price"><span>Общая стоимость проекта: </span>________ рублей</p>
-                            </div>
+                        <div class="reviews__review">
+                            <img src="img/review1.jpg" alt="" class="reviews__img">
+                            <p class="reviews__name">Сергей Сеськин</p>
+                            <p class="reviews__city">г. Саранск</p>
+                            <p class="reviews__text">"Обратился в компанию Bindoors, понравился ассортимент, качество
+                                дверей и цена. Компания выполняет все услуги, что очень удобно. Привезли и установили в
+                                обговорённый срок. Рекомендую!"</p>
                         </div>
-                    </div>
-                    <div class="ft__slide fotorama__select">
-                        <div class="row">
-                            <div class="col-xl-7 col-12">
-                                <script>
-                                    $('.ft__img_1').on("click", function () {
-                                        $('.image1-fullscreen').removeClass('hidden');
-                                        setTimeout(function () {
-                                            $('.image1-fullscreen').addClass("notrans");
-                                        }, 50);
-                                    })
-                                    $('.ft__img_2').on("click", function () {
-                                        $('.image2-fullscreen').removeClass('hidden');
-                                        setTimeout(function () {
-                                            $('.image2-fullscreen').addClass("notrans");
-                                        }, 50);
-                                    })
-                                    $('.ft__img_3').on("click", function () {
-                                        $('.image3-fullscreen').removeClass('hidden');
-                                        setTimeout(function () {
-                                            $('.image3-fullscreen').addClass("notrans");
-                                        }, 50);
-                                    })
-                                    $('.ft__img_4').on("click", function () {
-                                        $('.image4-fullscreen').removeClass('hidden');
-                                        setTimeout(function () {
-                                            $('.image4-fullscreen').addClass("notrans");
-                                        }, 50);
-                                    })
-                                    $('.ft__img_5').on("click", function () {
-                                        $('.image5-fullscreen').removeClass('hidden');
-                                        setTimeout(function () {
-                                            $('.image5-fullscreen').addClass("notrans");
-                                        }, 50);
-                                    })
-                                    $('.ft__img_6').on("click", function () {
-                                        $('.image6-fullscreen').removeClass('hidden');
-                                        setTimeout(function () {
-                                            $('.image6-fullscreen').addClass("notrans");
-                                        }, 50);
-                                    })
-                                </script>
-                                <div class="ft__img">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div class="row">
-                                                <div class="col-4">
-                                                    <div class="row">
-                                                        <img src="img/slide-photo-thumb-1.jpg" alt="" class="ft__img_1">
-                                                    </div>
-                                                </div>
-                                                <div class="col-4">
-                                                    <div class="row">
-                                                        <img src="img/slide-photo-thumb-2.jpg" alt="" class="ft__img_2">
-                                                    </div>
-                                                </div>
-                                                <div class="col-4">
-                                                    <div class="row">
-                                                        <img src="img/slide-photo-thumb-3.jpg" alt="" class="ft__img_3">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="row">
-                                                        <img src="img/slide-photo-thumb-4.jpg" alt="" class="ft__img_4">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="row">
-                                                <img src="img/slide-photo-thumb-5.jpg" alt="" class="ft__img_5">
-                                            </div>
-                                        </div>
-                                        <div class="col-3">
-                                            <div class="row">
-                                                <img src="img/slide-photo-thumb-6.jpg" alt="" class="ft__img_6">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ft__img">
-                                    <div class="ft__img_1234">
-                                        <div class="ft__img_123">
-                                            <img src="img/slide-photo-thumb-1.jpg" alt="" class="ft__img_1">
-                                            <img src="img/slide-photo-thumb-2.jpg" alt="" class="ft__img_2">
-                                            <img src="img/slide-photo-thumb-3.jpg" alt="" class="ft__img_3">
-                                        </div>
-                                        <img src="img/slide-photo-thumb-4.jpg" alt="" class="ft__img_4">
-                                    </div>
-                                    <div class="ft__img_56">
-                                        <img src="img/slide-photo-thumb-5.jpg" alt="" class="ft__img_5">
-                                        <img src="img/slide-photo-thumb-6.jpg" alt="" class="ft__img_6">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-5 col-12 ft__slide_mats mats d-xl-block d-none">
-                                <p class="mats__object"><span>Объект: </span>квартира</p>
-                                <p class="mats__address"><span>Адрес: </span>с. Михайлово, Молодежный бульвар, д.1</p>
-                                <p class="mats__date"><span>Дата монтажа: </span>март 2020 г.</p>
-                                <p class="mats__task"><span>Задача: </span>необходимо было установить 5 межкомнатных
-                                    дверей в частной
-                                    квартире</p>
-                                <p class="mats__jobs"><span>Выполненные работы: </span>провели предварительный замер,
-                                    расчет и установку
-                                    дверей компании Юкка (название модели), установили магнитные замки, ручки и петли от
-                                    компании Vantage</p>
-                                <p class="mats__price"><span>Общая стоимость проекта: </span>________ рублей</p>
-                            </div>
+                        <div class="reviews__review">
+                            <img src="img/review1.jpg" alt="" class="reviews__img">
+                            <p class="reviews__name">Сергей Сеськин</p>
+                            <p class="reviews__city">г. Саранск</p>
+                            <p class="reviews__text">"Обратился в компанию Bindoors, понравился ассортимент, качество
+                                дверей и цена. Компания выполняет все услуги, что очень удобно. Привезли и установили в
+                                обговорённый срок. Рекомендую!"</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-12">
-                <a href="#" class="open-modal_modal tw_button__catandprice" data-modal_modal="#modal_modal2">Отправить
-                    заявку на каталог и прайс</a>
+            <div class="col-12">
+                <a href="#" class="open-modal_modal btn reviews__button" data-modal_modal="#modal_modal2">Отправить
+                    заявку на
+                    каталог и прайс</a>
             </div>
-        </div>-->
-<!--        <div class="row frw">-->
-
-<!--            <div class="col-xl-6 offset-xl-6">-->
-<!--                <h1 class="text-center title title_black">Заявка на каталог и прайс</h1>-->
-<!--                <form action="#">-->
-<!--                    <input type="text" class="form-control frw__inputs" placeholder="ФИО">-->
-<!--                    <input type="text" class="form-control frw__inputs" placeholder="Телефон">-->
-<!--                    <input type="email" class="form-control frw__inputs" placeholder="E-mail">-->
-<!--                    <p class="form-check-label">-->
-<!--                        <input type="checkbox">-->
-<!--                        Согласен с <a href="agreement.html">Обработкой данных</a>-->
-<!--                    </p>-->
-<!--                    <input type="submit" class="frw_submit">-->
-<!--                </form>-->
-<!--            </div>-->
-<!--        </div>-->
-
+        </div>
         <!--<section class="services row">
             <h2 class="heading">Наши услуги</h2>
             <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -792,9 +560,8 @@
                         <h2>премиум</h2>
                     </div>
                 </div>
-        </section>-->
-        <!-- technology ---------------------------------------------->
-        <!--<section class="technology row">
+        </section>
+        <section class="technology row">
             <div class="contentBx">
                 <h2 class="heading">Мы используем новейшие технолгии</h2>
                 <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -806,95 +573,48 @@
                 <img src="../img/tech.png">
             </div>
         </section>-->
-
-        <!-- Комментарии -->
-
-<!--        <div class="reviews row justify-content-center" id="reviews">-->
-
-<!--            <div class="col-12">-->
-<!--                <h1 class="text-center title title_white">Отзывы</h1>-->
-<!--            </div>-->
-<!--            <div class="col-xl-6">-->
-<!--                <div style="width: 600px; margin: 0 auto">-->
-<!--                    <div class="fotorama" data-width="600px" data-maxwidth="100%" data-height="320px">-->
-<!--                        <div class="reviews__review review">-->
-<!--                            <img src="img/review1.jpg" alt="" class="review__img">-->
-<!--                            <p class="review__name">Сергей Сеськин</p>-->
-<!--                            <p class="review__city">г. Саранск</p>-->
-<!--                            <p class="review__text">"Обратился в компанию Bindoors, понравился ассортимент, качество-->
-<!--                                дверей и цена. Компания выполняет все услуги, что очень удобно. Привезли и установили в-->
-<!--                                обговорённый срок. Рекомендую!"</p>-->
-<!--                        </div>-->
-<!--                        <div class="reviews__review review">-->
-<!--                            <img src="img/review1.jpg" alt="" class="review__img">-->
-<!--                            <p class="review__name">Сергей Сеськин</p>-->
-<!--                            <p class="review__city">г. Саранск</p>-->
-<!--                            <p class="review__text">"Обратился в компанию Bindoors, понравился ассортимент, качество-->
-<!--                                дверей и цена. Компания выполняет все услуги, что очень удобно. Привезли и установили в-->
-<!--                                обговорённый срок. Рекомендую!"</p>-->
-<!--                        </div>-->
-<!--                        <div class="reviews__review review">-->
-<!--                            <img src="img/review1.jpg" alt="" class="review__img">-->
-<!--                            <p class="review__name">Сергей Сеськин</p>-->
-<!--                            <p class="review__city">г. Саранск</p>-->
-<!--                            <p class="review__text">"Обратился в компанию Bindoors, понравился ассортимент, качество-->
-<!--                                дверей и цена. Компания выполняет все услуги, что очень удобно. Привезли и установили в-->
-<!--                                обговорённый срок. Рекомендую!"</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-12">-->
-<!--                <a href="#" class="reviews__btn open-modal_modal" data-modal_modal="#modal_modal2">Отправить заявку на-->
-<!--                    каталог и прайс</a>-->
-<!--            </div>-->
-<!--        </div>-->
-
-
     </div>
 </main>
-<footer>
-
-    <div class="footer-top">
-        <div class="container">
-            <div class="row" id="contacts">
-                <div class="col-md-3 col-sm-6 col-xs-12 segment-one md-mb-30 sm-mb-30">
-                    <h3>Bindoors</h3>
-                    <p>Данный интернет-сайт носит исключительно информационный характер и не является публичной офертой,
-                        определяемой положениями Статьи 437 (2) ГК РФ. Все права защищены ©Bindoors.2020</p>
-                    <a href="privacy.html">Политика конфиденциальности</a>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 segment-two md-mb-30 sm-md-30">
-                    <h2>Bindoors</h2>
-                    <ul>
-                        <li><a href="#about" class="footer_link">О нас</a></li>
-                        <li><a href="#partners" class="footer_link">Наши партнеры</a></li>
-                        <li><a href="#projects" class="footer_link">Наши проекты</a></li>
-                        <li><a href="#reviews" class="footer_link">Отзывы</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 segment-three sm-mb-30">
-                    <h2>Подпишитесь</h2>
-                    <p>Подпишитесь на наши социальные сети.</p>
-                    <a href="https://wa.me/79775640883"><i class="fa fa-whatsapp"></i></a>
-                    <a href="#"><i class="fa fa-telegram"></i></a>
-                    <a href="https://www.instagram.com/bindoors_moscow/"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <p class="phone">+7 (977) 564-08-83</p>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 segment-four sm-mb-30">
-                    <h2>Подписка</h2>
-                    <p>Укажите свой e-mail адрес, чтобы получать уведомления о наших акциях и предложениях.</p>
-                    <form action="#">
-                        <input type="tel">
-                        <input type="submit" value="Отправить">
-                        <p class="form-check-label">
-                            <input type="checkbox">
-                            Согласен с <a href="agreement.html">обработкой данных</a>
-                        </p>
-                    </form>
-
-                </div>
+<footer class="footer">
+    <div class="container">
+        <div class="window_small row" id="contacts">
+            <div class="col-lg-3 col-sm-6 col-12 footer__block">
+                <p class="footer__logo">Bindoors</p>
+                <p class="footer__desc">Данный интернет-сайт носит исключительно информационный характер и не является
+                    публичной офертой, определяемой положениями Статьи 437 (2) ГК РФ. Все права защищены
+                    ©Bindoors.2020</p>
+                <a href="privacy.html">Политика конфиденциальности</a>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-12 footer__block">
+                <p class="footer__title">BINDOORS</p>
+                <ul class="footer__ul">
+                    <li class="footer__li"><a href="#about" class="footer__link">О нас</a></li>
+                    <li class="footer__li"><a href="#partners" class="footer__link">Наши партнеры</a></li>
+                    <li class="footer__li"><a href="#projects" class="footer__link">Наши проекты</a></li>
+                    <li class="footer__li"><a href="#reviews" class="footer__link">Отзывы</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-12 footer__block">
+                <p class="footer__title">ПОДПИШИТЕСЬ</p>
+                <p class="footer__desc">Подпишитесь на наши социальные сети.</p>
+                <a href="https://wa.me/79775640883"><i class="fa fa-whatsapp footer__social"></i></a>
+                <a href="#"><i class="fa fa-telegram footer__social"></i></a>
+                <a href="https://www.instagram.com/bindoors_moscow/"><i class="fa fa-instagram footer__social"></i></a>
+                <a href="#"><i class="fa fa-facebook footer__social"></i></a>
+                <a href="tel:+79775640883" class="footer__phone">+7 (977) 564-08-83</a>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-12 footer__block">
+                <p class="footer__title">ПОДПИСКА</p>
+                <p class="footer__desc">Укажите свой e-mail адрес, чтобы получать уведомления о наших акциях и
+                    предложениях.</p>
+                <form action="#">
+                    <input type="tel">
+                    <input type="submit" value="Отправить" class="footer__button">
+                    <p class="form-check-label footer__desc">
+                        <input type="checkbox">
+                        Согласен с <a href="agreement.html">обработкой данных</a>
+                    </p>
+                </form>
             </div>
         </div>
     </div>
@@ -923,35 +643,33 @@
         <a class='button_cancel close-modal_modal mod_btn' data-modal_modal="#modal_modal2" href="#">Отмена</a>
     </div>
 </div>
-<div class="image1-fullscreen hidden">
-    <img src="img/slide-photo-1.jpg" alt="" class="image1-fullscreen_img">
-    <img src="img/cross.png" alt="" class="image-fullscreen_close">
+<div class="fullscreen-img" id="fullscreen-img1">
+    <img src="img/slide-photo-1.jpg" alt="" class="fullscreen-img__img">
+    <div class="fullscreen-img__cross"></div>
 </div>
-<div class="image2-fullscreen hidden">
-    <img src="img/slide-photo-2.jpg" alt="" class="image2-fullscreen_img">
-    <img src="img/cross.png" alt="" class="image-fullscreen_close">
+<div class="fullscreen-img" id="fullscreen-img2">
+    <img src="img/slide-photo-2.jpg" alt="" class="fullscreen-img__img">
+    <div class="fullscreen-img__cross"></div>
 </div>
-<div class="image3-fullscreen hidden">
-    <img src="img/slide-photo-3.jpg" alt="" class="image3-fullscreen_img">
-    <img src="img/cross.png" alt="" class="image-fullscreen_close">
+<div class="fullscreen-img" id="fullscreen-img3">
+    <img src="img/slide-photo-3.jpg" alt="" class="fullscreen-img__img">
+    <div class="fullscreen-img__cross"></div>
 </div>
-<div class="image4-fullscreen hidden">
-    <img src="img/slide-photo-4.jpg" alt="" class="image4-fullscreen_img">
-    <img src="img/cross.png" alt="" class="image-fullscreen_close">
+<div class="fullscreen-img" id="fullscreen-img4">
+    <img src="img/slide-photo-4.jpg" alt="" class="fullscreen-img__img">
+    <div class="fullscreen-img__cross"></div>
 </div>
-<div class="image5-fullscreen hidden">
-    <img src="img/slide-photo-5.jpg" alt="" class="image5-fullscreen_img">
-    <img src="img/cross.png" alt="" class="image-fullscreen_close">
+<div class="fullscreen-img" id="fullscreen-img5">
+    <img src="img/slide-photo-5.jpg" alt="" class="fullscreen-img__img">
+    <div class="fullscreen-img__cross"></div>
 </div>
-<div class="image6-fullscreen hidden">
-    <img src="img/slide-photo-6.jpg" alt="" class="image6-fullscreen_img">
-    <img src="img/cross.png" alt="" class="image-fullscreen_close">
+<div class="fullscreen-img" id="fullscreen-img6">
+    <img src="img/slide-photo-6.jpg" alt="" class="fullscreen-img__img">
+    <div class="fullscreen-img__cross"></div>
 </div>
-
 
 <script src="css/fotorama.js"></script>
 <script src="js/main.js"></script>
-
 
 </body>
 </html>

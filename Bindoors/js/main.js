@@ -50,3 +50,54 @@ $('a[href^="#"]').click(function (e) {
     const destination = $(elementClick).offset().top;
     $('html').animate({scrollTop: destination}, 1000);
 });
+
+$(document).ready(function () {
+    $('.quiz__to2').on('click', function () {
+        setTimeout(function () {
+            $('.quiz__1').css('opacity', '0');
+        }, 300);
+        setTimeout(function () {
+            $('.quiz__1').css('display', 'none');
+            $('.quiz__2').css('display', 'block');
+        }, 600);
+        setTimeout(function () {
+            $('.quiz__2').css('opacity', '1');
+        }, 900);
+    });
+    $('.quiz__to3').on('click', function () {
+        setTimeout(function () {
+            $('.quiz__2').css('opacity', '0');
+        }, 300);
+        setTimeout(function () {
+            $('.quiz__2').css('display', 'none');
+            $('.quiz__3').css('display', 'block');
+        }, 600);
+        setTimeout(function () {
+            $('.quiz__3').css('opacity', '1');
+        }, 900);
+    });
+    $('.quiz__to4').on('click', function () {
+        setTimeout(function () {
+            $('.quiz__3').css('opacity', '0');
+        }, 300);
+        setTimeout(function () {
+            $('.quiz__3').css('display', 'none');
+            $('.quiz__4').css('display', 'block');
+        }, 600);
+        setTimeout(function () {
+            $('.quiz__4').css('opacity', '1');
+        }, 900);
+    });
+    $('.quiz__to5').on('click', function () {
+        setTimeout(function () {
+            $('.quiz__4').css('opacity', '0');
+        }, 300);
+        setTimeout(function () {
+            $('.quiz__4').css('display', 'none');
+            $('.quiz__5').css('display', 'block');
+        }, 600);
+        setTimeout(function () {
+            $('.quiz__5').css('opacity', '1');
+        }, 900);
+    });
+});

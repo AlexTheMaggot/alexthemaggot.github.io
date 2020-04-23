@@ -218,6 +218,33 @@ header .callback__social-item:hover {
 .quiz__item {
   margin: 0;
 }
+.quiz__1 {
+  transition: all 0.5s;
+}
+.quiz__2 {
+  display: none;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.quiz__3 {
+  display: none;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.quiz__4 {
+  display: none;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.quiz__4_desc {
+  color: #FFFFFF;
+  margin-top: 30px;
+}
+.quiz__5 {
+  display: none;
+  opacity: 0;
+  transition: all 0.3s;
+}
 @media (min-width: 576px) {
   .quiz__label {
     font-size: 1.5rem;

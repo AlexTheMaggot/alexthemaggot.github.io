@@ -302,12 +302,16 @@ header .callback__social-item:hover {
 .projects__img {
   width: 100%;
   transition: all 0.3s;
+  border-radius: 10px;
 }
-.projects__img_align {
-  margin-top: -3px;
+.projects__img_123 {
+  transform: scale(0.95);
+}
+.projects__img_456 {
+  transform: scale(0.98);
 }
 .projects__img:hover {
-  transform: scale(0.95);
+  transform: scale(0.9);
 }
 .projects__text {
   display: block;
@@ -513,7 +517,8 @@ header .callback__social-item:hover {
   color: #FFFFFF;
   letter-spacing: 1.2px;
   font-size: 1.75rem;
-  margin-top: -8px;
+  margin-top: -4px;
+  line-height: 25px;
 }
 .footer__desc {
   color: #AAAAAA;

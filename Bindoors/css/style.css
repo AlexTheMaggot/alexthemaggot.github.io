@@ -513,6 +513,7 @@ header .callback__social-item:hover {
   color: #FFFFFF;
   letter-spacing: 1.2px;
   font-size: 1.75rem;
+  margin-top: -8px;
 }
 .footer__desc {
   color: #AAAAAA;

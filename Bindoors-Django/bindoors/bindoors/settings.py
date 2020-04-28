@@ -27,6 +27,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '192.168.0.103',
     'alexthemaggot.pythonanywhere.com',
+    'pythonanywhere.com',
 ]
 
 # Application definition

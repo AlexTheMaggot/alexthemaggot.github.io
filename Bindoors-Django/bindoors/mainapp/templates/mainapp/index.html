@@ -399,41 +399,6 @@
                     </div>
                     {% endfor %}
                     <div class="container-fluid projects__fotorama fotorama__select">
-                        <script>
-                            $(document).ready(function () {
-                                setTimeout(function () {
-                                    var h = $('.projects__fotorama-row').height();
-                                $('.fotorama__stage:first').height(h);
-                                }, 1000);
-                                $(window).resize(function () {
-                                    var dh = $('.projects__fotorama-row').height();
-                                    $('.fotorama__stage:first').height(dh);
-                                });
-                            });
-                        </script>
-                        <script>
-                            $(document).ready(function () {
-
-
-                                $('.projects__img').on('click', function (e) {
-                                    e.preventDefault();
-                                    e.stopImmediatePropagation;
-                                    var $this = $(this),
-                                        fullscreen_img = $($this).data("fullscreen-img");
-                                    $(fullscreen_img).css('display', 'flex');
-                                    setTimeout(function () {
-                                        $(fullscreen_img).css('opacity', '1');
-                                    }, 1);
-                                });
-
-                                $('.fullscreen-img, .fullscreen-img__cross').on('click', function () {
-                                    $('.fullscreen-img').css('opacity', '0');
-                                    setTimeout(function () {
-                                        $('.fullscreen-img').css('display', 'none');
-                                    }, 300);
-                                });
-                            });
-                        </script>
                         <div class="row projects__fotorama-row">
                             <div class="col-xl-6 col-12">
                                 <div class="row">
@@ -497,6 +462,41 @@
                                     рублей</p>
                             </div>
                         </div>
+                        <script>
+                            $(document).ready(function () {
+                                setTimeout(function () {
+                                    var h = $('.projects__fotorama-row').height();
+                                $('.fotorama__stage:first').height(h);
+                                }, 1000);
+                                $(window).resize(function () {
+                                    var dh = $('.projects__fotorama-row').height();
+                                    $('.fotorama__stage:first').height(dh);
+                                });
+                            });
+                        </script>
+                        <script>
+                            $(document).ready(function () {
+
+
+                                $('.projects__img').on('click', function (e) {
+                                    e.preventDefault();
+                                    e.stopImmediatePropagation;
+                                    var $this = $(this),
+                                        fullscreen_img = $($this).data("fullscreen-img");
+                                    $(fullscreen_img).css('display', 'flex');
+                                    setTimeout(function () {
+                                        $(fullscreen_img).css('opacity', '1');
+                                    }, 1);
+                                });
+
+                                $('.fullscreen-img, .fullscreen-img__cross').on('click', function () {
+                                    $('.fullscreen-img').css('opacity', '0');
+                                    setTimeout(function () {
+                                        $('.fullscreen-img').css('display', 'none');
+                                    }, 300);
+                                });
+                            });
+                        </script>
                     </div>
                     <div class="container-fluid projects__fotorama fotorama__select">
                         <script>

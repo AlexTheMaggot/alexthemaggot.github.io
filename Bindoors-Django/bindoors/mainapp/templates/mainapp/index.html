@@ -401,8 +401,10 @@
                     <div class="container-fluid projects__fotorama fotorama__select">
                         <script>
                             $(document).ready(function () {
-                                var h = $('.projects__fotorama-row').height();
+                                setTimeout(function () {
+                                    var h = $('.projects__fotorama-row').height();
                                 $('.fotorama__stage:first').height(h);
+                                }, 300);
                                 $(window).resize(function () {
                                     var dh = $('.projects__fotorama-row').height();
                                     $('.fotorama__stage:first').height(dh);

@@ -199,6 +199,9 @@ header .callback__social-item:hover {
   background-color: #FFFFFF;
   color: #68952D;
 }
+.quiz__img {
+  height: 100px;
+}
 .quiz__label {
   display: block;
   max-width: 250px;
@@ -250,6 +253,9 @@ header .callback__social-item:hover {
     font-size: 1.5rem;
     max-width: none;
     width: 370px;
+  }
+  .quiz__img {
+    height: 250px;
   }
 }
 .partners {

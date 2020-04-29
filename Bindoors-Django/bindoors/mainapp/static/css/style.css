@@ -210,7 +210,6 @@ header .callback__social-item:hover {
   padding: 10px 0;
   color: #FFFFFF;
   font-size: 1rem;
-  border: 2px solid #FFFFFF;
   border-radius: 10px;
   transition: all 0.3s;
   text-align: center;
@@ -221,32 +220,75 @@ header .callback__social-item:hover {
 .quiz__item {
   margin: 0;
 }
+.quiz__step {
+  display: none;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.quiz__prev {
+  display: block;
+  width: fit-content;
+  margin: 10px auto 0 auto;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  transition: all 0.3s;
+}
+.quiz__prev:hover {
+  color: #FFFFFF;
+  transform: scale(1.1);
+}
+.quiz__prev:focus {
+  box-shadow: none;
+  background-color: #FFFFFF;
+  color: #68952D;
+}
 .quiz__1 {
-  transition: all 0.5s;
-}
-.quiz__2 {
-  display: none;
-  opacity: 0;
+  display: block;
+  opacity: 1;
   transition: all 0.3s;
 }
-.quiz__3 {
-  display: none;
-  opacity: 0;
-  transition: all 0.3s;
-}
-.quiz__4 {
-  display: none;
-  opacity: 0;
-  transition: all 0.3s;
-}
-.quiz__4_desc {
+.quiz__desc {
   color: #FFFFFF;
   margin-top: 30px;
 }
-.quiz__5 {
-  display: none;
+.quiz__desc_title {
+  font-size: 1rem;
+}
+.quiz__mail {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  min-width: 300px;
+  color: #FFFFFF;
+  background-color: #68952D;
+  border: 2px solid #FFFFFF;
+}
+.quiz__mail::placeholder {
+  color: #FFFFFF;
+}
+.quiz__mail:focus {
+  background-color: #68952D;
+  outline: none;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  box-shadow: none;
+}
+.quiz__mail:focus::placeholder {
   opacity: 0;
-  transition: all 0.3s;
+}
+.quiz__submit {
+  background-color: #FFFFFF;
+  margin: 10px auto 0 auto;
+  display: block;
+}
+.quiz__agreement {
+  margin-top: 10px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.quiz__agreement_link {
+  color: #FFFFFF;
+  text-decoration: underline;
 }
 @media (min-width: 576px) {
   .quiz__label {
@@ -255,7 +297,12 @@ header .callback__social-item:hover {
     width: 370px;
   }
   .quiz__img {
-    height: 250px;
+    height: 150px;
+  }
+}
+@media (min-width: 992px) {
+  .quiz__desc_title {
+    font-size: 1.5rem;
   }
 }
 .partners {

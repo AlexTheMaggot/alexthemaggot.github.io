@@ -26,6 +26,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '192.168.0.103',
+    '192.168.0.105',
     'alexthemaggot.pythonanywhere.com',
     'pythonanywhere.com',
 ]

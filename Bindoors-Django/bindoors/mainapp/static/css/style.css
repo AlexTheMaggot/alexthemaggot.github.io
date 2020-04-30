@@ -968,8 +968,10 @@ header .callback__social-item:hover {
 .modal_modal h1 {
   margin-bottom: 20px;
 }
+.modal_modal .title {
+  font-size: 1rem;
+}
 .modal_modal .mod_inputs {
-  width: 70%;
   margin: 10px auto;
   width: 100%;
   max-width: 400px;
@@ -1000,9 +1002,31 @@ header .callback__social-item:hover {
 .modal_modal .button_cancel:hover {
   background-color: #333333;
 }
-.hidden {
-  display: none;
-  transition: all 0.3s;
+@media (min-width: 576px) {
+  .modal_modal {
+    padding: 40px 80px;
+  }
+  .modal_modal .title {
+    font-size: 1.5rem;
+  }
+  .modal_modal .mod_inputs {
+    width: 70%;
+  }
+}
+@media (min-width: 768px) {
+  .modal_modal .title {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .modal_modal .title {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .modal_modal .title {
+    font-size: 2.5rem;
+  }
 }
 /* Услуги
 .services {
@@ -1090,46 +1114,52 @@ header .callback__social-item:hover {
   }
 }
 */
-.services {
+/*.services {
   padding: 50px;
 }
+
 .services .container {
   justify-content: center;
   margin-top: 20px;
 }
+
 .services .container .serviceBx {
   margin: 20px;
   width: 300px;
   height: 350px;
 }
+
 .technology {
   padding: 50px;
   padding-top: 300px;
   justify-content: center;
   flex-direction: column;
 }
+
 .technology .imgBx {
   margin-top: 40px;
   max-width: 250px;
 }
+
 .client {
   padding: 50px;
 }
+
 .client .imgBx {
   justify-content: center;
 }
+
 .testimonials {
   padding: 50px;
 }
+
 .testimonials .contentBx {
   padding: 60px 40px;
   max-width: 550px;
   margin-bottom: 40px;
 }
+
 .testimonials .contentBx:last-child {
   margin-bottom: 0px;
-}
-.contact {
-  padding: 50px;
-}
+}*/
 /*# sourceMappingURL=style.css.map */

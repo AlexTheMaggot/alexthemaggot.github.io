@@ -790,6 +790,7 @@ header .callback__social-item:hover {
   letter-spacing: 1.2px;
   font-size: 1.75rem;
   margin-top: -4px;
+  margin-bottom: 20px;
   line-height: 25px;
 }
 .footer__desc {
@@ -808,6 +809,7 @@ header .callback__social-item:hover {
 }
 .footer__ul {
   margin: 0;
+  margin-top: -7px;
   padding: 0;
   list-style: none;
 }

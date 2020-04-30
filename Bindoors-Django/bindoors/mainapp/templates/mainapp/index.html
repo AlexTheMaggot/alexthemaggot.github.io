@@ -338,7 +338,7 @@
                 <h1 class="title title_black text-center">Наши проекты</h1>
             </div>
             <div class="col-12">
-                <div class="fotorama" data-width="100%" data-arrows="true" data-click="false">
+                <div class="projects__slider">
                     {% for p in projects %}
                     <div class="container-fluid projects__fotorama fotorama__select">
                         <div class="row projects__fotorama-row">
@@ -348,21 +348,25 @@
                                         <div class="row">
                                             <div class="col-4 projects__img-wrap">
                                                 <img src="{{ p.thumb1.url }}" alt=""
-                                                     class="projects__img projects__img_123" data-fullscreen-img="#{{ p.pk }}01">
+                                                     class="projects__img projects__img_123"
+                                                     data-img="#img{{ p.pk }}01" data-fls="#fls{{ p.pk }}">
                                             </div>
                                             <div class="col-4 projects__img-wrap">
                                                 <img src="{{ p.thumb2.url }}" alt=""
-                                                     class="projects__img projects__img_123" data-fullscreen-img="#{{ p.pk }}02">
+                                                     class="projects__img projects__img_123"
+                                                     data-img="#img{{ p.pk }}02" data-fls="#fls{{ p.pk }}">
                                             </div>
                                             <div class="col-4 projects__img-wrap">
                                                 <img src="{{ p.thumb3.url }}" alt=""
-                                                     class="projects__img projects__img_123" data-fullscreen-img="#{{ p.pk }}03">
+                                                     class="projects__img projects__img_123"
+                                                     data-img="#img{{ p.pk }}03" data-fls="#fls{{ p.pk }}">
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-12 projects__img-wrap">
                                                 <img src="{{ p.thumb4.url }}" alt=""
-                                                     class="projects__img projects__img_456" data-fullscreen-img="#{{ p.pk }}04">
+                                                     class="projects__img projects__img_456"
+                                                     data-img="#img{{ p.pk }}04" data-fls="#fls{{ p.pk }}">
                                             </div>
                                         </div>
                                     </div>
@@ -370,60 +374,38 @@
                                         <div class="row">
                                             <div class="col-6 projects__img-wrap">
                                                 <img src="{{ p.thumb5.url }}" alt=""
-                                                     class="projects__img projects__img_align projects__img_456" data-fullscreen-img="#{{ p.pk }}05">
+                                                     class="projects__img projects__img_align projects__img_456"
+                                                     data-img="#img{{ p.pk }}05" data-fls="#fls{{ p.pk }}">
                                             </div>
                                             <div class="col-6 projects__img-wrap">
                                                 <img src="{{ p.thumb6.url }}" alt=""
-                                                     class="projects__img projects__img_align projects__img_456" data-fullscreen-img="#{{ p.pk }}06">
+                                                     class="projects__img projects__img_align projects__img_456"
+                                                     data-img="#img{{ p.pk }}06" data-fls="#fls{{ p.pk }}">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xl-6 col-12 d-none d-md-block">
-                                <p class="projects__text projects__text_object"><span class="projects__text_bold">Объект: </span>{{ p.object }}
+                                <p class="projects__text projects__text_object"><span class="projects__text_bold">Объект: </span>
+                                    {{ p.object }}
                                 </p>
                                 <p class="projects__text projects__text_adress"><span
                                         class="projects__text_bold">Адрес: </span>{{ p.address }}
                                 </p>
-                                <p class="projects__text projects__text_date"><span class="projects__text_bold">Дата монтажа: </span>{{ p.date }}</p>
+                                <p class="projects__text projects__text_date"><span class="projects__text_bold">Дата монтажа: </span>
+                                    {{ p.date }}</p>
                                 <p class="projects__text projects__text_task"><span
                                         class="projects__text_bold">Задача: </span> {{ p.task }}</p>
-                                <p class="projects__text projects__text_jobs"><span class="projects__text_bold">Выполненные работы: </span>{{ p.jobs }}</p>
-                                <p class="projects__text projects__text_price"><span class="projects__text_bold">Общая стоимость проекта: </span>{{ p.price }} рублей</p>
+                                <p class="projects__text projects__text_jobs"><span class="projects__text_bold">Выполненные работы: </span>
+                                    {{ p.jobs }}</p>
+                                <p class="projects__text projects__text_price"><span class="projects__text_bold">Общая стоимость проекта:</span>
+                                    {{ p.price }} рублей</p>
                             </div>
                         </div>
                         <script>
                             $(document).ready(function () {
-                                var h = $('.projects__fotorama-row').height();
-                                $('.fotorama__stage:first').height(h);
-                                $(window).resize(function () {
-                                    var dh = $('.projects__fotorama-row').height();
-                                    $('.fotorama__stage:first').height(dh);
-                                });
-                            });
-                        </script>
-                        <script>
-                            $(document).ready(function () {
 
-
-                                $('.projects__img').on('click', function (e) {
-                                    e.preventDefault();
-                                    e.stopImmediatePropagation;
-                                    var $this = $(this),
-                                        fullscreen_img = $($this).data("fullscreen-img");
-                                    $(fullscreen_img).css('display', 'flex');
-                                    setTimeout(function () {
-                                        $(fullscreen_img).css('opacity', '1');
-                                    }, 1);
-                                });
-
-                                $('.fullscreen-img, .fullscreen-img__cross').on('click', function () {
-                                    $('.fullscreen-img').css('opacity', '0');
-                                    setTimeout(function () {
-                                        $('.fullscreen-img').css('display', 'none');
-                                    }, 300);
-                                });
                             });
                         </script>
                     </div>
@@ -452,37 +434,65 @@
                 </form>
             </div>
         </div>
-        <div class="row window_small reviews" id="reviews">
+        <div class="row window_small reviews justify-content-center" id="reviews">
             <div class="col-12">
                 <h1 class="title title_white text-center">Отзывы</h1>
             </div>
             <div class="col-12">
                 <div class="reviews__slider">
-                    <div class="fotorama" data-width="100%" data-arrows="true" data-click="false">
+                    <div class="reviews__item">
                         <div class="reviews__review">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
                             <img src="{% static 'img/review1.jpg' %}" alt="" class="reviews__img">
+                        </div>
+                        <div class="col-md-6 col-12">
                             <p class="reviews__name">Сергей Сеськин</p>
                             <p class="reviews__city">г. Саранск</p>
                             <p class="reviews__text">"Обратился в компанию Bindoors, понравился ассортимент, качество
                                 дверей и цена. Компания выполняет все услуги, что очень удобно. Привезли и установили в
                                 обговорённый срок. Рекомендую!"</p>
                         </div>
+                    </div>
+
+
+                </div>
+                    </div>
+                    <div class="reviews__item">
                         <div class="reviews__review">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
                             <img src="{% static 'img/review1.jpg' %}" alt="" class="reviews__img">
+                        </div>
+                        <div class="col-md-6 col-12">
                             <p class="reviews__name">Сергей Сеськин</p>
                             <p class="reviews__city">г. Саранск</p>
                             <p class="reviews__text">"Обратился в компанию Bindoors, понравился ассортимент, качество
                                 дверей и цена. Компания выполняет все услуги, что очень удобно. Привезли и установили в
                                 обговорённый срок. Рекомендую!"</p>
                         </div>
+                    </div>
+
+
+                </div>
+                    </div>
+                    <div class="reviews__item">
                         <div class="reviews__review">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
                             <img src="{% static 'img/review1.jpg' %}" alt="" class="reviews__img">
+                        </div>
+                        <div class="col-md-6 col-12">
                             <p class="reviews__name">Сергей Сеськин</p>
                             <p class="reviews__city">г. Саранск</p>
                             <p class="reviews__text">"Обратился в компанию Bindoors, понравился ассортимент, качество
                                 дверей и цена. Компания выполняет все услуги, что очень удобно. Привезли и установили в
                                 обговорённый срок. Рекомендую!"</p>
                         </div>
+                    </div>
+
+
+                </div>
                     </div>
                 </div>
             </div>
@@ -606,32 +616,19 @@
     </div>
 </div>
 {% for p in projects %}
-<div class="fullscreen-img" id="{{ p.pk }}01">
-    <img src="{{ p.img1.url }}" alt="" class="fullscreen-img__img">
-    <div class="fullscreen-img__cross"></div>
-</div>
-<div class="fullscreen-img" id="{{ p.pk }}02">
-    <img src="{{ p.img2.url }}" alt="" class="fullscreen-img__img">
-    <div class="fullscreen-img__cross"></div>
-</div>
-<div class="fullscreen-img" id="{{ p.pk }}03">
-    <img src="{{ p.img3.url }}" alt="" class="fullscreen-img__img">
-    <div class="fullscreen-img__cross"></div>
-</div>
-<div class="fullscreen-img" id="{{ p.pk }}04">
-    <img src="{{ p.img4.url }}" alt="" class="fullscreen-img__img">
-    <div class="fullscreen-img__cross"></div>
-</div>
-<div class="fullscreen-img" id="{{ p.pk }}05">
-    <img src="{{ p.img5.url }}" alt="" class="fullscreen-img__img">
-    <div class="fullscreen-img__cross"></div>
-</div>
-<div class="fullscreen-img" id="{{ p.pk }}06">
-    <img src="{{ p.img6.url }}" alt="" class="fullscreen-img__img">
-    <div class="fullscreen-img__cross"></div>
+<div class="fullscreen" id="fls{{ p.pk }}">
+    <div class="fullscreen__prev fullscreen__arr fullscreen__btn"></div>
+    <img src="{{ p.img1.url }}" alt="" class="fullscreen__img" id="img{{ p.pk }}01">
+    <img src="{{ p.img2.url }}" alt="" class="fullscreen__img" id="img{{ p.pk }}02">
+    <img src="{{ p.img3.url }}" alt="" class="fullscreen__img" id="img{{ p.pk }}03">
+    <img src="{{ p.img4.url }}" alt="" class="fullscreen__img" id="img{{ p.pk }}04">
+    <img src="{{ p.img5.url }}" alt="" class="fullscreen__img" id="img{{ p.pk }}05">
+    <img src="{{ p.img6.url }}" alt="" class="fullscreen__img" id="img{{ p.pk }}06">
+    <div class="fullscreen__next fullscreen__arr fullscreen__btn"></div>
+    <div class="fullscreen__cross fullscreen__btn"></div>
 </div>
 {% endfor %}
 
-<script src="{% static 'css/fotorama.js' %}"></script>
+<script src="{% static 'js/slick.js' %}"></script>
 <script src="{% static 'js/main.js' %}"></script>
 {% endblock %}

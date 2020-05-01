@@ -339,6 +339,7 @@ header .callback__social-item:hover {
   margin-top: 30px;
 }
 .quiz__desc_title {
+  margin-top: -20px;
   font-size: 1rem;
 }
 .quiz__mail {
@@ -381,10 +382,10 @@ header .callback__social-item:hover {
   .quiz__label {
     font-size: 1.5rem;
     max-width: none;
-    width: 370px;
+    width: 350px;
   }
   .quiz__img {
-    height: 150px;
+    height: 250px;
   }
 }
 @media (min-width: 992px) {

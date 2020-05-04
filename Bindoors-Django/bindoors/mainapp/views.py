@@ -2,7 +2,7 @@ from django.views import View
 from django.shortcuts import render, redirect
 
 from .models import Project, Partner, Review
-from .forms import RecallForm, SendCatalogForm, SendCatandpriceForm, QuizForm
+from .forms import RecallForm, SendCatalogForm, SendCatandpriceForm, QuizForm, SubscribeForm
 
 
 def index(request):
@@ -38,6 +38,7 @@ class SendCatalogView(View):
                 return redirect('/thank-you')
         return redirect('/privacy')
 
+
 class SendCatandpriceView(View):
     def post(self, request):
         if request.method == 'POST':
@@ -47,6 +48,7 @@ class SendCatandpriceView(View):
                 return redirect('/thank-you')
         return redirect('/privacy')
 
+
 class QuizView(View):
     def post(self, request):
         if request.method == 'POST':
@@ -55,6 +57,18 @@ class QuizView(View):
                 form.save()
                 return redirect('/thank-you')
         return redirect('/privacy')
+
+
+class SubscribeView(View):
+    def post(self, request):
+        if request.method == 'POST':
+            form = SubscribeForm(request.POST)
+            if form.is_valid():
+                form.save()
+                return redirect('/thank-you')
+            return redirect('/agreement')
+        return redirect('/privacy')
+
 
 def agreement(request):
     return render(request, 'mainapp/agreement.html')

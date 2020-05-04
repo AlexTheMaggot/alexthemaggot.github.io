@@ -546,8 +546,9 @@
                 <p class="footer__title">ПОДПИСКА</p>
                 <p class="footer__desc">Укажите свой e-mail адрес, чтобы получать уведомления о наших акциях и
                     предложениях.</p>
-                <form action="#">
-                    <input type="email">
+                <form action="{% url 'subscribe' %}" method="POST">
+                    {% csrf_token %}
+                    <input type="email" name="mail">
                     <input type="submit" value="Отправить" class="footer__button">
                     <p class="form-check-label footer__desc">
                         <input type="checkbox">

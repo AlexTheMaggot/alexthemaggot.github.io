@@ -1,5 +1,8 @@
 body {
   text-align: center;
+  background-size: cover;
+  background: url("../img/space.jpg") center;
+  background-repeat: no-repeat;
 }
 .will {
   max-height: 100vh;

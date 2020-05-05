@@ -1,0 +1,14 @@
+body {
+  text-align: center;
+}
+.will {
+  max-height: 100vh;
+  max-width: 40%;
+  display: inline-block;
+}
+.screen {
+  max-height: 100vh;
+  max-width: 40%;
+  display: inline-block;
+}
+/*# sourceMappingURL=style.css.map */

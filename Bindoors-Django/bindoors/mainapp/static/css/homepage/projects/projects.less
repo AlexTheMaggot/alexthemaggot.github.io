@@ -2,10 +2,12 @@
   &__texts {
     margin-top: 20px;
   }
+
   &__fotorama {
     padding-left: 50px;
     padding-right: 50px;
   }
+
   &__img-wrap {
     padding: 0;
   }
@@ -14,9 +16,11 @@
     width: 100%;
     transition: all 0.3s;
     border-radius: 10px;
+
     &_123 {
       transform: scale(0.95);
     }
+
     &_456 {
       transform: scale(0.98);
     }
@@ -103,6 +107,7 @@
       }
     }
   }
+
   &__button {
     display: block;
     width: fit-content;
@@ -120,87 +125,129 @@
   }
 
 
-
-
-
   /* Слайдер */
-.slick-slider{}
-/* Слайдер запущен */
-.slick-slider.slick-initialized{}
-/* Слайдер с точками */
-.slick-slider.slick-dotted{}
-/* Ограничивающая оболочка */
-.slick-list {
-}
-/* Лента слайдов */
-.slick-track{
-}
-/* Слайд */
-.slick-slide{}
-/* Слайд активный (показывается) */
-.slick-slide.slick-active{}
-/* Слайд основной */
-.slick-slide.slick-current{}
-/* Слайд по центру */
-.slick-slide.slick-center{}
-/* Клонированный слайд */
-.slick-slide.slick-cloned{}
-/* Стрелка */
-.slick-arrow{
-  position: absolute;
-  top: 50%;
-  margin-top: -15px;
-  font-size: 0;
-  width: 30px;
-  height: 30px;
-  border: none;
-  z-index: 2;
-  &:focus {
-    outline: none;
+
+  .slick-slider {
   }
-}
-/* Стрелка влево */
-.slick-arrow.slick-prev{
-  left: 0;
-  background: url('../img/door_prev.png');
-  background-size: contain;
-}
-/* Стрелка вправо */
-.slick-arrow.slick-next{
-  right: 0;
-  background: url('../img/door_next.png');
-  background-size: contain;
-}
-/* Стрелка не активная */
-.slick-arrow.slick-disabled{}
-/* Точки (булиты) */
-.slick-dots{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-}
-.slick-dots li{
-  list-style: none;
-  margin: 0 5px;
-}
-/* Активная точка */
-.slick-dots li.slick-active{
-  button {
-    background-color: @gray-dark;
+
+  /* Слайдер запущен */
+
+  .slick-slider.slick-initialized {
   }
-}
-/* Элемент точки */
-.slick-dots li button{
-  font-size: 0;
-  width: 10px;
-  height: 10px;
-  background-color: @white;
-  border-radius: 50%;
-  border: 1px solid @gray-dark;
-  padding: 0;
-  &:focus {
-    outline: none;
+
+  /* Слайдер с точками */
+
+  .slick-slider.slick-dotted {
   }
-}
+
+  /* Ограничивающая оболочка */
+
+  .slick-list {
+  }
+
+  /* Лента слайдов */
+
+  .slick-track {
+  }
+
+  /* Слайд */
+
+  .slick-slide {
+  }
+
+  /* Слайд активный (показывается) */
+
+  .slick-slide.slick-active {
+  }
+
+  /* Слайд основной */
+
+  .slick-slide.slick-current {
+  }
+
+  /* Слайд по центру */
+
+  .slick-slide.slick-center {
+  }
+
+  /* Клонированный слайд */
+
+  .slick-slide.slick-cloned {
+  }
+
+  /* Стрелка */
+
+  .slick-arrow {
+    position: absolute;
+    top: 16vw;
+    margin-top: 0;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    border: none;
+    z-index: 2;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  /* Стрелка влево */
+
+  .slick-arrow.slick-prev {
+    left: 0;
+    background: url('../img/door_prev.png');
+    background-size: contain;
+  }
+
+  /* Стрелка вправо */
+
+  .slick-arrow.slick-next {
+    right: 0;
+    background: url('../img/door_next.png');
+    background-size: contain;
+  }
+
+  /* Стрелка не активная */
+
+  .slick-arrow.slick-disabled {
+  }
+
+  /* Точки (булиты) */
+
+  .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .slick-dots li {
+    list-style: none;
+    margin: 0 5px;
+  }
+
+  /* Активная точка */
+
+  .slick-dots li.slick-active {
+    button {
+      background-color: @gray-dark;
+    }
+  }
+
+  /* Элемент точки */
+
+  .slick-dots li button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: @white;
+    border-radius: 50%;
+    border: 1px solid @gray-dark;
+    padding: 0;
+
+    &:focus {
+      outline: none;
+    }
+  }
 }

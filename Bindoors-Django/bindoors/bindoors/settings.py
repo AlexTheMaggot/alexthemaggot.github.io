@@ -25,10 +25,9 @@ SECRET_KEY = '$87#s8xrcp^42baqoo$t+dpzxj*7g72jxt5bx*wysr=wig%*=*'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '192.168.0.103',
+    'bindoors.ru',
+    'www.bindoors.ru',
     '192.168.0.105',
-    'alexthemaggot.pythonanywhere.com',
-    'pythonanywhere.com',
 ]
 
 # Application definition

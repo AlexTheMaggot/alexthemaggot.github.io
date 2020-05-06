@@ -391,7 +391,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-6 col-12 d-none d-md-block">
+                            <div class="col-xl-6 col-12 projects__texts">
                                 <p class="projects__text projects__text_object"><span class="projects__text_bold">Объект: </span>
                                     {{ p.object }}
                                 </p>
@@ -549,9 +549,9 @@
                     предложениях.</p>
                 <form action="{% url 'subscribe' %}" method="POST">
                     {% csrf_token %}
-                    <input type="email" name="mail">
+                    <input type="email" name="mail" placeholder="Введите E-mail" class="footer__mail">
                     <input type="submit" value="Отправить" class="footer__button">
-                    <p class="form-check-label footer__desc">
+                    <p class="form-check-label footer__desc footer__agreement">
                         <input type="checkbox">
                         Согласен с <a href="agreement/">обработкой данных</a>
                     </p>

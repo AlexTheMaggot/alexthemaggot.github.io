@@ -457,6 +457,9 @@ header .callback__social-item:hover {
   /* Активная точка */
   /* Элемент точки */
 }
+.projects__texts {
+  margin-top: 20px;
+}
 .projects__fotorama {
   padding-left: 50px;
   padding-right: 50px;
@@ -481,15 +484,15 @@ header .callback__social-item:hover {
 .projects__text {
   display: block;
   width: fit-content;
-  margin-left: 80px;
-  margin-right: 60px;
+  margin-left: 30px;
+  margin-right: 0;
   margin-bottom: 0;
   padding-bottom: 10px;
   transition: all 0.3s;
 }
 .projects__text::before {
   content: '';
-  margin-left: 50px;
+  margin-left: 0;
   width: 30px;
   height: 30px;
   position: absolute;
@@ -606,8 +609,18 @@ header .callback__social-item:hover {
   }
 }
 @media (min-width: 1200px) {
+  .projects__texts {
+    margin-top: 0;
+  }
   .projects .slick-arrow {
     top: 50%;
+  }
+  .projects__text {
+    margin-left: 80px;
+    margin-right: 60px;
+  }
+  .projects__text::before {
+    margin-left: 50px;
   }
 }
 .order {

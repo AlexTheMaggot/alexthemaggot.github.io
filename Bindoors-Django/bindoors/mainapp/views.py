@@ -38,7 +38,7 @@ class RecallView(View):
                 message += 'Телефон: ' + phone
 
                 send_mail(subject, message, from_email, to_email, fail_silently=False)
-                bot.send_message(-439177655, message)
+                bot.send_message(-1001204503517, message)
                 return redirect('/thank-you')
         return redirect('/wrong')
 
@@ -57,7 +57,7 @@ class SendCatalogView(View):
                 message = 'Новая заявка на отправку каталога!' + '\r\n' + '\r\n' + 'Почта: ' + mail
 
                 send_mail(subject, message, from_email, to_email, fail_silently=False)
-                bot.send_message(-439177655, message)
+                bot.send_message(-1001204503517, message)
                 return redirect('/thank-you')
         return redirect('/wrong')
 
@@ -78,7 +78,7 @@ class SendCatandpriceView(View):
                 message += '\r\n' + 'Телефон: ' + phone + '\r\n' + 'Почта: ' + mail
 
                 send_mail(subject, message, from_email, to_email, fail_silently=False)
-                bot.send_message(-439177655, message)
+                bot.send_message(-1001204503517, message)
 
                 return redirect('/thank-you')
         return redirect('/wrong')
@@ -108,7 +108,7 @@ class QuizView(View):
                 message += 'Размер: ' + size_type + '\r\n' + 'Материал: ' + material_type
 
                 send_mail(subject, message, from_email, to_email, fail_silently=False)
-                bot.send_message(-439177655, message)
+                bot.send_message(-1001204503517, message)
 
                 return redirect('/thank-you')
         return redirect('/wrong')

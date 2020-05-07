@@ -27,7 +27,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'bindoors.ru',
     'www.bindoors.ru',
-    '192.168.0.105',
+    '192.168.0.103',
 ]
 
 # Application definition

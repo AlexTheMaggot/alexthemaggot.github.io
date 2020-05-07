@@ -120,6 +120,14 @@ class SubscribeView(View):
             form = SubscribeForm(request.POST)
             if form.is_valid():
                 form.save()
+                mail = form.cleaned_data['mail']
+                subject = 'Новая заявка на подписку!'
+                from_email = 'no-reply@bindoors.ru'
+                to_email = ['alexthemaggot23@gmail.com', ]
+                message = 'Новая заявка на подписку!' + '\r\n' + '\r\n' + 'Почта: ' + mail
+
+                send_mail(subject, message, from_email, to_email, fail_silently=False)
+                bot.send_message(-1001204503517, message)
                 return redirect('/thank-you')
         return redirect('/wrong')
 

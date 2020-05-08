@@ -1,0 +1,59 @@
+{% extends 'web/main.html' %}
+{% load static %}
+{% block title_page %}
+	<title>Магазин</title>
+{% endblock title_page%}
+{% block content %}
+	<section class="main-section paddind" id="Portfolio">
+		<!--main-section-start-->
+		<div class="container">
+			<h2>Магазин</h2>
+			<h6>К нам каждый день приезжают самые свежие продукты</h6>
+			<div class="portfolioFilter">
+				<ul class="Portfolio-nav wow fadeIn delay-02s">
+					<li><a href="#" data-filter="*" class="current">Все продукты</a></li>
+					<li><a href="#" data-filter=".branding">Фрукты</a></li>
+					<li><a href="#" data-filter=".webdesign">Море продукты</a></li>
+					<li><a href="#" data-filter=".printdesign">Молочное</a></li>
+					<li><a href="#" data-filter=".photography">Напитки</a></li>
+				</ul>
+			</div>
+
+		</div>
+		<div class="portfolioContainer wow fadeInUp delay-04s">
+			{% for post in pr %}
+				{% if post.availability %}
+					{% if post.group == 'fruit' %}
+						<div class=" Portfolio-box branding"><!--Фрукты	-->
+							<a href="img/Portfolio-pic3.jpg"><img src="{{ post.img.url }}" alt=""></a>
+							<h3>{{ post.name }}</h3>
+							<p>Цена:{{ post.price }} сум</p>
+							<p>{{ post.description}}</p>
+						</div>
+					{% elif post.group == "dairy" %}
+						<div class=" Portfolio-box printdesign"> <!--Молочное-->
+							<a href="img/Portfolio-pic1.jpg"><img src="{{ post.img.url }}" alt=""></a>
+							<h3>{{ post.name }}</h3>
+							<p>Цена:{{ post.price }} сум</p>
+							<p>{{ post.description}}</p>
+						</div>
+					{% elif post.group == "sea" %}
+						<div class="Portfolio-box webdesign"><!--Море продукты-->
+							<a href="img/Portfolio-pic2.jpg"><img src="{{ post.img.url }}" alt=""></a>
+							<h3>{{ post.name }}</h3>
+							<p>Цена:{{ post.price }} сум</p>
+							<p>{{ post.description}}</p>
+						</div>
+					{% elif post.group == "beverages" %}
+						<div class=" Portfolio-box photography"><!--Напитки-->
+							<a href="img/Portfolio-pic4.jpg"><img src="{{ post.img.url }}" alt=""></a>
+							<h3>{{ post.name }}</h3>
+							<p>Цена:{{ post.price }} сум</p>
+							<p>{{ post.description}}</p>
+						</div>
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+		</div>
+	</section>
+{% endblock content %}

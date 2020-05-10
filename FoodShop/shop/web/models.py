@@ -22,4 +22,12 @@ class Product(models.Model):
     img = models.ImageField(default='noimage.jpg', upload_to='product_image')
 
     def __str__(self):
-        return  f'{self.name}'
+        return f'{self.name}'
+
+
+class Order(models.Model):
+    name = models.CharField(max_length=200)
+    price = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.name
